@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foshanFFE.com — Foshan Hotel FF&E & Building Materials Supplier</title>
+    <meta name="description" content="Foshan-based hotel FF&E integrator. One PO, full guestroom + public area FF&E. Casegoods, soft seating, lobby furniture, lighting, mattresses, drapery, bath vanities. Serving US and Middle East hotel projects.">
+    <meta name="keywords" content="hotel FF&E, Foshan furniture supplier, hotel casegoods, hotel lobby furniture, hospitality procurement, hotel renovation furniture, Middle East hotel furniture">
+    <meta name="author" content="foshanFFE.com">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="foshanFFE.com — Hotel FF&E Integration from Foshan">
+    <meta property="og:description" content="One PO. Full Guestroom + Public Area FF&E. From Foshan to Your Property.">
+    <meta property="og:url" content="https://foshanffe.com">
+    <meta property="og:site_name" content="foshanFFE.com">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "foshanFFE.com",
+        "url": "https://foshanffe.com",
+        "description": "Foshan-based hotel FF&E integrator serving US and Middle East hotel projects.",
+        "email": "chencanming@coze.email",
+        "areaServed": ["United States", "Saudi Arabia", "UAE"],
+        "knowsAbout": ["Hotel FF&E", "Casegoods", "Soft Seating", "Lobby Furniture", "Lighting", "Mattresses", "Drapery", "Bath Vanities", "Hospitality Procurement"]
+    }
+    </script>
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; color: #2c2c2c; line-height: 1.6; background: #fff; }
+        
+        /* Navigation */
+        .nav { background: #1a237e; padding: 16px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+        .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-brand { color: #fff; font-size: 1.3rem; font-weight: bold; text-decoration: none; }
+        .nav-brand span { color: #c9a961; }
+        .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; margin-left: 28px; font-size: 0.9rem; transition: color 0.2s; }
+        .nav-links a:hover { color: #c9a961; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #1a237e 0%, #283593 60%, #3949ab 100%); color: #fff; padding: 100px 24px 80px; text-align: center; }
+        .hero-inner { max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 20px; font-weight: 700; }
+        .hero h1 .gold { color: #c9a961; }
+        .hero-tagline { font-size: 1.2rem; color: rgba(255,255,255,0.85); margin-bottom: 12px; font-weight: 300; letter-spacing: 0.5px; }
+        .hero-subtitle { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 600px; margin: 0 auto 32px; }
+        .hero-cta { display: inline-block; background: #c9a961; color: #1a237e; padding: 14px 36px; border-radius: 4px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: background 0.2s, transform 0.2s; }
+        .hero-cta:hover { background: #d4b76f; transform: translateY(-1px); }
+        .hero-cta-secondary { display: inline-block; color: rgba(255,255,255,0.85); padding: 14px 36px; text-decoration: none; font-size: 0.95rem; margin-left: 12px; border: 1px solid rgba(255,255,255,0.3); border-radius: 4px; transition: border-color 0.2s, color 0.2s; }
+        .hero-cta-secondary:hover { border-color: #c9a961; color: #c9a961; }
+        
+        /* Value Props */
+        .value-props { background: #f8f9fa; padding: 60px 24px; }
+        .value-props-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .value-card { background: #fff; border-radius: 8px; padding: 32px 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); text-align: center; }
+        .value-card-icon { font-size: 2rem; margin-bottom: 16px; }
+        .value-card h3 { color: #1a237e; font-size: 1.1rem; margin-bottom: 10px; }
+        .value-card p { color: #666; font-size: 0.9rem; line-height: 1.6; }
+        
+        /* Products/Services */
+        .services { padding: 70px 24px; }
+        .services-inner { max-width: 1100px; margin: 0 auto; }
+        .services h2 { text-align: center; color: #1a237e; font-size: 1.8rem; margin-bottom: 12px; }
+        .services-subtitle { text-align: center; color: #666; margin-bottom: 40px; font-size: 1rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .service-item { background: #f8f9fa; border-radius: 6px; padding: 24px 20px; text-align: center; border: 1px solid #e8e8e8; transition: border-color 0.2s, box-shadow 0.2s; }
+        .service-item:hover { border-color: #c9a961; box-shadow: 0 2px 8px rgba(201,169,97,0.15); }
+        .service-item-icon { font-size: 1.6rem; margin-bottom: 10px; }
+        .service-item h4 { color: #333; font-size: 0.95rem; margin-bottom: 6px; }
+        .service-item p { color: #888; font-size: 0.8rem; }
+        
+        /* Markets */
+        .markets { background: #1a237e; color: #fff; padding: 60px 24px; }
+        .markets-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+        .market-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 32px; }
+        .market-card h3 { color: #c9a961; font-size: 1.2rem; margin-bottom: 16px; }
+        .market-card p { color: rgba(255,255,255,0.8); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px; }
+        .market-stat { display: inline-block; background: rgba(201,169,97,0.15); border: 1px solid rgba(201,169,97,0.3); border-radius: 4px; padding: 6px 14px; margin: 4px 4px 4px 0; font-size: 0.85rem; color: #c9a961; }
+        
+        /* Insights Section */
+        .insights { padding: 70px 24px; background: #f8f9fa; }
+        .insights-inner { max-width: 1100px; margin: 0 auto; }
+        .insights h2 { text-align: center; color: #1a237e; font-size: 1.8rem; margin-bottom: 8px; }
+        .insights-subtitle { text-align: center; color: #666; margin-bottom: 40px; font-size: 1rem; }
+        .insights-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .insight-card { background: #fff; border-radius: 8px; padding: 24px 28px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); border-left: 3px solid #c9a961; transition: box-shadow 0.2s; }
+        .insight-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .insight-card-category { color: #c9a961; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; margin-bottom: 6px; }
+        .insight-card h3 { font-size: 1rem; color: #1a237e; margin-bottom: 8px; line-height: 1.4; }
+        .insight-card h3 a { color: inherit; text-decoration: none; }
+        .insight-card h3 a:hover { color: #c9a961; }
+        .insight-card p { color: #666; font-size: 0.85rem; line-height: 1.6; margin-bottom: 10px; }
+        .insight-card-meta { color: #999; font-size: 0.78rem; }
+        .insights-more { text-align: center; margin-top: 32px; }
+        .insights-more a { color: #1a237e; font-weight: 600; text-decoration: none; font-size: 0.95rem; border-bottom: 2px solid #c9a961; padding-bottom: 2px; }
+        .insights-more a:hover { color: #c9a961; }
+        
+        /* Foshan Advantage */
+        .advantage { padding: 70px 24px; }
+        .advantage-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+        .advantage h2 { color: #1a237e; font-size: 1.8rem; margin-bottom: 16px; }
+        .advantage > .advantage-inner > p { color: #555; font-size: 1rem; line-height: 1.8; margin-bottom: 32px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .advantage-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2.4rem; font-weight: 700; color: #c9a961; display: block; }
+        .stat-label { font-size: 0.85rem; color: #666; margin-top: 4px; }
+        
+        /* Contact */
+        .contact { background: #f8f9fa; padding: 60px 24px; text-align: center; }
+        .contact-inner { max-width: 600px; margin: 0 auto; }
+        .contact h2 { color: #1a237e; font-size: 1.6rem; margin-bottom: 16px; }
+        .contact p { color: #555; font-size: 1rem; margin-bottom: 24px; line-height: 1.7; }
+        .contact-email { display: inline-block; background: #1a237e; color: #fff; padding: 14px 36px; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: background 0.2s; }
+        .contact-email:hover { background: #283593; }
+        
+        /* Footer */
+        .footer { background: #0d1242; color: rgba(255,255,255,0.6); padding: 40px 24px; text-align: center; font-size: 0.85rem; }
+        .footer a { color: #c9a961; text-decoration: none; }
+        .footer-brand { color: #fff; font-size: 1.2rem; font-weight: bold; margin-bottom: 12px; }
+        .footer-brand span { color: #c9a961; }
+        .footer-tagline { color: rgba(255,255,255,0.5); margin-top: 8px; font-style: italic; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero { padding: 60px 20px 50px; }
+            .value-props-inner { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .markets-inner { grid-template-columns: 1fr; }
+            .insights-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .hero-cta-secondary { display: block; margin: 12px auto 0; }
+            .advantage-stats { gap: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">foshan<span>FFE</span>.com</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="industry-insights.html">Industry Insights</a>
+                <a href="mailto:chencanming@coze.email">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-inner">
+            <p class="hero-tagline">Foshan FF&E & Building Materials Supplier</p>
+            <h1>One PO. Full Guestroom + Public Area FF&E.<br><span class="gold">From Foshan to Your Property.</span></h1>
+            <p class="hero-subtitle">Integrated hotel furniture procurement for US and Middle East hotel projects. Casegoods, soft seating, lighting, mattresses, drapery, bath vanities — coordinated from a single source.</p>
+            <a href="mailto:chencanming@coze.email" class="hero-cta">Request a Consultation</a>
+            <a href="industry-insights.html" class="hero-cta-secondary">Read Industry Insights</a>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="value-props">
+        <div class="value-props-inner">
+            <div class="value-card">
+                <div class="value-card-icon">📋</div>
+                <h3>Single PO, Full Scope</h3>
+                <p>One purchase order covers your entire FF&E package — guestroom furniture, public area pieces, lighting, bedding, and bathroom vanities. One invoice, one accountability chain.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-card-icon">🏭</div>
+                <h3>Direct from Foshan</h3>
+                <p>Access the world's largest furniture manufacturing cluster. 30–45% cost advantage vs. Western sourcing, with quality specifications matched to your brand standards.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-card-icon">🌍</div>
+                <h3>US & Middle East Ready</h3>
+                <p>CAL 117 and BS 7177 fire compliance. DDP pricing with tariff transparency. Climate-adapted specifications for extreme environments. We handle the complexity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="services">
+        <div class="services-inner">
+            <h2>What We Source</h2>
+            <p class="services-subtitle">Full-scope hotel FF&E coordinated from Foshan's specialized manufacturing districts</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-item-icon">🪑</div>
+                    <h4>Casegoods</h4>
+                    <p>Desks, dressers, nightstands, wardrobes, headboards</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-icon">🛋️</div>
+                    <h4>Soft Seating</h4>
+                    <p>Lobby sofas, guestroom chairs, ottomans, banquettes</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-icon">💡</div>
+                    <h4>Lighting</h4>
+                    <p>Sconces, table lamps, pendant lights, chandeliers</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-icon">🛏️</div>
+                    <h4>Mattresses</h4>
+                    <p>Hotel-grade mattresses, box springs, bed foundations</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-icon">🪟</div>
+                    <h4>Drapery</h4>
+                    <p>Sheers, blackouts, valances, hardware systems</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-icon">🚿</div>
+                    <h4>Bath Vanities</h4>
+                    <p>Custom vanities, solid surface tops, mirrors, storage</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-icon">🏢</div>
+                    <h4>Lobby Furniture</h4>
+                    <p>Reception desks, lounge seating, concierge stations</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-icon">🔧</div>
+                    <h4>Custom Millwork</h4>
+                    <p>Paneling, trim, built-ins, specialty architectural elements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Markets -->
+    <section class="markets">
+        <div class="markets-inner">
+            <div class="market-card">
+                <h3>🇺🇸 United States</h3>
+                <p>The US hotel construction pipeline stands at 5,975 projects / 703,001 rooms (Q2 2026). With 661 hotels opening in 2026 and 255,834 rooms in the renovation pipeline, demand for FF&E is at historic levels.</p>
+                <p>Top markets: Dallas (183 projects), Atlanta (157), Nashville (122), Austin (116), Phoenix (115).</p>
+                <span class="market-stat">5,975 projects</span>
+                <span class="market-stat">703,001 rooms</span>
+                <span class="market-stat">$895M+ FF&E opportunity</span>
+            </div>
+            <div class="market-card">
+                <h3>🇸🇦 Middle East</h3>
+                <p>Record 724 projects / 178,003 rooms across the region. Saudi Arabia leads with 387 projects driven by Vision 2030, Expo 2030, and FIFA World Cup 2034. Only 5% import duty vs. 28–30% for the US.</p>
+                <p>Compliance: BS 7177 fire standard, PUR adhesive, climate-adapted specifications.</p>
+                <span class="market-stat">724 projects</span>
+                <span class="market-stat">178,003 rooms</span>
+                <span class="market-stat">5% tariff advantage</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Insights -->
+    <section class="insights">
+        <div class="insights-inner">
+            <h2>Latest Industry Insights</h2>
+            <p class="insights-subtitle">Market intelligence and procurement guides for hotel FF&E professionals</p>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <div class="insight-card-category">Market Analysis</div>
+                    <h3><a href="article-us-hotel-pipeline-2026.html">US Hotel Construction Pipeline 2026: $895M+ FF&E Opportunity for Global Suppliers</a></h3>
+                    <p>5,975 projects in the pipeline. 661 hotels opening this year. The renovation wave alone represents nearly $1 billion in FF&E demand.</p>
+                    <div class="insight-card-meta">Aug 29, 2026 · 8 min read</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-card-category">Market Guide</div>
+                    <h3><a href="article-middle-east-hotel-boom.html">Middle East Hotel Boom: 724 Projects, 178K Rooms — A FF&E Sourcing Guide</a></h3>
+                    <p>Saudi Vision 2030 drives 387 projects. With only 5% import duty, the Middle East offers compelling margins for Foshan-sourced FF&E.</p>
+                    <div class="insight-card-meta">Aug 29, 2026 · 9 min read</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-card-category">Trade & Tariff Analysis</div>
+                    <h3><a href="article-us-tariff-strategies.html">How to Navigate US Tariffs on Hotel Furniture: Strategies for 28-30% Tariff Environment</a></h3>
+                    <p>Five proven strategies for maintaining competitiveness despite significant tariff burdens. Why Foshan sourcing still delivers 10–25% savings after tariff.</p>
+                    <div class="insight-card-meta">Aug 29, 2026 · 10 min read</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-card-category">Technical Compliance</div>
+                    <h3><a href="article-fire-compliance-cal117-bs7177.html">Hotel FF&E Fire Compliance: CAL 117 vs BS 7177 — What Buyers Need to Know</a></h3>
+                    <p>A technical comparison of the two dominant fire standards. What to specify, what to verify, and common compliance mistakes to avoid.</p>
+                    <div class="insight-card-meta">Aug 29, 2026 · 9 min read</div>
+                </div>
+            </div>
+            <div class="insights-more">
+                <a href="industry-insights.html">View All Industry Insights →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Foshan Advantage -->
+    <section class="advantage">
+        <div class="advantage-inner">
+            <h2>The Foshan Advantage</h2>
+            <p>Foshan is the world's largest furniture manufacturing cluster — a city where specialized districts handle different product categories. Chancheng produces tiles and sanitary ware. Lecong specializes in contract furniture. Dali handles architectural aluminum. Shunde produces custom millwork. We coordinate across all of it.</p>
+            <div class="advantage-stats">
+                <div class="stat-item">
+                    <span class="stat-number">30–45%</span>
+                    <span class="stat-label">Cost Advantage vs. Western Sourcing</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8–14</span>
+                    <span class="stat-label">Weeks PO-to-Site Delivery</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Single PO for Full FF&E Scope</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="contact-inner">
+            <h2>Start a Conversation</h2>
+            <p>Whether you're planning a new hotel opening, a brand conversion, or a full-scale renovation — we can help scope your FF&E requirements and provide transparent, DDP-quoted pricing from Foshan.</p>
+            <a href="mailto:chencanming@coze.email" class="contact-email">chencanming@coze.email</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-brand">foshan<span>FFE</span>.com</div>
+        <p>Foshan FF&E & Building Materials Supplier</p>
+        <p>US & Middle East Hotel Projects — Casegoods, Soft Seating, Lobby Furniture, Lighting, Mattresses, Drapery, Bath Vanities</p>
+        <p class="footer-tagline">"One PO. Full Guestroom + Public Area FF&E. From Foshan to Your Property."</p>
+        <p style="margin-top: 16px;"><a href="industry-insights.html">Industry Insights</a> &nbsp;·&nbsp; <a href="mailto:chencanming@coze.email">Contact</a></p>
+        <p style="margin-top: 12px;">&copy; 2026 foshanFFE.com. All rights reserved.</p>
+    </footer>
+</body>
+</html>
