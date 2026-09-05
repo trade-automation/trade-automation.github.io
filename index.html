@@ -93,8 +93,8 @@
             letter-spacing: -0.5px;
         }
         .nav-brand span { color: var(--gold); }
-        .nav-links { display: flex; align-items: center; gap: 32px; }
-        .nav-links a { 
+        .nav-links { display: flex; align-items: center; gap: 28px; }
+        .nav-links > a { 
             color: var(--text-secondary); 
             text-decoration: none; 
             font-size: 0.88rem; 
@@ -102,7 +102,7 @@
             transition: color 0.2s;
             letter-spacing: 0.2px;
         }
-        .nav-links a:hover { color: var(--gold); }
+        .nav-links > a:hover { color: var(--gold); }
         .nav-cta {
             background: var(--navy);
             color: #fff !important;
@@ -112,6 +112,25 @@
             transition: background 0.2s, transform 0.2s;
         }
         .nav-cta:hover { background: var(--navy-light); transform: translateY(-1px); }
+
+        /* Dropdown */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown-trigger { 
+            color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; font-weight: 500;
+            transition: color 0.2s; letter-spacing: 0.2px; cursor: pointer;
+        }
+        .nav-dropdown-trigger:hover { color: var(--gold); }
+        .nav-dropdown-menu { 
+            display: none; position: absolute; top: 100%; left: -20px; background: #fff; 
+            border-radius: 10px; box-shadow: 0 12px 40px rgba(0,0,0,0.12); padding: 12px 0; 
+            min-width: 280px; z-index: 100; border: 1px solid var(--border-light); margin-top: 12px;
+        }
+        .nav-dropdown-menu a { 
+            display: block; padding: 10px 24px; color: var(--text-secondary); font-size: 0.85rem; 
+            white-space: nowrap; transition: all 0.15s; text-decoration: none;
+        }
+        .nav-dropdown-menu a:hover { background: var(--warm-white); color: var(--gold); }
+        .nav-dropdown:hover .nav-dropdown-menu { display: block; }
         
         /* Hero Section */
         .hero { 
@@ -193,6 +212,43 @@
             font-weight: 500;
         }
         .hero-cta-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+        /* Brand Story */
+        .brand-story {
+            padding: 80px 32px;
+            background: #fff;
+            text-align: center;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .brand-story-inner { max-width: 800px; margin: 0 auto; }
+        .brand-story-label {
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .brand-story h2 {
+            color: var(--navy);
+            font-size: 2rem;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+        .brand-story p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.85;
+            margin-bottom: 16px;
+        }
+        .brand-story p:last-of-type { margin-bottom: 0; }
+        .brand-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin: 28px auto 0;
+            border-radius: 2px;
+        }
         
         /* Value Propositions */
         .value-props { 
@@ -361,6 +417,53 @@
             font-size: 0.82rem;
             line-height: 1.6;
         }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 32px;
+            background: #fff;
+        }
+        .testimonials-inner { max-width: 1100px; margin: 0 auto; }
+        .testimonials-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 28px; 
+            margin-top: 48px;
+        }
+        .testimonial-card { 
+            background: var(--warm-white); 
+            border: 1px solid var(--border-light); 
+            border-radius: 12px; 
+            padding: 32px; 
+            position: relative;
+            transition: all 0.3s;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+            border-color: var(--gold);
+        }
+        .testimonial-card::before { 
+            content: '\201C'; 
+            position: absolute; 
+            top: 16px; left: 24px; 
+            font-size: 3rem; 
+            color: var(--gold); 
+            opacity: 0.3; 
+            font-family: Georgia, serif; 
+            line-height: 1;
+        }
+        .testimonial-card p { 
+            color: var(--text-secondary); 
+            font-size: 0.9rem; 
+            line-height: 1.75; 
+            margin-bottom: 20px; 
+            font-style: italic;
+            padding-top: 16px;
+        }
+        .testimonial-author { font-size: 0.85rem; }
+        .testimonial-author strong { color: var(--navy); display: block; font-weight: 600; }
+        .testimonial-author span { color: var(--text-muted); font-size: 0.8rem; }
         
         /* Markets */
         .markets { 
@@ -596,10 +699,13 @@
         .footer-brand span { color: var(--gold); }
         .footer-tagline { 
             color: rgba(255,255,255,0.4); 
-            margin-top: 12px; 
+            margin-top: 12px;
             font-style: italic;
             font-size: 0.9rem;
         }
+        .footer-nav { margin-top: 20px; line-height: 2; }
+        .footer-nav a { font-size: 0.85rem; transition: color 0.2s; }
+        .footer-nav a:hover { color: var(--gold-light); }
         .social-links { 
             display: flex; 
             justify-content: center; 
@@ -632,11 +738,13 @@
             .markets-grid { grid-template-columns: 1fr; }
             .insights-grid { grid-template-columns: 1fr; }
             .process-grid { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; }
             .hero-cta-secondary { display: block; margin: 12px auto 0; }
             .advantage-stats { gap: 32px; }
             .contact-channels { gap: 24px; }
             .section-header h2 { font-size: 1.8rem; }
+            .brand-story h2 { font-size: 1.5rem; }
         }
     </style>
     <link rel="canonical" href="https://foshanffe.com/">
@@ -647,7 +755,19 @@
         <div class="nav-inner">
             <a href="index.html" class="nav-brand">foshan<span>FFE</span>.com</a>
             <div class="nav-links">
-                <a href="#services">Services</a>
+                <div class="nav-dropdown">
+                    <a class="nav-dropdown-trigger">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="services/guestroom-ffe.html">Hotel Guestroom FF&E</a>
+                        <a href="services/lobby-furniture.html">Lobby & Public Area Furniture</a>
+                        <a href="services/fb-restaurant.html">F&B and Restaurant FF&E</a>
+                        <a href="services/custom-millwork.html">Custom Millwork & Joinery</a>
+                        <a href="services/quality-control.html">Quality Control & Inspection</a>
+                        <a href="services/logistics-shipping.html">Consolidation & Global Shipping</a>
+                    </div>
+                </div>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
                 <a href="#process">Process</a>
                 <a href="industry-insights.html">Insights</a>
                 <a href="#contact" class="nav-cta">Get in Touch</a>
@@ -664,6 +784,18 @@
             <p class="hero-subtitle">Integrated hotel FF&E procurement — casegoods, soft seating, lighting, mattresses, drapery, bath vanities, and custom millwork — coordinated from a single source for US and Middle East hotel projects.</p>
             <a href="#contact" class="hero-cta">Request a Consultation</a>
             <a href="industry-insights.html" class="hero-cta-secondary">Read Industry Insights</a>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story">
+        <div class="brand-story-inner">
+            <p class="brand-story-label">The Foshan Advantage</p>
+            <h2>Where the World's Hotels Source Their FF&E</h2>
+            <p>Foshan is not just a city — it is the world's furniture capital. Across specialized manufacturing districts, dozens of factories produce every component a hotel needs: casegoods in one district, upholstery in another, lighting in a third. The challenge has always been coordination.</p>
+            <p>foshanFFE.com exists to solve that challenge. We are the integrator on the ground — connecting hotel developers with Foshan's best factories, managing quality across every production line, and consolidating the entire FF&E package under a single purchase order. From our factory floor visits to your hotel loading dock, we own the chain.</p>
+            <p>The result: 30–45% cost advantage, 8–14 week delivery, and one team accountable for every detail.</p>
+            <div class="brand-divider"></div>
         </div>
     </section>
 
@@ -707,7 +839,7 @@
                     <div class="service-card-body">
                         <h4>Hotel Guestroom FF&E</h4>
                         <p>Complete guestroom furniture packages — casegoods, beds, nightstands, desks, wardrobes, and headboard panels — sourced factory-direct from Foshan's hospitality specialists.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
+                        <a href="services/guestroom-ffe.html" class="learn-more">Learn More →</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -715,7 +847,7 @@
                     <div class="service-card-body">
                         <h4>Lobby & Public Area Furniture</h4>
                         <p>Reception desks, lounge seating, concierge stations, and decorative pieces for hotel lobbies and public spaces — designed for durability and visual impact.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
+                        <a href="services/lobby-furniture.html" class="learn-more">Learn More →</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -723,7 +855,7 @@
                     <div class="service-card-body">
                         <h4>F&B and Restaurant FF&E</h4>
                         <p>Dining tables, upholstered chairs, banquettes, bar stools, and F&B fixtures for hotel restaurants, all-day dining, and specialty F&B outlets.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
+                        <a href="services/fb-restaurant.html" class="learn-more">Learn More →</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -731,7 +863,7 @@
                     <div class="service-card-body">
                         <h4>Custom Millwork & Joinery</h4>
                         <p>Bespoke wall paneling, built-in cabinetry, trim work, and architectural woodwork — precision-crafted to designer specifications with premium veneers and finishes.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
+                        <a href="services/custom-millwork.html" class="learn-more">Learn More →</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -739,7 +871,7 @@
                     <div class="service-card-body">
                         <h4>Quality Control & Inspection</h4>
                         <p>On-the-ground QC across Foshan — factory audits before production, milestone monitoring during fabrication, and formal pre-shipment inspection before every container is sealed.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
+                        <a href="services/quality-control.html" class="learn-more">Learn More →</a>
                     </div>
                 </div>
                 <div class="service-card">
@@ -747,7 +879,7 @@
                     <div class="service-card-body">
                         <h4>Consolidation & Global Shipping</h4>
                         <p>Export packaging, documentation, cargo consolidation, and ocean freight coordination — delivering to the US, Caribbean, Middle East, UK, and Canada with full DDP transparency.</p>
-                        <a href="#contact" class="learn-more">Learn More →</a>
+                        <a href="services/logistics-shipping.html" class="learn-more">Learn More →</a>
                     </div>
                 </div>
             </div>
@@ -801,6 +933,39 @@
                     <div class="process-number">08</div>
                     <h4>Delivery & Support</h4>
                     <p>Project hand-over support and post-delivery technical query resolution at the job site.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-inner">
+            <div style="text-align: center;">
+                <h2 style="color: var(--navy); font-size: 2rem; margin-bottom: 8px;">What Our Partners Say</h2>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Trusted by hotel developers and procurement teams worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>The single-PO model simplified our procurement process dramatically. Instead of managing six vendors across different product categories, we had one team delivering a fully coordinated package on time.</p>
+                    <div class="testimonial-author">
+                        <strong>— Testimonial Placeholder</strong>
+                        <span>VP of Procurement, Hotel Development Group</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>Quality control was a major concern sourcing from China. The foshanFFE.com team's on-the-ground QC presence in Foshan gave us confidence — detailed photo reports at every milestone, no surprises at delivery.</p>
+                    <div class="testimonial-author">
+                        <strong>— Testimonial Placeholder</strong>
+                        <span>Project Director, Middle East Hospitality Developer</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p>The cost advantage was significant, but what stood out was the transparency. DDP pricing with full tariff breakdown, proactive compliance guidance for CAL 117, and a dedicated coordinator who understood our brand standards.</p>
+                    <div class="testimonial-author">
+                        <strong>— Testimonial Placeholder</strong>
+                        <span>Chief Operating Officer, US Hotel Management Company</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -935,6 +1100,18 @@
             <p>Hospitality FF&E Integrator — Foshan, China</p>
             <p>US & Middle East Hotel Projects — Casegoods, Soft Seating, Lobby Furniture, Lighting, Mattresses, Drapery, Bath Vanities, Custom Millwork</p>
             <p class="footer-tagline">"One PO. Full Guestroom + Public Area FF&E. From Foshan to Your Property."</p>
+            <div class="footer-nav">
+                <a href="about.html">About Us</a> &nbsp;·&nbsp;
+                <a href="projects.html">Projects</a> &nbsp;·&nbsp;
+                <a href="services/guestroom-ffe.html">Guestroom FF&E</a> &nbsp;·&nbsp;
+                <a href="services/lobby-furniture.html">Lobby Furniture</a> &nbsp;·&nbsp;
+                <a href="services/fb-restaurant.html">F&B FF&E</a> &nbsp;·&nbsp;
+                <a href="services/custom-millwork.html">Custom Millwork</a> &nbsp;·&nbsp;
+                <a href="services/quality-control.html">Quality Control</a> &nbsp;·&nbsp;
+                <a href="services/logistics-shipping.html">Global Shipping</a> &nbsp;·&nbsp;
+                <a href="industry-insights.html">Industry Insights</a> &nbsp;·&nbsp;
+                <a href="#contact">Contact</a>
+            </div>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/canming-chen/" target="_blank" rel="noopener" title="LinkedIn">
                     <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -946,7 +1123,9 @@
                 </a>
             </div>
             <p style="margin-top: 24px;">
-                <a href="industry-insights.html">Industry Insights</a> &nbsp;·&nbsp; <a href="mailto:info@foshanFFE.com">Contact</a> &nbsp;·&nbsp; <a href="https://wa.me/8613630101668">WhatsApp</a>
+                <a href="mailto:info@foshanFFE.com">info@foshanFFE.com</a> &nbsp;·&nbsp;
+                <a href="tel:+8613630101668">+86 136 3010 1668</a> &nbsp;·&nbsp;
+                <a href="https://wa.me/8613630101668">WhatsApp</a>
             </p>
             <p style="margin-top: 16px;">&copy; 2026 foshanFFE.com. All rights reserved.</p>
         </div>
