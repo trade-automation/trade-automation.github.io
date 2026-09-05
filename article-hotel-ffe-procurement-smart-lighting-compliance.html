@@ -72,6 +72,49 @@
         .highlight-box { background: linear-gradient(135deg, #fff8e1 0%, #fff3e0 100%); border-left: 4px solid #c9a961; padding: 20px 24px; margin: 2em 0; border-radius: 0 8px 8px 0; }
         .highlight-box p { margin-bottom: 0.5em; font-family: 'Helvetica Neue', Arial, sans-serif; }
         .highlight-box strong { color: #1a237e; }
+<!-- Newsletter Subscription Section -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-content">
+      <h2>Stay Ahead in Hotel FF&amp;E</h2>
+      <p class="newsletter-desc">Get weekly insights on procurement trends, compliance updates, and sourcing tips — delivered straight to your inbox.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Your work email" required id="newsletter-email" aria-label="Email address">
+        <button type="submit" class="btn-gold">Subscribe</button>
+      </form>
+      <p class="newsletter-note">Join 500+ hospitality professionals. No spam, unsubscribe anytime.</p>
+      <div id="newsletter-success" style="display:none;">
+        <p>&#10004; Thank you! Please check your email client to confirm the subscription.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.newsletter-section{background:#1B2A4A;padding:80px 0;text-align:center}
+.newsletter-content{max-width:600px;margin:0 auto;padding:0 20px}
+.newsletter-content h2{font-family:'Playfair Display',serif;font-size:2.2rem;color:#fff;margin-bottom:16px}
+.newsletter-desc{color:rgba(255,255,255,.8);font-family:'Inter',sans-serif;font-size:1.05rem;line-height:1.7;margin-bottom:28px}
+.newsletter-form{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+.newsletter-form input[type="email"]{flex:1;min-width:220px;padding:14px 18px;border:none;border-radius:6px;font-size:1rem;font-family:'Inter',sans-serif;background:#fff;color:#1B2A4A;outline:none;transition:box-shadow .3s}
+.newsletter-form input[type="email"]:focus{box-shadow:0 0 0 3px rgba(201,169,110,.5)}
+.newsletter-form .btn-gold{padding:14px 32px;background:#C9A96E;color:#1B2A4A;border:none;border-radius:6px;font-size:1rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;transition:background .3s,transform .2s;white-space:nowrap}
+.newsletter-form .btn-gold:hover{background:#d4b87a;transform:translateY(-1px)}
+.newsletter-note{color:rgba(255,255,255,.5);font-family:'Inter',sans-serif;font-size:.85rem;margin-top:8px}
+#newsletter-success p{color:#C9A96E;font-family:'Inter',sans-serif;font-size:1rem;margin-top:12px}
+@media(max-width:600px){.newsletter-content h2{font-size:1.7rem}.newsletter-form{flex-direction:column}.newsletter-form input[type="email"]{min-width:100%}.newsletter-form .btn-gold{width:100%}}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var form=document.getElementById('newsletter-form');
+  if(form){form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=document.getElementById('newsletter-email').value;
+    window.location.href='mailto:info@foshanFFE.com?subject=Newsletter%20Subscription&body=Please%20subscribe%20'+encodeURIComponent(email)+'%20to%20the%20foshanFFE%20industry%20insights%20newsletter.';
+    form.style.display='none';
+    document.getElementById('newsletter-success').style.display='block';
+  });}
+});
+</script>
         .cta-section { background: #1a237e; color: #fff; padding: 40px; border-radius: 8px; margin-top: 3em; text-align: center; }
         .cta-section p { color: rgba(255,255,255,0.9); font-family: 'Helvetica Neue', Arial, sans-serif; margin-bottom: 16px; }
         .cta-section a { color: #c9a961; font-weight: bold; text-decoration: none; font-size: 1.1rem; }
