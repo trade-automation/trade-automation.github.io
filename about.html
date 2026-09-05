@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | foshanFFE.com — Hospitality FF&E Integrator from Foshan</title>
+    <meta name="description" content="Learn about foshanFFE.com — a Foshan-based hospitality FF&E integrator coordinating 19+ factories for US, Middle East, and global hotel projects.">
+    <meta name="author" content="foshanFFE.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="About Us | foshanFFE.com — Hospitality FF&E Integrator from Foshan">
+    <meta property="og:description" content="Learn about foshanFFE.com — a Foshan-based hospitality FF&E integrator coordinating 19+ factories for US, Middle East, and global hotel projects.">
+    <meta property="og:url" content="https://foshanffe.com/about.html">
+    <meta property="og:site_name" content="foshanFFE.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a237e;
+            --navy-dark: #0d1242;
+            --navy-light: #283593;
+            --gold: #c9a961;
+            --gold-light: #d4b76f;
+            --warm-white: #faf9f7;
+            --warm-gray: #f5f3f0;
+            --text-primary: #1a1a2e;
+            --text-secondary: #4a4a5a;
+            --text-muted: #6b6b7b;
+            --border-light: #e8e5e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text-primary); line-height: 1.6; background: #fff; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
+
+        /* Navigation */
+        .nav { background: rgba(255,255,255,0.98); padding: 0; position: fixed; top: 0; z-index: 1000; backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-light); transition: all 0.3s ease; }
+        .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; justify-content: space-between; align-items: center; height: 72px; }
+        .nav-brand { color: var(--navy); font-size: 1.4rem; font-weight: 700; text-decoration: none; font-family: 'Inter', sans-serif; letter-spacing: -0.5px; }
+        .nav-brand span { color: var(--gold); }
+        .nav-links { display: flex; align-items: center; gap: 28px; }
+        .nav-links > a, .nav-dropdown > a { color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.2px; }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 24px; border-radius: 6px; font-weight: 600; transition: background 0.2s, transform 0.2s; }
+        .nav-cta:hover { background: var(--navy-light); transform: translateY(-1px); }
+
+        /* Dropdown */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown-trigger { cursor: pointer; }
+        .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: -20px; background: #fff; border-radius: 10px; box-shadow: 0 12px 40px rgba(0,0,0,0.12); padding: 12px 0; min-width: 260px; z-index: 100; border: 1px solid var(--border-light); margin-top: 12px; }
+        .nav-dropdown-menu a { display: block; padding: 10px 24px; color: var(--text-secondary); font-size: 0.85rem; white-space: nowrap; transition: all 0.15s; }
+        .nav-dropdown-menu a:hover { background: var(--warm-white); color: var(--gold); }
+        .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+
+        /* Footer */
+        .footer { background: var(--navy-dark); color: rgba(255,255,255,0.6); padding: 60px 32px 40px; text-align: center; font-size: 0.85rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer a { color: var(--gold); text-decoration: none; }
+        .footer-brand { color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; font-family: 'Inter', sans-serif; letter-spacing: -0.5px; }
+        .footer-brand span { color: var(--gold); }
+        .footer-tagline { color: rgba(255,255,255,0.4); margin-top: 12px; font-style: italic; font-size: 0.9rem; }
+        .footer-nav { margin-top: 20px; line-height: 2; }
+        .footer-nav a { font-size: 0.85rem; transition: color 0.2s; }
+        .footer-nav a:hover { color: var(--gold-light); }
+        .social-links { display: flex; justify-content: center; gap: 24px; margin-top: 24px; }
+        .social-links a { display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; font-weight: 500; }
+        .social-links a:hover { color: var(--gold); }
+        .social-links svg { width: 18px; height: 18px; fill: currentColor; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .section-header h2 { font-size: 1.8rem; }
+        }
+
+        .page-hero { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color: #fff; padding: 140px 32px 80px; text-align: center; }
+        .page-hero-inner { max-width: 800px; margin: 0 auto; }
+        .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-bottom: 20px; }
+        .breadcrumb a { color: var(--gold); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .page-hero h1 { font-size: 2.6rem; margin-bottom: 20px; }
+        .page-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 650px; margin: 0 auto; }
+
+        .content-section { padding: 80px 32px; }
+        .content-section:nth-child(even) { background: var(--warm-white); }
+        .content-inner { max-width: 1000px; margin: 0 auto; }
+        .content-inner h2 { color: var(--navy); font-size: 1.8rem; margin-bottom: 24px; }
+
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+        .about-grid img { width: 100%; border-radius: 12px; height: 400px; object-fit: cover; }
+        .about-text p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 16px; }
+
+        .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+        .stat-card { background: #fff; border: 1px solid var(--border-light); border-radius: 12px; padding: 32px 24px; text-align: center; transition: all 0.3s; }
+        .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); border-color: var(--gold); }
+        .stat-number { font-size: 2.4rem; font-weight: 700; color: var(--gold); display: block; font-family: 'Playfair Display', serif; }
+        .stat-label { font-size: 0.85rem; color: var(--text-muted); margin-top: 8px; font-weight: 500; }
+
+        .team-card { background: #fff; border: 1px solid var(--border-light); border-radius: 12px; padding: 36px; }
+        .team-card h3 { color: var(--navy); font-size: 1.2rem; margin-bottom: 16px; }
+        .team-card p { color: var(--text-secondary); font-size: 0.92rem; line-height: 1.75; }
+
+        .cert-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 24px; }
+        .cert-item { background: #fff; border: 1px solid var(--border-light); border-radius: 10px; padding: 24px; }
+        .cert-item h4 { color: var(--navy); font-size: 1rem; margin-bottom: 8px; font-family: 'Inter', sans-serif; font-weight: 600; }
+        .cert-item p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; }
+
+        .markets-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .market-item { background: #fff; border: 1px solid var(--border-light); border-radius: 10px; padding: 28px; transition: all 0.3s; }
+        .market-item:hover { border-color: var(--gold); transform: translateY(-2px); }
+        .market-item h4 { color: var(--gold); font-size: 1.05rem; margin-bottom: 8px; font-family: 'Inter', sans-serif; font-weight: 600; }
+        .market-item p { color: var(--text-secondary); font-size: 0.88rem; line-height: 1.65; }
+
+        .service-cta { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color: #fff; padding: 80px 32px; text-align: center; }
+        .service-cta h2 { color: #fff; font-size: 2rem; margin-bottom: 16px; }
+        .service-cta p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+        .service-cta .cta-btn { display: inline-block; background: var(--gold); color: var(--navy-dark); padding: 16px 48px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: all 0.3s; }
+        .service-cta .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,169,97,0.3); }
+
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+            .cert-grid { grid-template-columns: 1fr; }
+            .markets-list { grid-template-columns: 1fr; }
+            .page-hero h1 { font-size: 1.8rem; }
+        }
+    </style>
+    <link rel="canonical" href="https://foshanffe.com/about.html">
+</head>
+<body>
+    <nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">foshan<span>FFE</span>.com</a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a href="index.html#services" class="nav-dropdown-trigger">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="services/guestroom-ffe.html">Hotel Guestroom FF&E</a>
+                        <a href="services/lobby-furniture.html">Lobby & Public Area Furniture</a>
+                        <a href="services/fb-restaurant.html">F&B and Restaurant FF&E</a>
+                        <a href="services/custom-millwork.html">Custom Millwork & Joinery</a>
+                        <a href="services/quality-control.html">Quality Control & Inspection</a>
+                        <a href="services/logistics-shipping.html">Consolidation & Global Shipping</a>
+                    </div>
+                </div>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="index.html#process">Process</a>
+                <a href="industry-insights.html">Insights</a>
+                <a href="index.html#contact" class="nav-cta">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;&gt;&nbsp; About Us</div>
+            <h1>About foshanFFE.com</h1>
+            <p>One PO. Full FF&E. From Foshan to your hotel property — anywhere in the world.</p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="content-section">
+        <div class="content-inner">
+            <div class="about-grid">
+                <div>
+                    <img src="images/custom-millwork.jpg" alt="foshanFFE.com - Custom millwork workshop in Foshan">
+                </div>
+                <div class="about-text">
+                    <h2>Our Mission</h2>
+                    <p>We exist to make hotel FF&E procurement simple, transparent, and cost-effective. As a Foshan-based integrator, we coordinate the world's largest furniture manufacturing cluster on behalf of hotel developers, owners, and operators worldwide.</p>
+                    <p>Our model is straightforward: one purchase order covers the entire FF&E package — guestroom furniture, lobby pieces, restaurant fixtures, lighting, bedding, bath vanities, and custom millwork. One invoice. One point of accountability. One team managing the entire supply chain from factory floor to loading dock.</p>
+                    <p>We are not a trading company. We are a specialist FF&E integrator with deep roots in Foshan's manufacturing districts, where specialized factories produce different categories of furniture and building materials. Our role is to source, coordinate, inspect, consolidate, and deliver — all under one integrated program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Advantages -->
+    <section class="content-section">
+        <div class="content-inner" style="text-align: center;">
+            <h2>Why Hotels Choose Us</h2>
+            <div class="stats-row">
+                <div class="stat-card">
+                    <span class="stat-number">19+</span>
+                    <span class="stat-label">Synergized Foshan Factories</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">30–45%</span>
+                    <span class="stat-label">Cost Advantage vs. Western Sourcing</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">8–14</span>
+                    <span class="stat-label">Weeks PO-to-Site Delivery</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1</span>
+                    <span class="stat-label">Single PO for Full FF&E Scope</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Markets We Cover -->
+    <section class="content-section">
+        <div class="content-inner">
+            <h2 style="text-align: center;">Markets We Cover</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 32px; font-size: 0.95rem;">From Foshan to the world's leading hospitality development regions</p>
+            <div class="markets-list">
+                <div class="market-item">
+                    <h4>🇺🇸 United States</h4>
+                    <p>5,975 hotel projects in pipeline (Q2 2026). CAL 117 compliant. DDP pricing with tariff transparency. Serving major markets from Dallas to New York.</p>
+                </div>
+                <div class="market-item">
+                    <h4>🇸🇦 Saudi Arabia</h4>
+                    <p>387 projects driven by Vision 2030. BS 7177 fire standard. 5% import duty advantage. Mega-project FF&E fulfillment.</p>
+                </div>
+                <div class="market-item">
+                    <h4>🇦🇺 Australia & Oceania</h4>
+                    <p>Growing hospitality pipeline across Sydney, Melbourne, and resort destinations. AS/NZS fire compliance. Tropical climate-adapted specifications.</p>
+                </div>
+                <div class="market-item">
+                    <h4>🇪🇺 Europe & UK</h4>
+                    <p>Boutique and lifestyle hotel segment growth. BS 7177 and EN fire standards. Premium finish requirements with competitive Foshan pricing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="content-section">
+        <div class="content-inner">
+            <h2 style="text-align: center;">The Team</h2>
+            <div style="max-width: 700px; margin: 0 auto;">
+                <div class="team-card">
+                    <h3>Hospitality FF&E Specialists</h3>
+                    <p>The foshanFFE.com team is built around deep expertise in hospitality procurement and Foshan's manufacturing landscape. With years of experience coordinating FF&E programs for international hotel projects, the team understands both the factory floor and the hotel boardroom.</p>
+                    <p>Based in Foshan's furniture district, the team conducts daily factory visits, monitors production quality in real time, and maintains direct relationships with workshop owners and production managers across all major manufacturing sub-districts.</p>
+                    <p>Every project is managed by a dedicated FF&E coordinator who serves as the single point of contact — from initial quotation through sample approval, production, QC, and final delivery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="content-section">
+        <div class="content-inner">
+            <h2 style="text-align: center;">Certifications & Compliance</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 32px; font-size: 0.95rem;">We ensure all FF&E meets destination-market fire safety and environmental standards</p>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <h4>CAL 117</h4>
+                    <p>California flammability standard for upholstered furniture — required for all US hotel projects.</p>
+                </div>
+                <div class="cert-item">
+                    <h4>BS 7177</h4>
+                    <p>British fire resistance standard for upholstery — mandated across UK and Middle East hospitality projects.</p>
+                </div>
+                <div class="cert-item">
+                    <h4>UL / CARB Phase 2</h4>
+                    <p>UL listing for electrical components. CARB Phase 2 for formaldehyde emission limits on composite wood products.</p>
+                </div>
+                <div class="cert-item">
+                    <h4>ISO 9001</h4>
+                    <p>Partner factories maintain ISO 9001 quality management systems for consistent production quality.</p>
+                </div>
+                <div class="cert-item">
+                    <h4>BIFMA</h4>
+                    <p>Commercial furniture performance testing for safety, durability, and structural adequacy.</p>
+                </div>
+                <div class="cert-item">
+                    <h4>FSC CoC</h4>
+                    <p>Forest Stewardship Council Chain of Custody certification available for sustainably sourced wood products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="service-cta" id="contact">
+        <h2>Let's Discuss Your Project</h2>
+        <p>Whether planning a new build, a renovation, or a brand conversion — share the scope and receive a transparent quotation from Foshan.</p>
+        <a href="mailto:info@foshanFFE.com?subject=About Us Inquiry" class="cta-btn">Request a Consultation</a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">foshan<span>FFE</span>.com</div>
+            <p>Hospitality FF&E Integrator — Foshan, China</p>
+            <p>US & Middle East Hotel Projects — Casegoods, Soft Seating, Lobby Furniture, Lighting, Mattresses, Drapery, Bath Vanities, Custom Millwork</p>
+            <p class="footer-tagline">"One PO. Full Guestroom + Public Area FF&E. From Foshan to Your Property."</p>
+            <div class="footer-nav">
+                <a href="about.html">About Us</a> &nbsp;·&nbsp;
+                <a href="projects.html">Projects</a> &nbsp;·&nbsp;
+                <a href="services/guestroom-ffe.html">Guestroom FF&E</a> &nbsp;·&nbsp;
+                <a href="services/lobby-furniture.html">Lobby Furniture</a> &nbsp;·&nbsp;
+                <a href="services/fb-restaurant.html">F&B FF&E</a> &nbsp;·&nbsp;
+                <a href="services/custom-millwork.html">Custom Millwork</a> &nbsp;·&nbsp;
+                <a href="services/quality-control.html">Quality Control</a> &nbsp;·&nbsp;
+                <a href="services/logistics-shipping.html">Global Shipping</a> &nbsp;·&nbsp;
+                <a href="industry-insights.html">Industry Insights</a> &nbsp;·&nbsp;
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/canming-chen/" target="_blank" rel="noopener" title="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="https://www.facebook.com/cxdprojectsolution/" target="_blank" rel="noopener" title="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    Facebook
+                </a>
+            </div>
+            <p style="margin-top: 24px;">
+                <a href="mailto:info@foshanFFE.com">info@foshanFFE.com</a> &nbsp;·&nbsp;
+                <a href="tel:+8613630101668">+86 136 3010 1668</a> &nbsp;·&nbsp;
+                <a href="https://wa.me/8613630101668">WhatsApp</a>
+            </p>
+            <p style="margin-top: 16px;">&copy; 2026 foshanFFE.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+    </script>
+</body>
+</html>
