@@ -113,4 +113,17 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- New Batch 2 - September 6, 2026 -->
+  <url>
+    <loc>https://foshanFFE.com/article-why-source-hotel-furniture-foshan-china.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://foshanFFE.com/article-fob-to-landed-cost-hotel-ffe-breakdown.html</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
