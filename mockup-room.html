@@ -23,6 +23,17 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-P07TQC591B');
+
+        // Gallery lightbox (same behavior as certificate lightbox)
+        function openGalleryLightbox(item) {
+            const img = item.querySelector('img');
+            const caption = item.querySelector('.gallery-item-info p').textContent;
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-img').alt = img.alt;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
     </script>
 
     <script type="application/ld+json">
@@ -49,6 +60,17 @@
         "url": "https://foshanffe.com"
       }
     }
+
+        // Gallery lightbox (same behavior as certificate lightbox)
+        function openGalleryLightbox(item) {
+            const img = item.querySelector('img');
+            const caption = item.querySelector('.gallery-item-info p').textContent;
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-img').alt = img.alt;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
     </script>
 
     <style>
@@ -205,6 +227,21 @@
         }
         @media (max-width: 480px) {
             .cert-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Real Mockup Room Gallery */
+        .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .gallery-item { background: #fff; border: 1px solid var(--border-light); border-radius: 10px; overflow: hidden; cursor: pointer; transition: all 0.3s; }
+        .gallery-item:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); border-color: var(--gold); }
+        .gallery-item img { width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.4s; }
+        .gallery-item:hover img { transform: scale(1.03); }
+        .gallery-item-info { padding: 14px 16px; border-top: 1px solid var(--border-light); }
+        .gallery-item-info p { color: var(--text-secondary); font-size: 0.85rem; line-height: 1.5; margin: 0; }
+        .gallery-item.featured { grid-column: 2; }
+        @media (max-width: 768px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+            .gallery-item.featured { grid-column: auto; }
+            .gallery-item img { height: 220px; }
         }
     </style>
 </head>
@@ -653,6 +690,61 @@
         </div>
     </section>
 
+
+    <!-- Real Mockup Room Gallery -->
+    <section class="content-section">
+        <div class="content-inner">
+            <div class="section-header">
+                <h2>Real Mockup Room — Completed Project</h2>
+                <p>A recently delivered twin-room mockup, showcasing full FF&E integration from concept to installation.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openGalleryLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/trade-automation/trade-automation.github.io/main/images/mockup-room/mockup-01-closet-area.jpg" alt="Walk-in wardrobe with luggage rack and LED strip lighting" loading="lazy">
+                    <div class="gallery-item-info">
+                        <p>Walk-in wardrobe area with luggage rack, LED strip lighting, and black marble countertop vanity</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/trade-automation/trade-automation.github.io/main/images/mockup-room/mockup-02-twin-headboard.jpg" alt="Twin room headboard wall with embossed panels and LED backlight" loading="lazy">
+                    <div class="gallery-item-info">
+                        <p>Twin room — embossed textured headboard panels with LED backlight and pendant lights</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/trade-automation/trade-automation.github.io/main/images/mockup-room/mockup-03-twin-lounge.jpg" alt="Twin room lounge corner with chaise lounge and side table" loading="lazy">
+                    <div class="gallery-item-info">
+                        <p>Twin room — chaise lounge corner with upholstered side table and ambient lighting</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/trade-automation/trade-automation.github.io/main/images/mockup-room/mockup-04-tv-wall.jpg" alt="TV wall unit with recessed niches and floating desk" loading="lazy">
+                    <div class="gallery-item-info">
+                        <p>TV wall with recessed display niches, floating console, integrated desk, and corridor view</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/trade-automation/trade-automation.github.io/main/images/mockup-room/mockup-05-twin-panorama.jpg" alt="Twin room panorama with blackout drapery" loading="lazy">
+                    <div class="gallery-item-info">
+                        <p>Twin room panorama showing full layout with blackout curtains and complete FF&E package</p>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openGalleryLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/trade-automation/trade-automation.github.io/main/images/mockup-room/mockup-06-king-tv-wall.jpg" alt="King room TV wall with wood veneer panel and round table" loading="lazy">
+                    <div class="gallery-item-info">
+                        <p>King room — wood veneer TV wall panel with round dining table and leather accent chair</p>
+                    </div>
+                </div>
+                <div class="gallery-item featured" onclick="openGalleryLightbox(this)">
+                    <img src="https://raw.githubusercontent.com/trade-automation/trade-automation.github.io/main/images/mockup-room/mockup-07-king-headboard.jpg" alt="King room headboard with geometric embossed panels and dual pendant lights" loading="lazy">
+                    <div class="gallery-item-info">
+                        <p>King room — geometric embossed headboard wall, dual pendant lights, and chaise lounge</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="service-cta" id="contact">
         <h2>Request Your Mockup Room Quote</h2>
@@ -726,6 +818,17 @@
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') closeLightbox();
         });
+
+        // Gallery lightbox (same behavior as certificate lightbox)
+        function openGalleryLightbox(item) {
+            const img = item.querySelector('img');
+            const caption = item.querySelector('.gallery-item-info p').textContent;
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-img').alt = img.alt;
+            document.getElementById('lightbox-caption').textContent = caption;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
     </script>
 </body>
 </html>
