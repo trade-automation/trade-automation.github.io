@@ -163,6 +163,23 @@
         .install-card.team-photo .install-caption { background: linear-gradient(135deg, rgba(201,169,97,0.06) 0%, rgba(26,35,126,0.04) 100%); }
         .install-card.team-photo .install-caption h4 { color: var(--gold); }
         .team-badge { display: inline-block; background: var(--gold); color: var(--navy-dark); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 10px; border-radius: 4px; margin-bottom: 6px; font-family: 'Inter', sans-serif; }
+        /* Mockup Room Assembly Timeline */
+        .assembly-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
+        .assembly-card { border-radius: 12px; overflow: hidden; background: #fff; border: 1px solid var(--border-light); transition: all 0.3s; }
+        .assembly-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.1); }
+        .assembly-card img { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; }
+        .assembly-card.completed { border-color: var(--gold); border-width: 2px; }
+        .assembly-card.completed .assembly-caption { background: linear-gradient(135deg, rgba(201,169,97,0.06) 0%, rgba(26,35,126,0.04) 100%); }
+        .completed-badge { display: inline-block; background: var(--gold); color: var(--navy-dark); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 10px; border-radius: 4px; margin-bottom: 6px; font-family: 'Inter', sans-serif; }
+        .assembly-caption { padding: 16px 20px; }
+        .assembly-day { display: inline-block; background: var(--navy); color: #fff; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 10px; border-radius: 4px; margin-bottom: 8px; font-family: 'Inter', sans-serif; }
+        .assembly-caption h4 { color: var(--navy); font-size: 0.92rem; margin-bottom: 4px; font-family: 'Inter', sans-serif; font-weight: 600; }
+        .assembly-caption p { color: var(--text-muted); font-size: 0.82rem; line-height: 1.5; }
+        .assembly-card:nth-child(7) { grid-column: 2; }
+        @media (max-width: 768px) {
+            .assembly-grid { grid-template-columns: 1fr; }
+            .assembly-card:nth-child(7) { grid-column: auto; }
+        }
         /* CTA */
         .service-cta { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color: #fff; padding: 80px 32px; text-align: center; }
         .service-cta h2 { color: #fff; font-size: 2rem; margin-bottom: 16px; }
@@ -476,6 +493,89 @@
                     <div class="install-caption">
                         <h4>Reception Area — Complete</h4>
                         <p>The finished reception area: marble-front counter, towering bookshelf wall, and wood-paneled ceiling — all delivered and installed as one complete FF&E package.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 6: Mockup Room On-Site Assembly Timeline -->
+    <section class="content-section">
+        <div class="content-inner">
+            <h2 style="text-align: center; margin-bottom: 8px;">Mockup Room — On-Site Assembly Timeline</h2>
+            <p class="section-subtitle" style="text-align: center; max-width: 700px; margin: 0 auto 48px;">5 days from bare room to fully furnished mockup. Our team handles wall panels, furniture assembly, lighting, and soft furnishing — on-site, on schedule.</p>
+            <div class="assembly-grid">
+                <div class="assembly-card">
+                    <img src="https://foshanFFE.com/images/projects/assembly-01-wall-panel-install.jpg" alt="Vertical-grain wood wall panels being installed, green floor protection film, installation tools visible" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 1</span>
+                        <h4>Wall Panel Installation</h4>
+                        <p>Vertical-grain wood wall panels mounted on prepared framing, green protective film on floors, tools and materials staged for efficient workflow.</p>
+                    </div>
+                </div>
+                <div class="assembly-card">
+                    <img src="https://foshanFFE.com/images/projects/assembly-02-bed-frame-build.jpg" alt="White upholstered bed frame being assembled, internal wood龙骨 structure visible, light wood flooring" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 2</span>
+                        <h4>Bed Frame Assembly</h4>
+                        <p>White upholstered bed frame assembly in progress, internal wood frame structure visible before fabric wrapping — light wood flooring throughout.</p>
+                    </div>
+                </div>
+                <div class="assembly-card completed">
+                    <img src="https://foshanFFE.com/images/projects/assembly-03-king-room-complete.jpg" alt="Completed king room with LED backlit wall panels, warm wall lamps, dual nightstands, orange and green accent pillows" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 3</span>
+                        <span class="completed-badge">✓ Completed</span>
+                        <h4>King Room — Finished</h4>
+                        <p>Completed king bedroom: LED backlit wall panels, warm ambient wall lamps, dual nightstands, dressed with orange and green accent throw pillows.</p>
+                    </div>
+                </div>
+                <div class="assembly-card">
+                    <img src="https://foshanFFE.com/images/projects/assembly-04-bunk-bed.jpg" alt="Bunk bed (twin-over-full) installed, black metal frame with grey upholstered panels, family room configuration" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 3</span>
+                        <h4>Bunk Bed — Family Room</h4>
+                        <p>Twin-over-full bunk bed installed: black metal frame with grey upholstered side panels, ladder, and safety rails — family room configuration.</p>
+                    </div>
+                </div>
+                <div class="assembly-card">
+                    <img src="https://foshanFFE.com/images/projects/assembly-05-sofa-area.jpg" alt="Grey fabric sofa bed with gold metal-leg side table and multi-color accent pillows" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 3</span>
+                        <h4>Sofa & Side Table</h4>
+                        <p>Grey fabric sofa bed paired with gold metal-leg side table, styled with multi-color accent pillows for a layered, inviting look.</p>
+                    </div>
+                </div>
+                <div class="assembly-card">
+                    <img src="https://foshanFFE.com/images/projects/assembly-06-open-wardrobe.jpg" alt="Gold metal frame open wardrobe with luggage rack, safe box, and full-length mirror" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 3</span>
+                        <h4>Open Wardrobe & Storage</h4>
+                        <p>Gold metal-frame open wardrobe system with integrated luggage rack, in-room safe, and full-length mirror — modern and functional.</p>
+                    </div>
+                </div>
+                <div class="assembly-card completed">
+                    <img src="https://foshanFFE.com/images/projects/assembly-07-balcony-panorama.jpg" alt="King room panorama with balcony, outdoor furniture, pool view, ceiling fan" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 4</span>
+                        <span class="completed-badge">✓ Completed</span>
+                        <h4>King Room — Panorama with Balcony</h4>
+                        <p>Full panorama of the completed king room opening to a furnished balcony with outdoor seating and pool views — ceiling fan overhead.</p>
+                    </div>
+                </div>
+                <div class="assembly-card">
+                    <img src="https://foshanFFE.com/images/projects/assembly-08-blue-glass-wall.jpg" alt="Blue striped glass partition wall with stainless steel frame, grey upholstered headboard, worker installing" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 5</span>
+                        <h4>Blue Glass Partition Wall</h4>
+                        <p>Blue striped glass partition wall with stainless steel frame being installed — grey upholstered headboard visible behind.</p>
+                    </div>
+                </div>
+                <div class="assembly-card">
+                    <img src="https://foshanFFE.com/images/projects/assembly-09-mattress-detail.jpg" alt="Premium hotel mattress close-up with honeycomb quilting pattern, grey upholstered headboard, blue glass background" loading="lazy" onclick="openLightbox(this)">
+                    <div class="assembly-caption">
+                        <span class="assembly-day">Day 5</span>
+                        <h4>Mattress & Headboard Detail</h4>
+                        <p>Premium hotel mattress close-up showing honeycomb quilting pattern, grey upholstered headboard, and blue glass partition backdrop.</p>
                     </div>
                 </div>
             </div>
