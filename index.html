@@ -1221,34 +1221,71 @@ document.addEventListener('DOMContentLoaded',function(){
         });
     </script>
 
-<!-- ========== Floating Contact Widget ========== -->
-<div id="float-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
-  <div id="float-panel" class="hidden bg-white rounded-2xl shadow-2xl border border-gray-200 p-5 w-72 mb-2">
-    <div class="flex items-center justify-between mb-4">
-      <h4 class="text-base font-bold text-gray-900">Start a Conversation</h4>
-      <button id="float-close-panel" class="text-gray-400 hover:text-gray-600 transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+<!-- ========== Floating Contact Widget (Self-Contained CSS, no Tailwind dependency) ========== -->
+<style>
+#float-widget{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:12px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+#float-btn{width:56px;height:56px;border-radius:50%;border:none;background-color:#d4af37;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .2s,background-color .2s;padding:0}
+#float-btn:hover{background-color:#b8931f;transform:scale(1.1)}
+#float-btn:focus{outline:none}
+#float-btn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#float-panel{display:none;background:#fff;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.15);border:1px solid #e5e7eb;padding:20px;width:288px;margin-bottom:8px}
+#float-panel.show{display:block}
+.panel-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.panel-header h4{font-size:15px;font-weight:700;color:#111827;margin:0}
+.close-btn{background:none;border:none;cursor:pointer;color:#9ca3af;padding:4px;border-radius:4px;display:flex;align-items:center;justify-content:center}
+.close-btn:hover{color:#6b7280}
+.close-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.float-item{display:flex;align-items:center;gap:12px;padding:12px;border-radius:12px;text-decoration:none}
+.float-item .icon-circle{width:40px;height:40px;min-width:40px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.float-item .icon-circle svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2}
+.float-item .icon-circle svg.filled{fill:currentColor;stroke:none}
+.float-item .label{font-size:14px;font-weight:600;color:#111827}
+.float-item .sublabel{font-size:12px;color:#6b7280}
+.float-item.whatsapp{background:#f0fdf4;margin-bottom:8px}
+.float-item.whatsapp:hover{background:#dcfce7}
+.float-item.whatsapp .icon-circle{background:#22c55e;color:#fff}
+.float-item.whatsapp:hover .label{color:#15803d}
+.float-item.email{background:#fffbeb}
+.float-item.email:hover{background:#fef3c7}
+.float-item.email .icon-circle{background:#d4af37;color:#fff}
+.float-item.email:hover .label{color:#92400e}
+.float-item.quote{background:#f9fafb;margin-top:8px}
+.float-item.quote:hover{background:#f3f4f6}
+.float-item.quote .icon-circle{background:#2d3748;color:#fff}
+.float-item.quote:hover .label{color:#1f2937}
+footer svg{width:20px;height:20px;flex-shrink:0}
+</style>
+<div id="float-widget">
+  <div id="float-panel">
+    <div class="panel-header">
+      <h4>Start a Conversation</h4>
+      <button id="float-close-panel" class="close-btn" aria-label="Close">
+        <svg viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
     </div>
-    <a href="https://wa.me/8613630101668?text=Hi%2C%20I%27m%20interested%20in%20hotel%20FF%26E%20sourcing.%20Could%20we%20discuss%20my%20project%3F" target="_blank" rel="noopener" class="flex items-center space-x-3 p-3 rounded-xl bg-green-50 hover:bg-green-100 transition-colors mb-2 group">
-      <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
-      <div><p class="text-sm font-semibold text-gray-900 group-hover:text-green-700">WhatsApp Chat</p><p class="text-xs text-gray-500">Reply within 2 hours</p></div>
+    <a href="https://wa.me/8613630101668?text=Hi%2C%20I%27m%20interested%20in%20hotel%20FF%26E%20sourcing.%20Could%20we%20discuss%20my%20project%3F" target="_blank" rel="noopener" class="float-item whatsapp">
+      <div class="icon-circle"><svg viewBox="0 0 24 24" class="filled"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+      <div><div class="label">WhatsApp Chat</div><div class="sublabel">Reply within 2 hours</div></div>
     </a>
-    <a href="mailto:chencanming@coze.email?subject=Inquiry%20from%20foshanFFE.com" class="flex items-center space-x-3 p-3 rounded-xl bg-amber-50 hover:bg-amber-100 transition-colors group">
-      <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: #d4af37;"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
-      <div><p class="text-sm font-semibold text-gray-900 group-hover:text-amber-700">Email Us</p><p class="text-xs text-gray-500">chencanming@coze.email</p></div>
+    <a href="mailto:chencanming@coze.email?subject=Inquiry%20from%20foshanFFE.com" class="float-item email">
+      <div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+      <div><div class="label">Email Us</div><div class="sublabel">chencanming@coze.email</div></div>
     </a>
-    <a href="contact.html" class="flex items-center space-x-3 p-3 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors mt-2 group">
-      <div class="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style="background-color: #2d3748;"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
-      <div><p class="text-sm font-semibold text-gray-900 group-hover:text-gray-700">Request a Quote</p><p class="text-xs text-gray-500">Fill out our inquiry form</p></div>
+    <a href="contact.html" class="float-item quote">
+      <div class="icon-circle"><svg viewBox="0 0 24 24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+      <div><div class="label">Request a Quote</div><div class="sublabel">Fill out our inquiry form</div></div>
     </a>
   </div>
-  <button id="float-btn" class="w-14 h-14 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none" style="background-color: #d4af37;" aria-label="Contact Us">
-    <svg id="float-icon-chat" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
-    <svg id="float-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+  <button id="float-btn" aria-label="Contact Us">
+    <svg id="float-icon-chat" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+    <svg id="float-icon-close" style="display:none" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
   </button>
 </div>
 <script>
-(function(){var a=document.getElementById('float-btn'),b=document.getElementById('float-panel'),c=document.getElementById('float-close-panel'),d=document.getElementById('float-icon-chat'),e=document.getElementById('float-icon-close'),f=!1;a.addEventListener('click',function(){f=!f;b.classList.toggle('hidden',!f);d.classList.toggle('hidden',f);e.classList.toggle('hidden',!f)});c.addEventListener('click',function(){f=!1;b.classList.add('hidden');d.classList.remove('hidden');e.classList.add('hidden')})})();
+(function(){var a=document.getElementById('float-btn'),b=document.getElementById('float-panel'),c=document.getElementById('float-close-panel'),d=document.getElementById('float-icon-chat'),e=document.getElementById('float-icon-close'),f=!1;a.addEventListener('click',function(){f=!f;if(f){b.classList.add('show');d.style.display='none';e.style.display='block'}else{b.classList.remove('show');d.style.display='block';e.style.display='none'}});c.addEventListener('click',function(){f=!1;b.classList.remove('show');d.style.display='block';e.style.display='none'})})();
 </script>
+
+
 
 
 </body>
