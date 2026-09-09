@@ -402,5 +402,34 @@ footer svg{width:20px;height:20px;flex-shrink:0}
 
 
 
+
+<script>
+(function(){
+  var form = document.getElementById('contact-form');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value || '';
+    var email = document.getElementById('email').value || '';
+    var company = document.getElementById('company').value || '';
+    var interest = document.getElementById('project-type').value || '';
+    var message = document.getElementById('message').value || '';
+    var subject = 'Inquiry from ' + (name || 'Website Visitor') + ' - ' + (company || 'FoshanFFE.com');
+    var body = 'Name: ' + name + '\n'
+             + 'Email: ' + email + '\n'
+             + 'Company: ' + company + '\n'
+             + 'Interested In: ' + interest + '\n\n'
+             + 'Message:\n' + message;
+    window.location.href = 'mailto:info@foshanffe.com?subject=' 
+             + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    // Show success message after short delay
+    setTimeout(function(){
+      var success = document.getElementById('success-message');
+      if (success) { success.classList.remove('hidden'); }
+    }, 1000);
+  });
+})();
+</script>
+
 </body>
 </html>
