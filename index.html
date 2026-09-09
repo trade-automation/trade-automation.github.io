@@ -1250,5 +1250,14 @@ document.addEventListener('DOMContentLoaded',function(){
 (function(){var a=document.getElementById('float-btn'),b=document.getElementById('float-panel'),c=document.getElementById('float-close-panel'),d=document.getElementById('float-icon-chat'),e=document.getElementById('float-icon-close'),f=!1;a.addEventListener('click',function(){f=!f;b.classList.toggle('hidden',!f);d.classList.toggle('hidden',f);e.classList.toggle('hidden',!f)});c.addEventListener('click',function(){f=!1;b.classList.add('hidden');d.classList.remove('hidden');e.classList.add('hidden')})})();
 </script>
 
+
+<!-- Icon Size Fallback (prevents oversized SVGs if Tailwind CDN fails) -->
+<style>
+  #float-widget svg { width: 24px; height: 24px; flex-shrink: 0; }
+  #float-btn { width: 56px !important; height: 56px !important; min-width: 56px; min-height: 56px; max-width: 56px; max-height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; padding: 0; overflow: hidden; }
+  footer a svg, footer li svg { width: 20px !important; height: 20px !important; flex-shrink: 0; }
+  #float-panel a svg { width: 20px !important; height: 20px !important; }
+  #float-panel a .w-10, #float-panel a div[class*="w-10"] { width: 40px !important; height: 40px !important; min-width: 40px; }
+</style>
 </body>
 </html>
