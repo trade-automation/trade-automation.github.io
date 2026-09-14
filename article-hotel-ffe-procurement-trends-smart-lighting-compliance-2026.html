@@ -87,7 +87,10 @@
             .article-header { padding: 48px 20px 40px; }
             .nav-links { display: none; }
         }
-    </style>
+    /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
 <script>
@@ -96,6 +99,7 @@
   gtag('js', new Date());
   gtag('config', 'G-ZYGZJB2SWQ');
 </script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 </head>
 <body>
     <nav class="nav">
