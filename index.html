@@ -868,7 +868,7 @@
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="images/guestroom-furniture.jpg" alt="Hotel guestroom furniture procurement from Foshan" class="service-card-img">
+                    <img src="images/guestroom-furniture.jpg" alt="Hotel guestroom furniture procurement from Foshan" class="service-card-img" loading="lazy">
                     <div class="service-card-body">
                         <h4>Hotel Guestroom FF&E</h4>
                         <p>Complete guestroom furniture packages — casegoods, beds, nightstands, desks, wardrobes, and headboard panels — sourced factory-direct from Foshan's hospitality specialists.</p>
@@ -876,7 +876,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="images/lobby-furniture.jpg" alt="Hotel lobby furniture sourcing China" class="service-card-img">
+                    <img src="images/lobby-furniture.jpg" alt="Hotel lobby furniture sourcing China" class="service-card-img" loading="lazy">
                     <div class="service-card-body">
                         <h4>Lobby & Public Area Furniture</h4>
                         <p>Reception desks, lounge seating, concierge stations, and decorative pieces for hotel lobbies and public spaces — designed for durability and visual impact.</p>
@@ -884,7 +884,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="images/restaurant-furniture.jpg" alt="Hotel restaurant furniture supplier Foshan" class="service-card-img">
+                    <img src="images/restaurant-furniture.jpg" alt="Hotel restaurant furniture supplier Foshan" class="service-card-img" loading="lazy">
                     <div class="service-card-body">
                         <h4>F&B and Restaurant FF&E</h4>
                         <p>Dining tables, upholstered chairs, banquettes, bar stools, and F&B fixtures for hotel restaurants, all-day dining, and specialty F&B outlets.</p>
@@ -892,7 +892,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="images/custom-millwork.jpg" alt="Custom hotel millwork and joinery from China" class="service-card-img">
+                    <img src="images/custom-millwork.jpg" alt="Custom hotel millwork and joinery from China" class="service-card-img" loading="lazy">
                     <div class="service-card-body">
                         <h4>Custom Millwork & Joinery</h4>
                         <p>Bespoke wall paneling, built-in cabinetry, trim work, and architectural woodwork — precision-crafted to designer specifications with premium veneers and finishes.</p>
@@ -900,7 +900,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="images/quality-control.jpg" alt="Hotel FF&E quality control inspection in Foshan" class="service-card-img">
+                    <img src="images/quality-control.jpg" alt="Hotel FF&E quality control inspection in Foshan" class="service-card-img" loading="lazy">
                     <div class="service-card-body">
                         <h4>Quality Control & Inspection</h4>
                         <p>On-the-ground QC across Foshan — factory audits before production, milestone monitoring during fabrication, and formal pre-shipment inspection before every container is sealed.</p>
@@ -908,7 +908,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="images/logistics-shipping.jpg" alt="Hotel FF&E global shipping and logistics from China" class="service-card-img">
+                    <img src="images/logistics-shipping.jpg" alt="Hotel FF&E global shipping and logistics from China" class="service-card-img" loading="lazy">
                     <div class="service-card-body">
                         <h4>Consolidation & Global Shipping</h4>
                         <p>Export packaging, documentation, cargo consolidation, and ocean freight coordination — delivering to the US, Caribbean, Middle East, UK, and Canada with full DDP transparency.</p>
@@ -1254,6 +1254,9 @@ document.addEventListener('DOMContentLoaded',function(){
 .float-item.quote .icon-circle{background:#2d3748;color:#fff}
 .float-item.quote:hover .label{color:#1f2937}
 footer svg{width:20px;height:20px;flex-shrink:0}
+/* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
 </style>
 <div id="float-widget">
   <div id="float-panel">
