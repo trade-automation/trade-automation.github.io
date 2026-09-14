@@ -87,7 +87,10 @@
     .ff-floating-panel .ff-wa:hover { background: #dcfce7; }
     .ff-floating-panel .ff-em { background: #fffbeb; }
     .ff-floating-panel .ff-em:hover { background: #fef3c7; }
-  </style>
+  /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
 
   <!-- JSON-LD Schema -->
   <script type="application/ld+json">
@@ -128,6 +131,7 @@
   gtag('js', new Date());
   gtag('config', 'G-ZYGZJB2SWQ');
 </script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 </head>
 <body class="bg-white text-gray-800 font-sans antialiased">
 
