@@ -152,7 +152,10 @@
             .newsletter-form input[type="email"] { min-width: 100%; }
             .newsletter-form .btn-gold { width: 100%; }
         }
-    </style>
+    /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P07TQC591B"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
