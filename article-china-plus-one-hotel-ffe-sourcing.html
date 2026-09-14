@@ -84,7 +84,10 @@
         .footer-col a:hover{color:white}
         .footer-bottom{max-width:1200px;margin:2rem auto 0;padding:2rem 2rem 0;border-top:1px solid rgba(255,255,255,0.2);text-align:center;font-size:0.85rem;color:rgba(255,255,255,0.6)}
         @media(max-width:768px){h1{font-size:1.6rem}article{padding:0 1rem}.key-stats{grid-template-columns:1fr}.country-grid{grid-template-columns:1fr}nav{display:none}}
-    </style>
+    /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
 <script>
@@ -93,6 +96,7 @@
   gtag('js', new Date());
   gtag('config', 'G-ZYGZJB2SWQ');
 </script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 </head>
 <body>
 <header>
