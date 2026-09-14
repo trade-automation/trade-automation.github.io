@@ -156,7 +156,10 @@
             .phase-block { padding: 20px; }
             .cta-section { padding: 32px 24px; }
         }
-    </style>
+    /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
 <script>
