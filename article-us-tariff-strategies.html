@@ -89,6 +89,7 @@
   gtag('js', new Date());
   gtag('config', 'G-ZYGZJB2SWQ');
 </script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
 </head>
 <body>
         <nav class="nav" id="navbar">
@@ -286,6 +287,9 @@
 .newsletter-note{color:rgba(255,255,255,.5);font-family:'Inter',sans-serif;font-size:.85rem;margin-top:8px}
 #newsletter-success p{color:#C9A96E;font-family:'Inter',sans-serif;font-size:1rem;margin-top:12px}
 @media(max-width:600px){.newsletter-content h2{font-size:1.7rem}.newsletter-form{flex-direction:column}.newsletter-form input[type="email"]{min-width:100%}.newsletter-form .btn-gold{width:100%}}
+/* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
 </style>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
