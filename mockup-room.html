@@ -243,7 +243,10 @@
             .gallery-item.featured { grid-column: auto; }
             .gallery-item img { height: 220px; }
         }
-    </style>
+    /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
 <script>
@@ -669,7 +672,7 @@
     <!-- Lightbox -->
     <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
         <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" alt="Certificate">
+        <img id="lightbox-img" src="" alt="Certificate" loading="lazy">
         <div class="lightbox-caption" id="lightbox-caption"></div>
     </div>
 
