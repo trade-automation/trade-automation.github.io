@@ -137,7 +137,10 @@
             .cert-thumb { width: 100px; }
             .service-cta .cta-buttons { flex-direction: column; align-items: center; }
         }
-    </style>
+    /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
