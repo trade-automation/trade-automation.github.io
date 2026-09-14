@@ -522,7 +522,10 @@
             .spec-table { font-size: 0.8rem; }
             .spec-table thead th, .spec-table tbody td { padding: 10px 12px; }
         }
-    </style>
+    /* Performance: responsive images + lazy loading */
+img { max-width: 100%; height: auto; }
+img[loading="lazy"] { content-visibility: auto; }
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
 <script>
@@ -814,7 +817,7 @@
     <!-- Lightbox -->
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
         <button class="lightbox-close">&times;</button>
-        <img id="lightbox-img" src="" alt="Technical Drawing">
+        <img id="lightbox-img" src="" alt="Technical Drawing" loading="lazy">
     </div>
 
     <script>
