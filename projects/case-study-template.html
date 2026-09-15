@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel FF&amp;E Case Study | [Project Name] | foshanFFE.com</title>
+  <meta name="description" content="Discover how we delivered a complete hotel FF&amp;E package for [Project Name] — from design to installation, on time and on budget.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://foshanffe.com/projects/case-study-template.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hotel FF&amp;E Case Study | [Project Name] | foshanFFE.com">
+  <meta property="og:description" content="Complete hotel FF&amp;E delivery — casegoods, soft seating, lobby furniture, lighting, drapery — all on one PO.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://foshanffe.com/projects/case-study-template.html">
+  <meta property="og:image" content="https://foshanffe.com/assets/og-case-study-default.jpg">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com" onerror="var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4/dist/tailwindcss.browser.js';document.head.appendChild(s)"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#1a202c',
+            'navy-light': '#2d3748',
+            'navy-dark': '#0f1419',
+            gold: '#d4af37',
+            'gold-dark': '#b8931f',
+            'gold-light': '#e8c94a',
+            'warm-white': '#faf8f5',
+            'warm-gray': '#f5f0eb',
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZYGZJB2SWQ');</script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-gradient { background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a202c 100%); }
+    .gold-accent { color: #d4af37; }
+    .stat-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .stat-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+    .photo-placeholder {
+      background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e0 100%);
+      display: flex; align-items: center; justify-content: center;
+      color: #718096; font-size: 1.1rem; font-weight: 500;
+      border-radius: 12px; min-height: 280px;
+    }
+  </style>
+</head>
+<body class="bg-warm-white text-gray-800 font-sans antialiased">
+
+  <!-- ========== Navigation ========== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main Navigation">
+      <div class="flex items-center justify-between h-16 lg:h-20">
+        <a href="/index.html" class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-navy rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-lg">FF</span>
+          </div>
+          <span class="text-gold font-bold text-xl hidden sm:block">FoshanFFE</span>
+        </a>
+        <ul class="hidden md:flex items-center space-x-8">
+          <li><a href="/index.html" class="text-gray-600 hover:text-gold transition-colors duration-200">Home</a></li>
+          <li><a href="/about.html" class="text-gray-600 hover:text-gold transition-colors duration-200">About</a></li>
+          <li><a href="/projects.html" class="text-gray-600 hover:text-gold transition-colors duration-200">Projects</a></li>
+          <li><a href="/services/guestroom-ffe.html" class="text-gray-600 hover:text-gold transition-colors duration-200">Services</a></li>
+          <li><a href="/contact.html" class="text-gray-600 hover:text-gold transition-colors duration-200">Contact</a></li>
+        </ul>
+        <a href="/contact.html" class="hidden md:inline-flex items-center px-5 py-2.5 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark transition-colors duration-200 shadow-sm">
+          Request a Quote
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100" aria-label="Open menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <ul class="space-y-2">
+          <li><a href="/index.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Home</a></li>
+          <li><a href="/about.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">About</a></li>
+          <li><a href="/projects.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Projects</a></li>
+          <li><a href="/services/guestroom-ffe.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Services</a></li>
+          <li><a href="/contact.html" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 rounded-lg">Contact</a></li>
+          <li><a href="/contact.html" class="block mx-4 mt-3 text-center px-5 py-2.5 bg-gold text-white font-medium rounded-lg hover:bg-gold-dark">Request a Quote</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========== Hero Section ========== -->
+    <section class="hero-gradient pt-24 lg:pt-28 pb-16 lg:pb-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <span class="inline-block px-4 py-1.5 bg-gold/20 text-gold-light text-sm font-medium rounded-full mb-6">Case Study</span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight">
+            Boutique Hotel FF&amp;E — Middle East
+          </h1>
+          <p class="mt-6 text-lg text-gray-300 leading-relaxed">
+            A complete FF&amp;E delivery for a 120-room boutique hotel in Dubai — from initial design through final installation, coordinated under a single purchase order.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Project Overview Card ========== -->
+    <section class="relative -mt-10 z-10 pb-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-lg p-8 lg:p-10 border border-gray-100">
+          <h2 class="text-xl font-serif font-bold text-navy mb-6">Project Overview</h2>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="text-center p-4 bg-warm-gray rounded-xl">
+              <div class="text-2xl font-bold text-gold mb-1">Dubai, UAE</div>
+              <div class="text-sm text-gray-500">Location</div>
+            </div>
+            <div class="text-center p-4 bg-warm-gray rounded-xl">
+              <div class="text-2xl font-bold text-gold mb-1">120</div>
+              <div class="text-sm text-gray-500">Guest Rooms</div>
+            </div>
+            <div class="text-center p-4 bg-warm-gray rounded-xl">
+              <div class="text-2xl font-bold text-gold mb-1">12 Weeks</div>
+              <div class="text-sm text-gray-500">Delivery Timeline</div>
+            </div>
+            <div class="text-center p-4 bg-warm-gray rounded-xl">
+              <div class="text-sm font-semibold text-navy mb-1">Casegoods, Soft Seating,<br>Lobby Furniture, Lighting,<br>Drapery</div>
+              <div class="text-sm text-gray-500">Product Scope</div>
+            </div>
+            <div class="text-center p-4 bg-warm-gray rounded-xl">
+              <div class="text-sm font-semibold text-navy mb-1">ISO 9001<br>UL Certified<br>CARB P2</div>
+              <div class="text-sm text-gray-500">Compliance Standards</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Challenge Section ========== -->
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <span class="text-gold font-semibold text-sm uppercase tracking-wider">The Challenge</span>
+          <h2 class="mt-3 text-2xl sm:text-3xl font-serif font-bold text-navy">Complex Multi-Category Sourcing, One Deadline</h2>
+          <div class="mt-6 text-gray-600 space-y-4">
+            <p class="text-lg">The client needed to furnish 120 guest rooms plus lobby, restaurant, and corridor areas for a new boutique hotel opening in Dubai. They faced several critical challenges:</p>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-gold mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span><strong>Multiple product categories</strong> — casegoods, upholstery, lighting, drapery, and lobby furniture — each requiring different manufacturing expertise.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-gold mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span><strong>Tight 12-week timeline</strong> — from final design approval to on-site delivery, with zero tolerance for delays.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-gold mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span><strong>Strict compliance requirements</strong> — all materials needed to meet UAE fire safety codes, UL certification for electrical components, and CARB P2 for formaldehyde emissions.</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-gold mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                <span><strong>Cost pressure</strong> — the client was comparing against Western suppliers and needed competitive pricing without sacrificing quality.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Solution Section ========== -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <span class="text-gold font-semibold text-sm uppercase tracking-wider">Our Solution</span>
+          <h2 class="mt-3 text-2xl sm:text-3xl font-serif font-bold text-navy">One Partner, 19 Factories, One PO</h2>
+          <p class="mt-6 text-lg text-gray-600">As a hospitality FF&amp;E integrator based in Foshan — China's furniture manufacturing capital — we coordinated the entire project through our network of 19 specialized partner factories:</p>
+
+          <div class="mt-8 grid sm:grid-cols-2 gap-6">
+            <div class="bg-warm-gray rounded-xl p-6">
+              <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              </div>
+              <h3 class="font-semibold text-navy mb-2">Single Purchase Order</h3>
+              <p class="text-sm text-gray-600">All product categories consolidated under one PO — simplified procurement, unified quality standards, one point of accountability.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c.63.634.184 1.716-.707 1.716H6.707c-.891 0-1.336-1.082-.707-1.716l5-5A2 2 0 0012 10.172V5L11 4z"/></svg>
+              </div>
+              <h3 class="font-semibold text-navy mb-2">Rigorous QC Process</h3>
+              <p class="text-sm text-gray-600">Three-stage quality control: incoming material inspection, in-line production checks, and pre-shipment full inspection with photo reports.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h3 class="font-semibold text-navy mb-2">Parallel Production</h3>
+              <p class="text-sm text-gray-600">Multiple factories producing simultaneously — casegoods, upholstery, lighting, and drapery all on parallel tracks to meet the 12-week deadline.</p>
+            </div>
+            <div class="bg-warm-gray rounded-xl p-6">
+              <div class="w-10 h-10 bg-gold/20 rounded-lg flex items-center justify-center mb-4">
+                <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+              </div>
+              <h3 class="font-semibold text-navy mb-2">Consolidated Shipping</h3>
+              <p class="text-sm text-gray-600">All goods consolidated at our Foshan warehouse, then shipped in full containers to Dubai — reducing shipping costs and ensuring coordinated delivery.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Results Section ========== -->
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="text-gold font-semibold text-sm uppercase tracking-wider">Results</span>
+        <h2 class="mt-3 text-2xl sm:text-3xl font-serif font-bold text-navy mb-10">Delivered on Time, Under Budget</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="stat-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+            <div class="text-4xl font-serif font-bold text-gold mb-2">35%</div>
+            <div class="text-sm text-gray-600 font-medium">Cost Savings</div>
+            <div class="text-xs text-gray-400 mt-1">vs. Western sourcing</div>
+          </div>
+          <div class="stat-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+            <div class="text-4xl font-serif font-bold text-gold mb-2">12</div>
+            <div class="text-sm text-gray-600 font-medium">Weeks Delivery</div>
+            <div class="text-xs text-gray-400 mt-1">On schedule, zero delays</div>
+          </div>
+          <div class="stat-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+            <div class="text-4xl font-serif font-bold text-gold mb-2">120</div>
+            <div class="text-sm text-gray-600 font-medium">Rooms Furnished</div>
+            <div class="text-xs text-gray-400 mt-1">Complete guestroom FF&amp;E</div>
+          </div>
+          <div class="stat-card bg-white rounded-2xl p-6 border border-gray-100 shadow-sm text-center">
+            <div class="text-4xl font-serif font-bold text-gold mb-2">98%</div>
+            <div class="text-sm text-gray-600 font-medium">Client Satisfaction</div>
+            <div class="text-xs text-gray-400 mt-1">Post-project survey score</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Project Photos ========== -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <span class="text-gold font-semibold text-sm uppercase tracking-wider">Gallery</span>
+        <h2 class="mt-3 text-2xl sm:text-3xl font-serif font-bold text-navy mb-10">Project Photos</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="photo-placeholder">Project Photo — Guestroom</div>
+          <div class="photo-placeholder">Project Photo — Lobby</div>
+          <div class="photo-placeholder">Project Photo — Restaurant</div>
+          <div class="photo-placeholder">Project Photo — Bathroom</div>
+          <div class="photo-placeholder">Project Photo — Corridor</div>
+          <div class="photo-placeholder">Project Photo — Detail</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Testimonial ========== -->
+    <section class="py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <span class="text-gold font-semibold text-sm uppercase tracking-wider">Client Testimonial</span>
+          <div class="mt-8 relative">
+            <svg class="w-12 h-12 text-gold/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            <blockquote class="text-xl sm:text-2xl font-serif text-navy leading-relaxed italic">
+              "[Testimonial placeholder — The client praised the seamless coordination, quality of finishes, and the significant cost savings compared to their previous European suppliers. The project was delivered on time and the hotel opened as scheduled.]"
+            </blockquote>
+            <div class="mt-6">
+              <div class="font-semibold text-navy">[Client Name]</div>
+              <div class="text-sm text-gray-500">[Title], [Company]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA Section ========== -->
+    <section class="py-16 lg:py-20 hero-gradient">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl sm:text-3xl font-serif font-bold text-white mb-4">Ready to Start Your Next Hotel FF&amp;E Project?</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto mb-8">
+          From design to delivery, we coordinate your entire FF&amp;E package through our network of 19 specialized Foshan factories — one PO, one point of contact.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact.html" class="inline-flex items-center px-8 py-3.5 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-colors duration-200 shadow-sm">
+            Request a Quote
+          </a>
+          <a href="https://wa.me/8613630101668?text=Hello%2C%20we%27re%20interested%20in%20hotel%20FF%26E%20sourcing.%20Could%20you%20share%20more%20details%3F" target="_blank" rel="noopener" class="inline-flex items-center px-8 py-3.5 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors duration-200 border border-white/20">
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="bg-gray-900 text-gray-400 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-9 h-9 bg-navy rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-sm">FF</span>
+            </div>
+            <span class="text-white font-bold text-lg">FoshanFFE</span>
+          </div>
+          <p class="text-sm leading-relaxed">Foshan-based one-stop supplier for hotel FF&amp;E packages and construction materials.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="/about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="/projects.html" class="hover:text-white transition-colors">Projects</a></li>
+            <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Services</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/services/guestroom-ffe.html" class="hover:text-white transition-colors">Guestroom FF&amp;E</a></li>
+            <li><a href="/services/lobby-furniture.html" class="hover:text-white transition-colors">Lobby Furniture</a></li>
+            <li><a href="/services/custom-millwork.html" class="hover:text-white transition-colors">Custom Millwork</a></li>
+            <li><a href="/services/quality-control.html" class="hover:text-white transition-colors">Quality Control</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li class="flex items-start">
+              <svg class="w-4 h-4 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              <a href="mailto:chencanming@coze.email" class="hover:text-white transition-colors">chencanming@coze.email</a>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-4 h-4 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              <span>Foshan, Guangdong, China</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+        <p>&copy; 2026 FoshanFFE. All rights reserved.</p>
+        <div class="flex space-x-4 mt-4 sm:mt-0">
+          <a href="https://www.linkedin.com/company/foshanffe" class="hover:text-white transition-colors" aria-label="LinkedIn" target="_blank" rel="noopener"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+          <a href="https://wa.me/8613630101668" class="hover:text-white transition-colors" aria-label="WhatsApp" target="_blank" rel="noopener"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Toggle -->
+  <script>
+    (function(){
+      var btn = document.getElementById('mobile-menu-btn');
+      var menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', function(){ menu.classList.toggle('hidden'); });
+      }
+    })();
+  </script>
+</body>
+</html>
