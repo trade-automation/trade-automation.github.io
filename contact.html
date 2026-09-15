@@ -153,18 +153,6 @@
                 >
               </div>
 
-              <!-- Project Type -->
-              <div>
-                <label for="project-type" class="block text-sm font-medium text-gray-700 mb-1">Interested In</label>
-                <select id="project-type" name="project-type" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 bg-white">
-                  <option value="">Select a product line</option>
-                  <option value="hotel-ffe">Hotel FF&E Package</option>
-                  <option value="building-materials">Building Materials</option>
-                  <option value="both">Both FF&E & Building Materials</option>
-                  <option value="other">Other Inquiry</option>
-                </select>
-              </div>
-
               <!-- Message -->
               <div>
                 <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message / Project Details <span class="text-red-500">*</span></label>
@@ -419,13 +407,11 @@ img[loading="lazy"] { content-visibility: auto; }
     var name = document.getElementById('name').value || '';
     var email = document.getElementById('email').value || '';
     var company = document.getElementById('company').value || '';
-    var interest = document.getElementById('project-type').value || '';
     var message = document.getElementById('message').value || '';
     var subject = 'Inquiry from ' + (name || 'Website Visitor') + ' - ' + (company || 'FoshanFFE.com');
     var body = 'Name: ' + name + '\n'
              + 'Email: ' + email + '\n'
              + 'Company: ' + company + '\n'
-             + 'Interested In: ' + interest + '\n\n'
              + 'Message:\n' + message;
     window.location.href = 'mailto:info@foshanffe.com?subject=' 
              + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
