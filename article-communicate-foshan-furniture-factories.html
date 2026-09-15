@@ -310,5 +310,48 @@ img[loading="lazy"] { content-visibility: auto; }
             else if (nav) nav.classList.remove('scrolled');
         });
     </script>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8613630101668?text=Hello%2C%20we%27re%20interested%20in%20hotel%20FF%26E%20sourcing.%20Could%20you%20share%20more%20details%3F" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="32" height="32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.914 15.914 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.316 22.612c-.39 1.1-1.932 2.014-3.17 2.282-.848.18-1.954.324-5.68-1.22-4.762-1.972-7.826-6.79-8.064-7.108-.228-.318-1.932-2.574-1.932-4.908s1.222-3.472 1.656-3.948c.434-.476.948-.594 1.266-.594.318 0 .636.002.914.016.294.014.688-.11 1.076.822.39.94 1.326 3.238 1.442 3.474.118.236.196.512.04.828-.158.318-.236.514-.472.79-.236.276-.496.616-.71.83-.236.236-.482.492-.208.968.276.476 1.224 2.026 2.626 3.274 1.804 1.606 3.324 2.104 3.798 2.34.476.236.752.198 1.028-.118.276-.318 1.186-1.384 1.502-1.86.318-.476.634-.396 1.068-.236.434.158 2.754 1.298 3.228 1.534.476.236.792.354.91.552.116.198.116 1.14-.274 2.24z" fill="#25D366"/></svg>
+</a>
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37,211,102,0.4);
+  z-index: 9999;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37,211,102,0.5);
+}
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+  }
+  .whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+</style>
 </body>
 </html>
