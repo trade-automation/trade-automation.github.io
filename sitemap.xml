@@ -216,4 +216,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://foshanffe.com/projects/case-study-restaurant-ffe-middle-east.html</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
