@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://foshanffe.com/about.html</loc>
@@ -49,12 +49,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://foshanffe.com/article-hotel-ffe-compliance-guide-2026-20260910.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://foshanffe.com/article-hotel-ffe-compliance-guide-2026.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -62,42 +56,6 @@
   </url>
   <url>
     <loc>https://foshanffe.com/article-hotel-ffe-procurement-process-timeline.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://foshanffe.com/article-hotel-ffe-procurement-smart-lighting-compliance.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://foshanffe.com/article-hotel-ffe-procurement-trends-2026-20260911.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://foshanffe.com/article-hotel-ffe-procurement-trends-2026-20260912.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://foshanffe.com/article-hotel-ffe-procurement-trends-smart-compliance-2026-20260913.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://foshanffe.com/article-hotel-ffe-procurement-trends-smart-compliance-2026.html</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://foshanffe.com/article-hotel-ffe-procurement-trends-smart-lighting-compliance-2026.html</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -251,5 +209,11 @@
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://foshanffe.com/article-hotel-ffe-procurement-trends-2026.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
