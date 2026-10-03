@@ -1,4 +1,35 @@
+# robots.txt for foshanFFE.com
+# Last updated: 2026-10-03
+
+# Default rules for all crawlers
 User-agent: *
 Allow: /
+Disallow: /baidu_verify_codeva-PmPYWBO0o4.html
 
+# AI / LLM Crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Sitemap
 Sitemap: https://foshanFFE.com/sitemap.xml
