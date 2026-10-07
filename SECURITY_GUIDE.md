@@ -159,4 +159,40 @@ permissions-policy: accelerometer=(), camera=(), microphone=(), geolocation=()
 
 ---
 
-*生成时间：2026-10-07 | 适用于 Cloudflare Free Plan + GitHub Pages 架构*
+*生成时间：2026-10-07 | 更新于 2026-10-07 | 适用于 Cloudflare Free Plan + GitHub Pages 架构*
+
+---
+
+## 🔒 GEO 与安全的兼容策略
+
+安全性与 GEO 本质互补：安全做得好，站点可信度更高，AI 更愿意引用；GEO 做得好，内容结构化、路径清晰，也便于安全审计和访问控制。冲突只发生在粗放的安全配置上。
+
+### ✅ 不冲突的安全措施（放心做）
+
+| 措施 | 为什么不影响 GEO |
+|------|-----------------|
+| 隐藏源站 IP / CDN 回源 / HTTPS / HSTS | AI 爬虫访问 CDN 边缘节点，不关心源站 IP |
+| WAF 托管规则（SQL 注入/XSS 防护） | 正常 GET 请求不会被拦截 |
+| Schema 结构化数据、FAQ、产品参数 | 纯公开内容标记，不涉及敏感数据 |
+| 2FA、Tokenization、密码哈希、备份 | 与前端公开内容抓取完全无关 |
+| 安全响应头（X-Frame-Options 等） | 只要不阻止 HTML 和 JSON-LD 输出即可 |
+
+### ⚠️ 需要注意冲突的措施
+
+| 措施 | 冲突原因 | 协调方法 |
+|------|---------|---------|
+| Bot Fight Mode / JS 挑战 / CAPTCHA | AI 爬虫通常不执行 JS，被挑战就抓不到内容 | 对已验证 AI Bot 放行，只挑战未知 Bot |
+| 一键屏蔽 AI 爬虫 | 直接切断 GEO 来源 | 不要全站屏蔽，按 UA/IP/路径精细控制 |
+| robots.txt 全站 Disallow | 合法 AI 也进不来 | 允许 GPTBot/PerplexityBot 等，仅禁止敏感路径 |
+| WAF 自定义 UA 拦截 | 可能误杀 PerplexityBot、Bytespider | 用官方 IP 段 + 反向 DNS 验证，加入白名单 |
+| 速率限制 / CC 防护过严 | AI 爬虫多 IP 高频抓取，触发限流 | 对已验证 AI Bot 放宽阈值 |
+| 内容依赖 JS 渲染 | AI 不执行 JS，可能读不到 | 用静态 HTML，JSON-LD 直接内联 |
+| CSP 阻止内联脚本 | 可能影响 JSON-LD 或页面渲染 | 允许 application/ld+json，或使用 nonce |
+
+### 🎯 兼容原则：精细化，不一刀切
+
+1. **白名单放行合法 AI 爬虫** — 在 Cloudflare 中把 GPTBot、OAI-SearchBot、PerplexityBot、ClaudeBot、Bytespider 加入允许列表，不开"屏蔽所有 AI 爬虫"全局开关
+2. **路径隔离** — 公开内容（产品页、博客、FAQ）允许抓取；敏感路径（/social-drafts/ 等内部草稿）在 robots.txt 中禁止
+3. **静态化 + 结构化** — 核心内容用静态 HTML，JSON-LD 直接写在 HTML 里，既利于 GEO 也减少攻击面
+4. **日志监控区分敌友** — 通过 UA、IP 段、频率区分合法 AI 爬虫和恶意爬虫，定期审计
+5. **黑帽 GEO 不碰** — 伪造内容、刷评、投毒会被 AI 引擎降权，得不偿失
