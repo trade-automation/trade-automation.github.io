@@ -5,6 +5,7 @@
 User-agent: *
 Allow: /
 Disallow: /baidu_verify_codeva-PmPYWBO0o4.html
+Disallow: /social-drafts/
 
 # AI / LLM Crawlers — explicitly allowed
 User-agent: GPTBot
