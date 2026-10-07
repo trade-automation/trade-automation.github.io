@@ -59,6 +59,11 @@
     .faq-answer.open { max-height: 500px; padding-top: 12px; padding-bottom: 16px; }
     .lang-switch { transition: all 0.2s; }
   </style>
+
+<!-- Security Headers -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com; frame-ancestors 'none';">
 </head>
 <body class="bg-warm-white text-gray-800 font-sans antialiased">
 
