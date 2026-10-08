@@ -627,15 +627,21 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://foshanffe.com/sitemap.xml</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://foshanffe.com/article-gcc-smart-lighting-white-list-multi-region-ffe.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://foshanffe.com/llms.txt</loc>
-    <lastmod>2026-10-03</lastmod>
+    <loc>https://foshanffe.com/article-hotel-ffe-asset-lifecycle-opening-budgets-disposal.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://foshanffe.com/customer-gallery.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
 </urlset>
