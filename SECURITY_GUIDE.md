@@ -1,6 +1,6 @@
 # foshanFFE.com Cloudflare 安全加固配置指南
 
-> 当前状态：✅ Cloudflare 代理已启用 | ✅ HSTS 已开启 | ⚠️ 以下配置需在 Cloudflare Dashboard 手动完成
+> 最后更新：2026-10-07 | 通过 Cloudflare API 自动完成所有免费计划可用安全配置
 
 ---
 
