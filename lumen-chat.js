@@ -51,7 +51,7 @@
     },
     contact: {
       keywords: ['contact', 'email', 'phone', 'reach', 'talk to', 'speak with'],
-      response: "You can reach us at:\n\n• Email: chencanming@coze.email\n• Website: foshanFFE.com\n• For urgent inquiries, please use our contact form on this website.\n\nOur team typically responds within 24 hours."
+      response: "You can reach us at:\n\n• Email: chencanming@coze.email\n• WhatsApp: +86 136 3010 1668\n• Website: foshanFFE.com\n• For urgent inquiries, please use our contact form on this website.\n\nOur team typically responds within 24 hours."
     },
     portfolio: {
       keywords: ['portfolio', 'projects', 'cases', 'case study', 'previous work', 'references', 'gallery'],
