@@ -124,6 +124,100 @@ code { font-size: 1.05em; background: #f0f0f0; padding: 0.1em 0.3em; border-radi
 }
 
 </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZYGZJB2SWQ', { send_page_view: true });
+</script>
+<!-- foshanFFE.com GA4 Conversion Tracking -->
+<!-- Tracks: mailto clicks, form submissions, CTA clicks, newsletter signups -->
+<script>
+(function() {
+  var GA4_ID = 'G-ZYGZJB2SWQ';
+
+  // Ensure gtag exists
+  if (typeof gtag !== 'function') {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', GA4_ID, { send_page_view: true });
+  }
+
+  // 1. Mailto Click Tracking
+  document.addEventListener('click', function(e) {
+    var target = e.target.closest('a[href^="mailto:"]');
+    if (target) {
+      var email = target.href.replace('mailto:', '').split('?')[0];
+      var subject = '';
+      try { subject = new URL(target.href).searchParams.get('subject') || ''; } catch(ex) {}
+      gtag('event', 'mailto_click', {
+        event_category: 'engagement',
+        event_label: email,
+        value: subject ? 1 : 0,
+        subject_preview: subject.substring(0, 80)
+      });
+    }
+  });
+
+  // 2. CTA Button Click Tracking
+  document.addEventListener('click', function(e) {
+    var target = e.target.closest('.nav-cta, .hero-cta, .hero-cta-secondary, .cta-btn, .contact-cta, .btn-primary, .btn-secondary');
+    if (target) {
+      var classes = target.className || '';
+      var text = (target.textContent || '').trim().substring(0, 50);
+      gtag('event', 'cta_click', {
+        event_category: 'conversion',
+        event_label: text,
+        button_class: classes.split(' ').filter(function(c){ return c.indexOf('cta') > -1 || c.indexOf('btn') > -1; }).join(',')
+      });
+    }
+  });
+
+  // 3. Contact Form Submission Tracking
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      gtag('event', 'form_submit', {
+        event_category: 'conversion',
+        event_label: 'contact_form'
+      });
+    });
+  }
+
+  // 4. Newsletter Signup Tracking
+  document.addEventListener('click', function(e) {
+    var target = e.target.closest('[id*="newsletter"], [class*="newsletter"]');
+    if (target && (target.tagName === 'BUTTON' || target.type === 'submit')) {
+      gtag('event', 'newsletter_signup', {
+        event_category: 'conversion',
+        event_label: 'newsletter'
+      });
+    }
+  });
+
+  // 5. Scroll Depth Tracking (25%, 50%, 75%, 100%)
+  var scrollMarks = { 25: false, 50: false, 75: false, 100: false };
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrollPercent = Math.round((scrollTop / docHeight) * 100);
+    for (var mark in scrollMarks) {
+      if (!scrollMarks[mark] && scrollPercent >= parseInt(mark)) {
+        scrollMarks[mark] = true;
+        gtag('event', 'scroll_depth', {
+          event_category: 'engagement',
+          event_label: mark + '%',
+          value: parseInt(mark)
+        });
+      }
+    }
+  }, { passive: true });
+})();
+</script>
 </head>
 <body>
 <article>
