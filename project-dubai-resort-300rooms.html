@@ -151,84 +151,150 @@
         }
     </style>
 
-<!-- foshanFFE.com GA4 Conversion Tracking -->
-<!-- Tracks: mailto clicks, form submissions, CTA clicks, newsletter signups -->
+<!-- foshanFFE.com GA4 Conversion Tracking v2 -->
+<!-- Tracks: mailto clicks, form submissions, CTA clicks, newsletter signups, scroll depth -->
+<!-- All events include page_location and relevant parameters for GA4 analysis -->
 <script>
 (function() {
-  var GA4_ID = 'G-ZYGZJB2SWQ';
+  var PAGE = location.pathname;
 
-  // Ensure gtag exists
-  if (typeof gtag !== 'function') {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  }
-
-  // 1. Mailto Click Tracking
+  // 1. Mailto Click Tracking — micro-conversion (B2B intent signal)
   document.addEventListener('click', function(e) {
     var target = e.target.closest('a[href^="mailto:"]');
     if (target) {
-      var email = target.href.replace('mailto:', '').split('?')[0];
+      var href = target.href || '';
+      var email = href.replace('mailto:', '').split('?')[0];
       var subject = '';
-      try { subject = new URL(target.href).searchParams.get('subject') || ''; } catch(ex) {}
+      try { subject = new URL(href).searchParams.get('subject') || ''; } catch(ex) {}
       gtag('event', 'mailto_click', {
-        event_category: 'engagement',
-        event_label: email,
-        value: subject ? 1 : 0,
+        page_location: PAGE,
+        email_target: email,
+        has_subject: subject ? 'yes' : 'no',
         subject_preview: subject.substring(0, 80)
       });
     }
   });
 
-  // 2. CTA Button Click Tracking
+  // 2. CTA Button Click Tracking — engagement (NOT a conversion)
   document.addEventListener('click', function(e) {
     var target = e.target.closest('.nav-cta, .hero-cta, .hero-cta-secondary, .cta-btn, .contact-cta, .btn-primary, .btn-secondary');
     if (target) {
-      var classes = target.className || '';
       var text = (target.textContent || '').trim().substring(0, 50);
+      var dest = target.getAttribute('href') || '';
+      var location = '';
+      if (target.closest('.nav') || target.closest('nav')) location = 'nav';
+      else if (target.closest('.hero')) location = 'hero';
+      else if (target.closest('.cta-section') || target.closest('.cta-banner')) location = 'cta-section';
+      else if (target.closest('.footer')) location = 'footer';
+      else location = 'inline';
       gtag('event', 'cta_click', {
-        event_category: 'conversion',
-        event_label: text,
-        button_class: classes.split(' ').filter(function(c){ return c.indexOf('cta') > -1 || c.indexOf('btn') > -1; }).join(',')
+        page_location: PAGE,
+        cta_text: text,
+        cta_destination: dest.substring(0, 60),
+        cta_position: location
       });
     }
   });
 
-  // 3. Contact Form Submission Tracking
-  var contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      gtag('event', 'form_submit', {
-        event_category: 'conversion',
-        event_label: 'contact_form'
+  // 3. Contact Form Submission Tracking — KEY CONVERSION
+  // Fires only when success message appears (after validation + mailto), NOT on failed validation
+  function trackContactFormSuccess() {
+    var successEl = document.getElementById('success-message');
+    if (!successEl) return;
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.type === 'attributes' && m.attributeName === 'style') {
+          var display = successEl.style.display;
+          if (display !== 'none' && display !== '') {
+            gtag('event', 'form_submit', {
+              page_location: PAGE,
+              form_name: 'contact_inquiry',
+              form_type: 'inquiry'
+            });
+            observer.disconnect();
+          }
+        }
       });
     });
+    observer.observe(successEl, { attributes: true, attributeFilter: ['style'] });
   }
-
-  // 4. Newsletter Signup Tracking
-  document.addEventListener('click', function(e) {
-    var target = e.target.closest('[id*="newsletter"], [class*="newsletter"]');
-    if (target && (target.tagName === 'BUTTON' || target.type === 'submit')) {
-      gtag('event', 'newsletter_signup', {
-        event_category: 'conversion',
-        event_label: 'newsletter'
+  // Also catch hidden class toggle (some pages use classList.add('hidden'))
+  function trackContactFormHidden() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(m) {
+        if (m.type === 'attributes' && m.attributeName === 'class') {
+          if (form.classList.contains('hidden')) {
+            gtag('event', 'form_submit', {
+              page_location: PAGE,
+              form_name: 'contact_inquiry',
+              form_type: 'inquiry'
+            });
+            observer.disconnect();
+          }
+        }
       });
-    }
+    });
+    observer.observe(form, { attributes: true, attributeFilter: ['class'] });
+  }
+  trackContactFormSuccess();
+  trackContactFormHidden();
+
+  // 4. Newsletter Signup Tracking — MICRO-CONVERSION
+  // Fires when newsletter success message appears (not on submit click)
+  document.addEventListener('DOMContentLoaded', function() {
+    var successEls = document.querySelectorAll('[id*="newsletter-success"], [class*="newsletter-success"]');
+    successEls.forEach(function(el) {
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+          if (m.type === 'attributes' && m.attributeName === 'style') {
+            if (el.style.display !== 'none') {
+              gtag('event', 'newsletter_signup', {
+                page_location: PAGE,
+                signup_source: el.closest('form') ? el.closest('form').id : 'unknown'
+              });
+              observer.disconnect();
+            }
+          }
+        });
+      });
+      observer.observe(el, { attributes: true, attributeFilter: ['style'] });
+    });
+
+    // Fallback: if newsletter form is hidden after submit (some pages hide form instead of showing success)
+    var newsletterForms = document.querySelectorAll('[id*="newsletter-form"], [class*="newsletter-form"]');
+    newsletterForms.forEach(function(form) {
+      var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(m) {
+          if (m.type === 'attributes' && m.attributeName === 'style') {
+            if (form.style.display === 'none') {
+              gtag('event', 'newsletter_signup', {
+                page_location: PAGE,
+                signup_source: form.id || 'unknown'
+              });
+              observer.disconnect();
+            }
+          }
+        });
+      });
+      observer.observe(form, { attributes: true, attributeFilter: ['style'] });
+    });
   });
 
-  // 5. Scroll Depth Tracking (25%, 50%, 75%, 100%)
+  // 5. Scroll Depth Tracking — ENGAGEMENT (NOT a conversion)
   var scrollMarks = { 25: false, 50: false, 75: false, 100: false };
   window.addEventListener('scroll', function() {
     var scrollTop = window.scrollY || document.documentElement.scrollTop;
     var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    if (docHeight <= 0) return;
     var scrollPercent = Math.round((scrollTop / docHeight) * 100);
     for (var mark in scrollMarks) {
       if (!scrollMarks[mark] && scrollPercent >= parseInt(mark)) {
         scrollMarks[mark] = true;
         gtag('event', 'scroll_depth', {
-          event_category: 'engagement',
-          event_label: mark + '%',
-          value: parseInt(mark)
+          page_location: PAGE,
+          depth_percent: parseInt(mark)
         });
       }
     }
