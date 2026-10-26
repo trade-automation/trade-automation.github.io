@@ -39,7 +39,7 @@
     },
     price: {
       keywords: ['price', 'cost', 'how much', 'pricing', 'rate', 'budget', 'expensive', 'cheap', 'quotation', 'quote'],
-      response: "For a detailed quotation, we'll need:\n\n1. Furniture list with dimensions and quantities (PDF/Excel/drawings)\n2. Material preferences or brand spec book\n3. Project site address (for DDP calculation)\n4. Target delivery date\n\nPlease share these details via our contact form or email us at chencanming@coze.email. Our specialist will prepare a quotation within 5-7 working days."
+      response: "For a detailed quotation, we'll need:\n\n1. Furniture list with dimensions and quantities (PDF/Excel/drawings)\n2. Material preferences or brand spec book\n3. Project site address (for DDP calculation)\n4. Target delivery date\n\nPlease share these details via our contact form or email us at info@foshanffe.com. Our specialist will prepare a quotation within 5-7 working days."
     },
     sample: {
       keywords: ['sample', 'send sample', 'sample cost', 'mockup', 'prototype'],
@@ -51,7 +51,7 @@
     },
     contact: {
       keywords: ['contact', 'email', 'phone', 'reach', 'talk to', 'speak with'],
-      response: "You can reach us at:\n\n• Email: chencanming@coze.email\n• WhatsApp: +86 136 3010 1668\n• Website: foshanFFE.com\n• For urgent inquiries, please use our contact form on this website.\n\nOur team typically responds within 24 hours."
+      response: "You can reach us at:\n\n• Email: info@foshanffe.com\n• WhatsApp: +86 136 3010 1668\n• Website: foshanFFE.com\n• For urgent inquiries, please use our contact form on this website.\n\nOur team typically responds within 24 hours."
     },
     portfolio: {
       keywords: ['portfolio', 'projects', 'cases', 'case study', 'previous work', 'references', 'gallery'],
@@ -70,7 +70,7 @@
     textDark: '#1e293b',
     textMuted: '#64748b',
     borderRadius: '12px',
-    businessEmail: 'chencanming@coze.email',
+    businessEmail: 'info@foshanffe.com',
     businessName: 'Foshan FF&E Solutions',
     responseDelay: 600
   };
@@ -427,27 +427,49 @@
       showTyping();
       setTimeout(function() {
         hideTyping();
-        addMessage("Thank you, " + state.leadData.name + "! Your inquiry has been received. Our project specialist will review your details and get back to you within 24 hours at " + state.leadData.email + ".\n\nFor urgent matters, you can also reach us directly at " + CONFIG.businessEmail + ".", 'bot');
-        // Compose mailto link for lead data
-        var subject = encodeURIComponent('Website Inquiry: ' + state.leadData.company);
-        var body = encodeURIComponent(
-          'New website inquiry from Lumen chat:\n\n' +
-          'Name: ' + state.leadData.name + '\n' +
-          'Email: ' + state.leadData.email + '\n' +
-          'Company: ' + state.leadData.company + '\n' +
-          'Project: ' + state.leadData.message + '\n' +
-          'Source: foshanFFE.com chat widget'
-        );
-        // Open mailto in background
-        var mailLink = document.createElement('a');
-        mailLink.href = 'mailto:' + CONFIG.businessEmail + '?subject=' + subject + '&body=' + body;
-        mailLink.style.display = 'none';
-        document.body.appendChild(mailLink);
-        mailLink.click();
-        document.body.removeChild(mailLink);
+        addMessage("Thank you, " + state.leadData.name + "! Your details have been sent to our project team — expect a reply within 24 hours at " + state.leadData.email + ".\n\nNothing back from us? Message WhatsApp +86 136 3010 1668 or email " + CONFIG.businessEmail + " and we will pick it up straight away.", 'bot');
+        submitLead();
         state.step = 'ended';
       }, CONFIG.responseDelay);
     }
+  }
+
+  // ===== Lead Delivery =====
+  // Posts to the form endpoint through a hidden iframe: real delivery, no page navigation,
+  // and no dependency on the visitor having a mail client configured.
+  function submitLead() {
+    try {
+      var frameId = 'lumen-post-frame';
+      if (!document.getElementById(frameId)) {
+        var fr = document.createElement('iframe');
+        fr.name = frameId; fr.id = frameId; fr.style.display = 'none';
+        document.body.appendChild(fr);
+      }
+      var f = document.createElement('form');
+      f.action = 'https://formsubmit.co/' + CONFIG.businessEmail;
+      f.method = 'POST';
+      f.target = frameId;
+      f.style.display = 'none';
+      var data = {
+        name: state.leadData.name,
+        email: state.leadData.email,
+        company: state.leadData.company,
+        message: state.leadData.message,
+        source: 'foshanFFE.com Lumen chat widget',
+        _subject: 'Chat widget inquiry — ' + (state.leadData.company || state.leadData.name),
+        _cc: 'chencanming@coze.email',
+        _template: 'table',
+        _captcha: 'false'
+      };
+      Object.keys(data).forEach(function(k) {
+        var i = document.createElement('input');
+        i.type = 'hidden'; i.name = k; i.value = data[k] || '';
+        f.appendChild(i);
+      });
+      document.body.appendChild(f);
+      f.submit();
+      document.body.removeChild(f);
+    } catch (err) { /* silent: WhatsApp fallback is already shown in the chat */ }
   }
 
   // ===== Initialize =====
