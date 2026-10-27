@@ -69,6 +69,12 @@
         .social-links a:hover { color: var(--gold); }
         .social-links svg { width: 18px; height: 18px; fill: currentColor; }
 
+        .pg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0 12px; }
+        .pg-item { background: #fff; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; margin: 0; }
+        .pg-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; }
+        .pg-item figcaption { padding: 8px 10px 10px; font-size: 0.78rem; line-height: 1.35; color: var(--text-muted); text-align: center; }
+        @media (max-width: 700px) { .pg-grid { grid-template-columns: repeat(2, 1fr); } }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links { display: none; }
@@ -334,6 +340,26 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Suite Seating Gallery (added 2026-10-27) -->
+    <section class="content-section" id="suite-seating">
+        <div class="content-inner">
+            <h2>Suite Seating and Occasional Pieces</h2>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 8px;">The sitting area is the part of a suite that gets photographed and the part that gets abused. Covers get sat on in wet coats, coffee tables get used as luggage benches, armchairs get dragged to the window every morning. What survives that is decided at spec stage: the frame joint, the foam density under the seat cushion, and whether the cover is a contract fabric that still passes a rub test in year three. The groups below are from our current suite programme.</p>
+            <div class="pg-grid">
+                <figure class="pg-item"><img src="../images/products/sf-suite-cream-armchairs.jpg" alt="Cream three-piece suite with a brass-framed coffee table and ottomans in a suite sitting room" loading="lazy" width="900" height="900"><figcaption>Cream sofa, two armchairs, brass coffee table</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-emerald-velvet.jpg" alt="Emerald velvet sofa and two matching armchairs around a low coffee table, tall window behind" loading="lazy" width="900" height="900"><figcaption>Emerald velvet sofa, matching armchairs</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-blue-velvet.jpg" alt="Blue velvet sofa and two armchairs with a low coffee table against a panelled wall" loading="lazy" width="900" height="900"><figcaption>Blue velvet sofa, panelled wall</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-gold-lattice.jpg" alt="Emerald velvet sofa and armchairs with brass lattice detailing around a black marble coffee table" loading="lazy" width="702" height="900"><figcaption>Emerald velvet, brass lattice detail</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-teal-modular.jpg" alt="Teal velvet modular sofa and two armchairs with a low round coffee table" loading="lazy" width="900" height="900"><figcaption>Teal velvet modular three-piece</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-grey-tufted.jpg" alt="Grey tufted sofa with two matching armchairs and a round marble coffee table" loading="lazy" width="900" height="900"><figcaption>Grey tufted sofa, two armchairs</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-navy-velvet.jpg" alt="Navy velvet three-piece suite around a round coffee table on a shagreen rug" loading="lazy" width="900" height="900"><figcaption>Navy velvet suite, shagreen rug</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-white-ribbed.jpg" alt="White ribbed sofa with a round marble drum coffee table" loading="lazy" width="900" height="900"><figcaption>White ribbed sofa, marble drum table</figcaption></figure>
+                <figure class="pg-item"><img src="../images/products/sf-suite-curved-boutique.jpg" alt="Curved cream sofa with accent chairs under a ring pendant in an arched lounge" loading="lazy" width="900" height="900"><figcaption>Curved sofa, ring pendant</figcaption></figure>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-top: 18px;">Frame in kiln-dried hardwood or steel, joints glued and dowelled rather than stapled, seat foam at 35kg/m&sup3; or above with a wrapped crown, and covers in contract-grade fabric or full-grain leather to your schedule. <a href="../index.html#contact" style="color: var(--navy);">Send the suite plan with seat counts</a> and the groups come back dimensioned against your room, costed and sampled.</p>
         </div>
     </section>
 
