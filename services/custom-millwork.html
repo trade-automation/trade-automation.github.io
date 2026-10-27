@@ -69,6 +69,13 @@
         .social-links a:hover { color: var(--gold); }
         .social-links svg { width: 18px; height: 18px; fill: currentColor; }
 
+        /* Product Gallery */
+        .pg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0 12px; }
+        .pg-item { background: #fff; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; margin: 0; }
+        .pg-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; }
+        .pg-item figcaption { padding: 8px 10px 10px; font-size: 0.78rem; line-height: 1.35; color: var(--text-muted); text-align: center; }
+        @media (max-width: 700px) { .pg-grid { grid-template-columns: repeat(2, 1fr); } }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links { display: none; }
@@ -341,6 +348,65 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Joinery Gallery -->
+    <section class="content-section" id="joinery-gallery">
+        <div class="content-inner">
+            <h2>Door Sets, Wall Panelling and Fitted Joinery</h2>
+            <p>Millwork is the part of a fit-out that has to be drawn before it can be priced. A door is not a door: it is a leaf, a frame, an architrave, a threshold, a closer, a fire rating and a hardware schedule, and the wall it sits in has to be built to receive all of it. The references below show the three things that most often go wrong on a hotel joinery package &mdash; how a door meets a panelled wall, how a reveal is set out so the shadow gap stays even, and how a wardrobe or vanity is integrated so it reads as part of the room rather than an object dropped into it.</p>
+            <div class="pg-grid">
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-painted-panel-door-set.jpg" alt="Painted MDF panel wall with a flush door set and brass reveal strip in a dining room" loading="lazy" width="1200" height="900">
+                    <figcaption>Painted panel wall with flush door set</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-dark-veneer-door-brass-edge.jpg" alt="Dark veneer door set with a brass edge trim above a low console" loading="lazy" width="1200" height="900">
+                    <figcaption>Dark veneer door, brass edge trim</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-white-door-brass-threshold.jpg" alt="White door set with a brass threshold strip in a dark panelled corridor" loading="lazy" width="1200" height="900">
+                    <figcaption>White door set in a dark-panelled wall</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-stone-wall-tv-console.jpg" alt="Stone-clad feature wall with a grey door set and floating TV console" loading="lazy" width="1200" height="900">
+                    <figcaption>Stone-clad wall and TV console</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-glazed-door-black-frame.jpg" alt="Black-framed glazed door set in a white brick wall with gallery lighting" loading="lazy" width="1200" height="900">
+                    <figcaption>Black-framed glazed door set</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-fluted-panel-door.jpg" alt="Fluted timber wall panelling with a matching door set in a dining room" loading="lazy" width="1200" height="900">
+                    <figcaption>Fluted wall panelling and door</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-green-panel-brass-reveal.jpg" alt="Green panelled wall with a brass reveal, door set and integrated TV niche" loading="lazy" width="1200" height="900">
+                    <figcaption>Green panelled wall with brass reveal</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-dressing-wardrobe-door.jpg" alt="Fitted wardrobe with glass-fronted shelving and a matching door set in a dressing area" loading="lazy" width="1200" height="900">
+                    <figcaption>Fitted wardrobe and dressing joinery</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-chevron-veneer-door.jpg" alt="Chevron book-matched veneer door set with a floating vanity and TV" loading="lazy" width="1200" height="900">
+                    <figcaption>Chevron book-matched veneer door</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-wardrobe-desk-door.jpg" alt="Fitted wardrobe with an integrated desk and a matching walnut door set" loading="lazy" width="1200" height="900">
+                    <figcaption>Fitted wardrobe, desk and door set</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-walnut-door-stone-wall.jpg" alt="Walnut veneer door set with brass ironmongery against a stone-clad wall" loading="lazy" width="1200" height="900">
+                    <figcaption>Walnut door set against stone</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/cmw-brass-trim-panel-door.jpg" alt="Dark panelled wall with brass trim, open shelving and a flush door set" loading="lazy" width="1200" height="900">
+                    <figcaption>Brass-trimmed panels and flush door</figcaption>
+                </figure>
+            </div>
+            <p>Every item on this page is produced from shop drawings rather than a catalogue number. Send the architect's joinery details, the wall build-up and the fire strategy, and the package comes back as a drawing set with door schedules, ironmongery schedules and a finish sample board for sign-off before any board is cut.</p>
         </div>
     </section>
 
