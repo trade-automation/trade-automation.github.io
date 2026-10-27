@@ -57,6 +57,11 @@
         .geo-table td { padding: 10px 16px; border-bottom: 1px solid #e8e5e0; }
         .geo-table tr:nth-child(even) { background: #FAF8F5; }
         .geo-table .highlight { color: #C9A96E; font-weight: 600; }
+        .pg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0 12px; }
+        @media (max-width: 700px) { .pg-grid { grid-template-columns: repeat(2, 1fr); } }
+        .pg-item { background: #fff; border: 1px solid #e8e5e0; border-radius: 8px; overflow: hidden; margin: 0; }
+        .pg-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; }
+        .pg-item figcaption { padding: 8px 10px 10px; font-size: 0.78rem; line-height: 1.35; color: #6a6a7a; text-align: center; }
     </style>
     <script type="application/ld+json">
     {
@@ -128,6 +133,19 @@
         <p>Finding individual suppliers for each furniture category in a hotel project is time-consuming, coordination-intensive, and prone to quality inconsistencies. As a hotel FF&E procurement company and hotel FF&E contractor in China, foshanFFE.com eliminates this complexity by providing a single source for every furniture category your project requires.</p>
         <p>Our 19-factory partner network in Foshan — China's furniture manufacturing capital — covers every product category from the grand hotel lobby furniture manufacturer pieces to the smallest hotel coat closet supplier items. Whether you need a hotel wardrobe manufacturer for custom-built guestroom wardrobes, a hotel minibar cabinet supplier for in-room refreshment centers, or a hotel conference room furniture supplier for boardroom and meeting spaces — we coordinate production, quality control, and delivery across all categories under one management team.</p>
         <p>This turnkey hotel furnishing solution approach means your procurement team deals with one point of contact, one quality standard, one production timeline, and one shipping schedule — regardless of how many furniture categories or individual items your project requires.</p>
+
+        <h2>Product Gallery</h2>
+        <p>Accent, occasional and loose furniture for the items that complete a room. All pieces can be produced in small quantities and consolidated into your main container.</p>
+        <div class="pg-grid">
+            <figure class="pg-item"><img src="../images/products/counter-height-stool-upholstered.jpg" alt="Counter-height hotel stool with upholstered seat" loading="lazy" width="462" height="900"><figcaption>Counter stool</figcaption></figure>
+            <figure class="pg-item"><img src="../images/products/timber-counter-stool-curved-back.jpg" alt="Timber counter stool with curved back" loading="lazy" width="464" height="900"><figcaption>Timber counter stool</figcaption></figure>
+            <figure class="pg-item"><img src="../images/products/bar-stool-blue-channel-back.jpg" alt="Blue bar stool with channel-stitched back" loading="lazy" width="509" height="900"><figcaption>Bar stool, blue</figcaption></figure>
+            <figure class="pg-item"><img src="../images/products/bar-stool-moulded-shell.jpg" alt="Bar stool with moulded shell seat" loading="lazy" width="553" height="900"><figcaption>Bar stool, shell seat</figcaption></figure>
+            <figure class="pg-item"><img src="../images/products/bar-stool-blush-velvet-brass.jpg" alt="Blush velvet bar stool with brass footrest" loading="lazy" width="524" height="900"><figcaption>Bar stool, blush velvet</figcaption></figure>
+            <figure class="pg-item"><img src="../images/products/accent-chair-reading-set.jpg" alt="Accent chairs grouped as a reading set" loading="lazy" width="740" height="900"><figcaption>Reading set</figcaption></figure>
+            <figure class="pg-item"><img src="../images/products/platform-bed-frame-timber.jpg" alt="Platform bed frame in solid timber" loading="lazy" width="744" height="900"><figcaption>Platform bed frame</figcaption></figure>
+            <figure class="pg-item"><img src="../images/products/boucle-accent-chair.jpg" alt="Boucle accent chair for hotel suites" loading="lazy" width="700" height="851"><figcaption>Boucle accent chair</figcaption></figure>
+        </div>
 
         <h2>Complete Product Category Directory</h2>
         <p>Below is the full scope of hotel furniture categories we supply as a hotel FF&E package deal provider:</p>
