@@ -69,6 +69,15 @@
         .social-links a:hover { color: var(--gold); }
         .social-links svg { width: 18px; height: 18px; fill: currentColor; }
 
+        /* Packing Table */
+        .pk-wrap { overflow-x: auto; margin: 22px 0 10px; }
+        .pk-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 620px; }
+        .pk-table th { background: var(--navy); color: #fff; text-align: left; padding: 11px 12px; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.02em; }
+        .pk-table td { padding: 11px 12px; border-bottom: 1px solid var(--border-light); vertical-align: top; line-height: 1.5; }
+        .pk-table tr:nth-child(even) td { background: #faf9f7; }
+        .pk-table td:first-child { font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+        @media (max-width: 700px) { .pk-table { font-size: 0.82rem; } .pk-table th, .pk-table td { padding: 9px 8px; } }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links { display: none; }
@@ -358,6 +367,29 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Packing by Category -->
+    <section class="content-section" id="packing-by-category">
+        <div class="content-inner">
+            <h2>Packing and Loading, by Product Category</h2>
+            <p>Damage in an FF&E shipment is rarely caused by the ocean leg. It is caused by how the goods were packed at the factory and how they were loaded into the container, and both of those are decided weeks before the vessel sails. The table below is the packing specification we apply by default. It is not a sales sheet &mdash; it is what the factory is instructed to do, and what the loading photos are checked against before the container is sealed.</p>
+            <div class="pk-wrap">
+                <table class="pk-table">
+                    <thead><tr><th>Category</th><th>Packing</th><th>Loading note</th></tr></thead>
+                    <tbody>
+                <tr><td>Casegoods</td><td>EPE foam wrap on all edges and corners, 5-layer corrugated carton, corner protectors on every carcass</td><td>Flat-packed carcasses where the design allows; assembled units need a wider footprint and cost roughly 20% more container space</td></tr>
+                <tr><td>Upholstered seating</td><td>Foam corner blocks, stretch wrap, breathable bag — never vacuum-sealed for more than 14 days</td><td>Bags are opened on arrival for inspection; long transit in sealed plastic traps moisture and sets creases in the cover</td></tr>
+                <tr><td>Marble and stone tops</td><td>Foam-faced A-frame crate, tops stood on edge, never stacked flat</td><td>Stacking flat is the single most common cause of transit breakage on stone tops</td></tr>
+                <tr><td>Glass and mirrors</td><td>Timber crate with foam spacers, individual cardboard sleeves, vertical orientation only</td><td>Marked fragile and loaded last so nothing sits on top of the crate</td></tr>
+                <tr><td>Fixed joinery</td><td>Disassembled into panels, panel edges banded, hardware bagged and labelled per unit</td><td>Labelled by room number and unit so the installation crew can work room by room</td></tr>
+                <tr><td>Lighting and hardware</td><td>Individual cartons inside a master carton, anti-static wrap on drivers and LED boards</td><td>Kept off the container floor and away from doors — the two places that take water</td></tr>
+                <tr><td>Mattresses</td><td>Vacuum-compressed and rolled, boxed individually</td><td>Recovers to full height within 48–72 hours of unboxing; do not open before the room is ready</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Consolidation is where the cost actually moves. Goods from five factories arriving at the port on five different dates will either wait for each other or ship separately, and both outcomes cost money. We hold the schedule, book the container against the slowest factory rather than the fastest, and issue loading photographs and a sealed container number before the bill of lading is released. Send the FF&amp;E schedule with destination port and required on-site date, and the loading plan comes back with a container count and a sailing window.</p>
         </div>
     </section>
 
