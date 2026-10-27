@@ -69,6 +69,13 @@
         .social-links a:hover { color: var(--gold); }
         .social-links svg { width: 18px; height: 18px; fill: currentColor; }
 
+        /* Product Gallery */
+        .pg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0 12px; }
+        .pg-item { background: #fff; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; margin: 0; }
+        .pg-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; }
+        .pg-item figcaption { padding: 8px 10px 10px; font-size: 0.78rem; line-height: 1.35; color: var(--text-muted); text-align: center; }
+        @media (max-width: 700px) { .pg-grid { grid-template-columns: repeat(2, 1fr); } }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links { display: none; }
@@ -341,6 +348,41 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Inspection Stages -->
+    <section class="content-section" id="inspection-stages">
+        <div class="content-inner">
+            <h2>What the Inspection Actually Looks At</h2>
+            <p>An FF&E package is not one order. It is a guestroom casegoods run, a soft seating run, a joinery package and a lighting schedule moving through four or five factories on different schedules, and a single inspection at the end will only tell you what has already gone wrong. The work is staged: material and frame before upholstery, panels before assembly, assembly before packing, and packing before the container is sealed.</p>
+            <div class="pg-grid">
+                <figure class="pg-item">
+                    <img src="../images/products/qc-frames-foam-fabric.jpg" alt="Frames, foam and fabric staged before upholstery" loading="lazy" width="1200" height="900">
+                    <figcaption>Hardwood sofa frames, foam blocks and fabric rolls staged on the factory floor before upholstery</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/qc-timber-chair-frames.jpg" alt="Timber chair frames checked before upholstery" loading="lazy" width="1200" height="900">
+                    <figcaption>Rows of unfinished timber dining chair frames being checked and wrapped on the factory floor</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/qc-board-laminating-line.jpg" alt="Panel boards checked on the laminating line" loading="lazy" width="1200" height="900">
+                    <figcaption>Stacked panels on a laminating line with an operator checking board edges</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/qc-upholstered-bed-inspection.jpg" alt="Upholstered bed frame measured on the floor" loading="lazy" width="1200" height="900">
+                    <figcaption>Upholstered bed frame being measured and inspected on the factory floor</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/qc-finished-chairs-lined-up.jpg" alt="Finished chairs lined up for pre-shipment check" loading="lazy" width="1200" height="900">
+                    <figcaption>Rows of finished upholstered dining chairs lined up for pre-shipment inspection</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/products/qc-millwork-final-check.jpg" alt="Fixed joinery assembled and checked" loading="lazy" width="1200" height="900">
+                    <figcaption>Finished fixed joinery console and brass shelving assembled for a final dimensional check</figcaption>
+                </figure>
+            </div>
+            <p>Each stage is photographed and videoed against the approved sample and the shop drawing, not against a generic checklist. Sampling follows AQL levels agreed with the buyer, defects come back as photographs within four hours with a corrective action plan attached, and nothing is released for shipment until the stage report has been signed off on the buyer's side.</p>
         </div>
     </section>
 
