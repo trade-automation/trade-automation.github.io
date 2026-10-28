@@ -75,6 +75,11 @@
         .pk-table th { background: var(--navy); color: #fff; text-align: left; padding: 11px 12px; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.02em; }
         .pk-table td { padding: 11px 12px; border-bottom: 1px solid var(--border-light); vertical-align: top; line-height: 1.5; }
         .pk-table tr:nth-child(even) td { background: #faf9f7; }
+        .pg-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 26px 0 12px; }
+        .pg-item { background: #fff; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; margin: 0; }
+        .pg-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #f2f0ec; }
+        .pg-item figcaption { padding: 9px 11px 11px; font-size: 0.78rem; line-height: 1.4; color: var(--text-muted); text-align: left; }
+        @media (max-width: 700px) { .pg-grid { grid-template-columns: 1fr; } }
         .pk-table td:first-child { font-weight: 600; color: var(--text-primary); white-space: nowrap; }
         @media (max-width: 700px) { .pk-table { font-size: 0.82rem; } .pk-table th, .pk-table td { padding: 9px 8px; } }
 
@@ -390,6 +395,19 @@
                 </table>
             </div>
             <p>Consolidation is where the cost actually moves. Goods from five factories arriving at the port on five different dates will either wait for each other or ship separately, and both outcomes cost money. We hold the schedule, book the container against the slowest factory rather than the fastest, and issue loading photographs and a sealed container number before the bill of lading is released. Send the FF&amp;E schedule with destination port and required on-site date, and the loading plan comes back with a container count and a sailing window.</p>
+
+            <h3 style="margin-top: 44px;">What the Loading Photos Actually Show</h3>
+            <p>Two photographs come back per container before the doors are shut: the load as it stands, and the door end once it is braced. The first is checked against the packing list, the second against the loading plan. Both go out the same day with the container number and the seal number, and the shipment is signed off against them.</p>
+            <div class="pg-grid">
+                <figure class="pg-item">
+                    <img src="../images/factory/container-packed-labels.jpg" alt="Loaded shipping container with labelled cartons and foil-wrapped furniture frames standing on edge" loading="lazy" width="1200" height="1096">
+                    <figcaption>Door end of a loaded 40ft HC. Every carton carries its unit label. Upholstered frames stand on edge against the doors and are strapped there, with nothing stacked on top of them.</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/factory/container-loading-forklift.jpg" alt="Forklift loading a carton into a shipping container in the factory yard" loading="lazy" width="1200" height="751">
+                    <figcaption>Loading in the factory yard. Cartons go in on the forks rather than being carried by hand, so the corner protection stays on the piece instead of on the floor.</figcaption>
+                </figure>
+            </div>
         </div>
     </section>
 
