@@ -124,6 +124,7 @@
         .fig-wrap { background: #fff; border: 1px solid var(--border-light); border-radius: 10px; padding: 20px; margin: 28px 0 8px; }
         .fig-wrap svg { display: block; width: 100%; height: auto; }
         .fig-cap { font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; margin-top: 14px; }
+        .fig-one { max-width: 560px; margin: 26px auto 10px; }
         .note { background: var(--warm-gray); border-left: 3px solid var(--gold); padding: 18px 22px; margin: 26px 0 0; font-size: 0.92rem; line-height: 1.75; color: var(--text-secondary); }
         .note strong { color: var(--navy); }
         .tbl-wrap { overflow-x: auto; }
@@ -368,6 +369,17 @@
             <div class="note">
                 <strong>Where the sequence breaks.</strong> The three furniture-mounted domains leave the factory with a plug-in harness. The contractor's only obligation is a matching connector above the ceiling at 2700 mm. When that connector is missing, on the wrong wall or 200 mm out, the panel has to come off after handover to reach the joint, and the furniture has to be re-tested on site.
             </div>
+
+            <div class="pg-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 26px;">
+                <figure class="pg-item">
+                    <img src="../images/smart-control/ceiling-harness-site.jpg" alt="Control harness pulled down at a ceiling slot on a guestroom site" loading="lazy" width="1200" height="900">
+                    <figcaption>The contractor's harness pulled down at a ceiling slot. How many cores arrive, and where each one goes, is settled by the point schedule before the pull rather than sorted out afterwards.</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/smart-control/room-box-termination.jpg" alt="Guestroom service box with a dense bundle of control cores entering through cable glands" loading="lazy" width="1200" height="900">
+                    <figcaption>The same cores at the room box. At this density, termination is a drawing-driven job: every core needs a destination on the schedule, or the box gets sorted on site.</figcaption>
+                </figure>
+            </div>
         </div>
     </section>
 
@@ -458,6 +470,17 @@
                 <li><strong>Door lock and PMS.</strong> Card or face recognition at the door plate feeds the same status the front desk sees, and the check-in record drives pre-arrival cooling.</li>
                 <li><strong>Emergency call.</strong> A bathroom pull cord or panel button raises an alarm on the front office screen, as a phone alert to named staff, and by SMS.</li>
             </ul>
+
+            <div class="pg-grid" style="grid-template-columns: repeat(2, 1fr); margin-top: 26px;">
+                <figure class="pg-item">
+                    <img src="../images/smart-control/panel-back-rs485.jpg" alt="Rear of a bedside control plate showing the RS485 terminal block and DIP address switch" loading="lazy" width="1200" height="900">
+                    <figcaption>Rear of a bedside plate. Four-core bus terminal and a DIP switch for the address, so a plate can be swapped without re-terminating the room.</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/smart-control/rcu-enclosure-breakers.jpg" alt="Room control enclosure on the bench with DIN rail, miniature circuit breakers and wiring duct" loading="lazy" width="1200" height="900">
+                    <figcaption>Room enclosure on the bench: DIN rail, one breaker per circuit, wiring duct. Board size follows circuit count, so the enclosure is sized from the room's schedule rather than from a catalogue.</figcaption>
+                </figure>
+            </div>
             <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-top: 20px;">The control hardware is produced on a shorter cycle than the casegoods, so it rides the same container as the furniture rather than shipping as a separate consignment. That matters for more than freight: the panels and the joinery they mount into arrive together, and the factory harness has already been mated to a sample panel before either is packed.</p>
         </div>
     </section>
@@ -467,6 +490,12 @@
         <div class="content-inner">
             <h2>Do the panels have to match the joinery finishes?</h2>
             <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8;">Yes, and this is the detail most often missed. A switch plate is a visible surface in the same frame as the timber, the stone and the metal, at a distance a guest actually stands from it. Panel families run from large-plate touch glass to metal-framed and dot-touch plates, in the finishes the interior designer selects for the room. A champagne-gold plate set against a black-titanium door frame reads as a mistake at one metre.</p>
+
+            <figure class="pg-item fig-one">
+                <img src="../images/smart-control/bedside-plate-group.jpg" alt="Three brushed-metal bedside plates with etched Bed, Bedside Lamp and Night Light legends" loading="lazy" width="1200" height="900">
+                <figcaption>Three plates from one bedside group, in brushed metal, with the legend etched into the plate instead of printed on it. Etching survives cleaning; a printed legend does not survive a year of housekeeping.</figcaption>
+            </figure>
+
             <ul class="content-list">
                 <li><strong>Finish selection timing.</strong> Panel finish is chosen with the FF&amp;E finish schedule, not after it. Late selection is what produces a plate that matches nothing.</li>
                 <li><strong>Cut-out dimensions.</strong> Plate dimensions and back-box depths go onto the millwork shop drawing before the panel is machined. A 2 mm error in a routed opening is visible on a flush-mounted plate.</li>
