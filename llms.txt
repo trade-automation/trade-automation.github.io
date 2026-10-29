@@ -44,6 +44,8 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 - [Custom Millwork](https://foshanffe.com/services/custom-millwork.html): Bespoke casework and architectural woodwork
 - [Quality Control](https://foshanffe.com/services/quality-control.html): QC protocols, inspection services, compliance
 - [Logistics & Shipping](https://foshanffe.com/services/logistics-shipping.html): Global shipping, customs, container consolidation
+- [Decorative Lighting](https://foshanffe.com/services/lighting.html): Hotel sconces, picture lights, pendants, chandeliers and table lamps
+- [Smart Room Control](https://foshanffe.com/services/smart-room-control.html): Guestroom control provisions built into the joinery
 
 ### Product Pages
 - [Reception & Banquet](https://foshanffe.com/products/reception-banquet.html): Banquet chairs, reception desks, event furniture
