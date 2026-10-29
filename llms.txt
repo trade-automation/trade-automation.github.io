@@ -46,6 +46,7 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 - [Logistics & Shipping](https://foshanffe.com/services/logistics-shipping.html): Global shipping, customs, container consolidation
 - [Decorative Lighting](https://foshanffe.com/services/lighting.html): Hotel sconces, picture lights, pendants, chandeliers and table lamps
 - [Smart Room Control](https://foshanffe.com/services/smart-room-control.html): Guestroom control provisions built into the joinery
+- [Contract Seating](https://foshanffe.com/services/contract-seating.html): Hotel dining chairs, booths, bar stools and communal tables, specified to booth geometry
 
 ### Product Pages
 - [Reception & Banquet](https://foshanffe.com/products/reception-banquet.html): Banquet chairs, reception desks, event furniture
