@@ -26,7 +26,24 @@
         "author": {"@type": "Organization", "name": "foshanFFE.com", "url": "https://foshanffe.com"},
         "publisher": {"@type": "Organization", "name": "foshanFFE.com", "url": "https://foshanffe.com"},
         "datePublished": "2026-10-11",
-        "dateModified": "2026-10-11",
+        "dateModified": "2026-10-30",
+        "additionalProperty": [
+            {"@type": "PropertyValue", "name": "Face veneer thickness", "value": "0.5-0.6 mm"},
+            {"@type": "PropertyValue", "name": "Face veneer thickness tolerance", "value": "+/-0.05 mm"},
+            {"@type": "PropertyValue", "name": "Minimum veneer for a visible face", "value": "0.4 mm"},
+            {"@type": "PropertyValue", "name": "Thick or sawn veneer range", "value": "1.5-3.0 mm"},
+            {"@type": "PropertyValue", "name": "Quarter-sliced premium over plain", "value": "15-25%"},
+            {"@type": "PropertyValue", "name": "Book-matched veneer cost addition", "value": "20-40%"},
+            {"@type": "PropertyValue", "name": "MDF density for veneered panels", "value": "700-800 kg/m3"},
+            {"@type": "PropertyValue", "name": "MDF.H density", "value": "about 720 kg/m3"},
+            {"@type": "PropertyValue", "name": "HDF density", "value": "above 800 kg/m3"},
+            {"@type": "PropertyValue", "name": "Particleboard P2 density", "value": "630-680 kg/m3"},
+            {"@type": "PropertyValue", "name": "Plywood bond class for humid interiors", "value": "EN 314-2 Class 3"},
+            {"@type": "PropertyValue", "name": "Panel moisture content at dispatch, temperate", "value": "8-10%"},
+            {"@type": "PropertyValue", "name": "Panel flatness tolerance", "value": "1.5 mm per 1,000 mm"},
+            {"@type": "PropertyValue", "name": "Joint line tolerance", "value": "under 0.2 mm"},
+            {"@type": "PropertyValue", "name": "Conversion varnish film build", "value": "2-4 mil"}
+        ],
         "mainEntityOfPage": {"@type": "WebPage", "@id": "https://foshanffe.com/industry-insights/veneer-guide.html"}
     }
     </script>
@@ -72,6 +89,15 @@
         .newsletter-note { color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-top: 12px; }
         .footer { background: var(--navy-dark); color: rgba(255,255,255,0.6); text-align: center; padding: 32px 24px; font-size: 0.85rem; }
         .footer-brand { color: #fff; font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; font-family: 'Inter', sans-serif; }
+        .tbl-wrap { overflow-x: auto; margin: 1.6em 0 0.6em; border: 1px solid var(--border-light); border-radius: 8px; }
+        .spec-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 720px; }
+        .spec-table th { background: var(--navy); color: #fff; padding: 11px 13px; text-align: left; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.4px; text-transform: uppercase; vertical-align: bottom; }
+        .spec-table td { padding: 11px 13px; border-bottom: 1px solid var(--border-light); vertical-align: top; color: var(--text-secondary); line-height: 1.6; font-size: 0.85rem; }
+        .spec-table tr:last-child td { border-bottom: none; }
+        .spec-table tbody tr:nth-child(even) td { background: var(--warm-white); }
+        .spec-table td:first-child { font-weight: 600; color: var(--navy); }
+        .tbl-cap { font-size: 0.8rem; color: var(--text-muted); margin: 0 0 2em; line-height: 1.5; }
+        @media (min-width: 1040px) { .tbl-wrap { margin-left: -70px; margin-right: -70px; } }
         .footer-brand span { color: var(--gold); }
         @media (max-width: 768px) { .article-header h1 { font-size: 1.8rem; } .nav-links { display: none; } }
     </style>
@@ -160,6 +186,23 @@
             <li><strong>Grade C (sound):</strong> Permits knots and grain variations. Used for concealed structural surfaces (drawer interiors, cabinet backs) where appearance is secondary.</li>
         </ul>
 
+        <div class="tbl-wrap">
+            <table class="spec-table">
+                <thead>
+                    <tr><th>Veneer type</th><th>Thickness</th><th>HPVA grade</th><th>Where it goes</th><th>Reject if</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Sliced, plain</td><td>0.5&ndash;0.6 mm</td><td>A</td><td>Guestroom casegood fronts, desk tops, cabinet doors</td><td>Thickness varies more than 0.05 mm across one panel</td></tr>
+                    <tr><td>Sliced, quarter</td><td>0.5&ndash;0.6 mm</td><td>A</td><td>Suite furniture, executive desks, feature wall panels</td><td>Ray fleck runs out, or the angle changes across a matched set</td></tr>
+                    <tr><td>Book-matched pair</td><td>0.5&ndash;0.6 mm</td><td>A</td><td>Headboards, boardroom tables, lobby feature walls</td><td>Join line off centre by more than 2 mm, or figure does not mirror</td></tr>
+                    <tr><td>Rotary backer</td><td>0.3&ndash;0.4 mm</td><td>C</td><td>Reverse faces, drawer bottoms, cabinet backs</td><td>Appears on any face a guest can see</td></tr>
+                    <tr><td>Thick or sawn veneer</td><td>1.5&ndash;3.0 mm</td><td>A</td><td>Desk edges, high-abrasion tops, pieces intended for refinishing</td><td>Lifts or splits at the edge after trimming</td></tr>
+                    <tr><td>Reconstituted / engineered</td><td>0.6&ndash;0.8 mm</td><td>&mdash;</td><td>Large volumes needing repeatable colour across phases</td><td>Sold or labelled as natural sliced veneer</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="tbl-cap">Thickness tolerance for face veneer is &plusmn;0.05 mm. Anything under 0.4 mm on a guest-facing surface will sand through during finishing; anything over 1.5 mm behaves like a thin solid board and needs a matching substrate movement allowance.</p>
+
         <h3>Substrate Selection</h3>
 
         <p>The substrate beneath the veneer determines the panel's stability, weight, and fastener-holding ability:</p>
@@ -170,6 +213,24 @@
             <li><strong>Plywood:</strong> Cross-laminated veneer layers provide superior strength-to-weight ratio and moisture resistance. Specified for bathroom vanity cabinets, outdoor-adjacent pieces, and applications where panel strength matters (cantilevered shelves, wall-mounted units). More expensive than MDF but structurally superior.</li>
             <li><strong>Lumber core:</strong> A solid wood strip core (typically basswood or poplar) faced with crossband veneer and face veneer. Provides the heaviest, most substantial feel — preferred for luxury desk tops and dining table surfaces where edge thickness is visible and solid-wood appearance is desired.</li>
         </ul>
+
+        <div class="tbl-wrap">
+            <table class="spec-table">
+                <thead>
+                    <tr><th>Substrate</th><th>Standard</th><th>Density</th><th>Veneer bond</th><th>Where it goes</th><th>Do not use</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>MDF</td><td>EN 622-5</td><td>700&ndash;800 kg/m&sup3;</td><td>Best &mdash; uniform, no voids to telegraph through</td><td>Guestroom casegoods, desks, every flat face</td><td>Wet areas &mdash; specify MDF.H instead</td></tr>
+                    <tr><td>MDF.H</td><td>EN 622-5</td><td>about 720 kg/m&sup3;</td><td>Very good</td><td>Bathroom vanities, spa, poolside joinery</td><td>Continuous water contact or exterior</td></tr>
+                    <tr><td>HDF</td><td>Manufacturer data only</td><td>above 800 kg/m&sup3;</td><td>Very good, and the edge holds a profile</td><td>Door faces, routed profiles, painted edges</td><td>Structural spans &mdash; EN 622-5 has no HDF class</td></tr>
+                    <tr><td>Particleboard P2</td><td>EN 312</td><td>630&ndash;680 kg/m&sup3;</td><td>Good</td><td>Wardrobe sides, shelves, cabinet backs</td><td>Bathrooms and any humid location</td></tr>
+                    <tr><td>Particleboard P3</td><td>EN 312</td><td>630&ndash;680 kg/m&sup3;</td><td>Good</td><td>Humid interiors, non-load-bearing fitments</td><td>Anything carrying load</td></tr>
+                    <tr><td>Plywood</td><td>EN 636-2, EN 314-2 Class 3</td><td>about 700 kg/m&sup3;</td><td>Good &mdash; check the face grade first</td><td>Vanity carcasses, wall-hung units, cantilevers</td><td>Thin or patched faces that telegraph through</td></tr>
+                    <tr><td>Lumber core</td><td>No product standard</td><td>Species dependent</td><td>Good</td><td>Desk and dining tops where the edge is seen</td><td>Wide panels &mdash; movement is uncontrolled</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="tbl-cap">HDF is the one line here without a European product class: EN 622-5 defines MDF, MDF.H, MDF.LA and MDF.HLS, but stops short of high-density board, so an HDF claim is only as good as the mill's own data sheet.</p>
 
         <h3>Veneer Finishing</h3>
 
@@ -184,6 +245,31 @@
         <div class="highlight-box">
             <strong>Pro Tip:</strong> When specifying veneer for a <strong>contemporary hotel lobby design</strong>, request a physical sample panel (300 × 300mm minimum) in the exact species, cut, grade, and finish specified. Digital renderings and small swatches cannot accurately convey the visual impact of a full-scale veneered surface. Review the sample under the actual lighting conditions of the lobby space.
         </div>
+
+        <h3>Veneer Acceptance at Goods-In</h3>
+
+        <p>Veneer faults are cheap to find at goods-in and expensive to find after installation, because almost none of them can be corrected on site. The list below is ordered by how often each one gets through.</p>
+
+        <div class="tbl-wrap">
+            <table class="spec-table">
+                <thead>
+                    <tr><th>Check</th><th>Method</th><th>Pass</th><th>Reject</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Veneer thickness</td><td>Micrometer, ten points per panel</td><td>0.5&ndash;0.6 mm within &plusmn;0.05 mm</td><td>Below 0.4 mm on any visible face</td></tr>
+                    <tr><td>Species and cut</td><td>Compare against the approved sample panel</td><td>Same species, cut and figure</td><td>Substituted species, or rotary passed off as sliced</td></tr>
+                    <tr><td>Colour match</td><td>Sample panel under the project lighting</td><td>Within the approved Delta E</td><td>Visible banding between adjacent panels</td></tr>
+                    <tr><td>Joint line</td><td>Straightedge across the seam</td><td>Under 0.2 mm gap, no step</td><td>Stepped joint, open seam, or glue squeeze-out</td></tr>
+                    <tr><td>Blistering</td><td>Raking light plus tap test</td><td>No hollow sound, no lifting</td><td>Any blister over 5 mm</td></tr>
+                    <tr><td>Edge banding</td><td>Visual at one metre, then fingernail</td><td>Flush, no shadow line</td><td>Overhang or undercut visible at one metre</td></tr>
+                    <tr><td>Sand-through</td><td>Visual on corners, edges and profiles</td><td>Veneer intact throughout</td><td>Substrate showing at any edge or profile</td></tr>
+                    <tr><td>Adhesive line</td><td>Cut a sample and read the cross-section</td><td>Uniform glue line, no dry spots</td><td>Voids over 10% of the bond line</td></tr>
+                    <tr><td>Panel moisture</td><td>Pin meter on the panel</td><td>8&ndash;10% for a temperate destination</td><td>Above 12%, or a spread over 2 points within a batch</td></tr>
+                    <tr><td>Substrate flatness</td><td>1,000 mm straightedge</td><td>Under 1.5 mm deviation</td><td>Waviness visible under raking light</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="tbl-cap">Ten checks that need no destructive testing except the adhesive line, which needs one cut sample per batch. The two that most often get through are sand-through at profiles and colour banding between panels.</p>
 
         <h2>2. Leather in Hotel Furniture: Luxury You Can Feel</h2>
 
@@ -306,6 +392,10 @@
       <li><a href="/industry-insights/glass-guide.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">The Complete Guide to Glass & Rattan Hotel Furniture</a></li>
       <li><a href="/industry-insights/guestroom-guide.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">The Complete Guide to Guestroom & Lobby Furniture for Luxury Hotels</a></li>
       <li><a href="/industry-insights/solid-wood-guide.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">The Complete Guide to Solid Wood & Oak Hotel Furniture</a></li>
+      <li><a href="/industry-insights/panel-substrate-specification.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Furniture Panels: Formaldehyde, Density and Edge Failure</a></li>
+      <li><a href="/industry-insights/hotel-furniture-acceptance-standards.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Furniture Acceptance: Inspection, Judgement and Handover</a></li>
+      <li><a href="/industry-insights/furniture-finish-specification.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Furniture Finish: What to Specify, and What Actually Fails</a></li>
+      <li><a href="/industry-insights/upholstery-fabric-specification.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Upholstery Fabric: How to Read the Numbers</a></li>
   </ul>
 </section>
 <footer class="footer">
