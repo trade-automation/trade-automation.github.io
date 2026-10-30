@@ -26,7 +26,25 @@
         "author": {"@type": "Organization", "name": "foshanFFE.com", "url": "https://foshanffe.com"},
         "publisher": {"@type": "Organization", "name": "foshanFFE.com", "url": "https://foshanffe.com"},
         "datePublished": "2026-10-09",
-        "dateModified": "2026-10-09",
+        "dateModified": "2026-10-30",
+        "additionalProperty": [
+            {"@type": "PropertyValue", "name": "White oak Janka hardness", "value": "1360 lbf"},
+            {"@type": "PropertyValue", "name": "Red oak Janka hardness", "value": "1290 lbf"},
+            {"@type": "PropertyValue", "name": "Hard maple Janka hardness", "value": "1450 lbf"},
+            {"@type": "PropertyValue", "name": "White ash Janka hardness", "value": "1320 lbf"},
+            {"@type": "PropertyValue", "name": "Teak Janka hardness", "value": "1070 lbf"},
+            {"@type": "PropertyValue", "name": "American black walnut Janka hardness", "value": "1010 lbf"},
+            {"@type": "PropertyValue", "name": "Mortise-and-tenon racking strength", "value": "above 1,000 kg"},
+            {"@type": "PropertyValue", "name": "Desk top thickness", "value": "25-40 mm"},
+            {"@type": "PropertyValue", "name": "Dining table top thickness", "value": "30-50 mm"},
+            {"@type": "PropertyValue", "name": "Oak seasonal movement", "value": "5-8 mm per 600 mm width"},
+            {"@type": "PropertyValue", "name": "Edge-glued stave width, commercial grade", "value": "60-80 mm"},
+            {"@type": "PropertyValue", "name": "CNC joinery tolerance", "value": "+/-0.2 mm"},
+            {"@type": "PropertyValue", "name": "Moisture content, temperate destination", "value": "8-10%"},
+            {"@type": "PropertyValue", "name": "Moisture content, Gulf and arid destination", "value": "6-8%"},
+            {"@type": "PropertyValue", "name": "Moisture content, tropical destination", "value": "12-14%"},
+            {"@type": "PropertyValue", "name": "In-service relative humidity range", "value": "40-60% RH"}
+        ],
         "mainEntityOfPage": {"@type": "WebPage", "@id": "https://foshanffe.com/industry-insights/solid-wood-guide.html"}
     }
     </script>
@@ -59,6 +77,15 @@
         .article-body strong { color: var(--navy); }
         .article-body a { color: var(--gold); text-decoration: underline; }
         .highlight-box { background: var(--warm-white); border-left: 4px solid var(--gold); padding: 24px 28px; margin: 2em 0; border-radius: 0 8px 8px 0; }
+        .tbl-wrap { overflow-x: auto; margin: 1.6em 0 0.6em; border: 1px solid var(--border-light); border-radius: 8px; }
+        .spec-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; min-width: 720px; }
+        .spec-table th { background: var(--navy); color: #fff; padding: 11px 13px; text-align: left; font-weight: 600; font-family: 'Inter', sans-serif; font-size: 0.78rem; letter-spacing: 0.4px; text-transform: uppercase; vertical-align: bottom; }
+        .spec-table td { padding: 11px 13px; border-bottom: 1px solid var(--border-light); vertical-align: top; color: var(--text-secondary); line-height: 1.6; font-size: 0.85rem; }
+        .spec-table tr:last-child td { border-bottom: none; }
+        .spec-table tbody tr:nth-child(even) td { background: var(--warm-white); }
+        .spec-table td:first-child { font-weight: 600; color: var(--navy); }
+        .tbl-cap { font-size: 0.8rem; color: var(--text-muted); margin: 0 0 2em; line-height: 1.5; }
+        @media (min-width: 1040px) { .tbl-wrap { margin-left: -70px; margin-right: -70px; } }
         .cta-section { background: var(--warm-gray); padding: 48px 32px; text-align: center; border-radius: 12px; margin: 3em 0; }
         .cta-section h2 { margin-bottom: 16px; }
         .cta-btn { display: inline-block; background: var(--gold); color: var(--navy-dark); padding: 14px 32px; border-radius: 6px; text-decoration: none; font-weight: 600; margin-top: 16px; }
@@ -227,6 +254,23 @@
 
         <p>Choosing the right wood species affects appearance, durability, cost, and sustainability credentials. Here are the species most commonly specified in hospitality FF&E:</p>
 
+        <div class="tbl-wrap">
+            <table class="spec-table">
+                <thead>
+                    <tr><th>Species</th><th>Janka (lbf)</th><th>Air-dry density (kg/m&sup3;)</th><th>Tangential shrinkage (%)</th><th>Hotel applications</th><th>Specification note</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>White oak</td><td>1360</td><td>750&ndash;770</td><td>10.5</td><td>Guestroom desks, restaurant tables, bed frames, wall panelling</td><td>Default for guestrooms. Quartersawn stock for any panel over 400 mm wide.</td></tr>
+                    <tr><td>Red oak</td><td>1290</td><td>700&ndash;730</td><td>8.6</td><td>Budget casegoods, stained frames</td><td>Open grain collects soil. Acceptable only under a dark stain.</td></tr>
+                    <tr><td>Hard maple</td><td>1450</td><td>700&ndash;750</td><td>9.9</td><td>Dining chairs, chair frames, clean modern casegoods</td><td>Hardest species listed. Blunts tooling, so check joint fit closely.</td></tr>
+                    <tr><td>White ash</td><td>1320</td><td>650&ndash;690</td><td>7.8</td><td>Limed and light-stained pieces, oak substitute</td><td>15&ndash;25% below oak at similar grain. Takes bleach and lime well.</td></tr>
+                    <tr><td>American black walnut</td><td>1010</td><td>640&ndash;660</td><td>7.8</td><td>Executive desks, feature headboards, boardroom tables</td><td>30&ndash;50% premium over oak. Softest of the group; avoid chair frames.</td></tr>
+                    <tr><td>Teak</td><td>1070</td><td>620&ndash;640</td><td>4.1&ndash;5.8</td><td>Outdoor terraces, spa, tropical villa packages</td><td>Only species here rated for exterior. Grade A heartwood only.</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="tbl-cap">Janka and shrinkage figures are for the species as commonly traded. Actual values vary by origin, growth rate and board position within the log. Shrinkage is tangential, green to oven-dry &mdash; the direction that governs cupping in wide panels.</p>
+
         <h3>Oak (Quercus spp.)</h3>
 
         <p><strong>Oak hotel furniture</strong> is the dominant choice in contemporary hospitality design. White oak (Quercus alba, Janka 1360) is preferred over red oak (Janka 1290) for its tighter grain pattern, greater moisture resistance (closed cellular structure), and compatibility with a wider range of stain and finish options. An <strong>oak hotel table</strong> in white oak with a natural oil finish projects Scandinavian warmth; the same table in stained walnut oak conveys traditional luxury.</p>
@@ -282,6 +326,57 @@
             <li><strong>Narrow boards (60–80mm):</strong> More stable (less cupping tendency), more uniform color, but more visible glue lines. Standard for commercial-grade production.</li>
             <li><strong>Wide boards (120–200mm):</strong> More dramatic grain presentation, fewer glue lines, but higher risk of seasonal movement and cupping. Specify only with proper breadboard ends or battened undersides to restrain movement.</li>
         </ul>
+
+        <h3>Construction Acceptance Criteria</h3>
+
+        <p>Each line below is checkable at goods-in or at first-article inspection without cutting the piece open. A factory that cannot produce evidence for these items is relying on the buyer not asking.</p>
+
+        <div class="tbl-wrap">
+            <table class="spec-table">
+                <thead>
+                    <tr><th>Element</th><th>Specification</th><th>Evidence required</th><th>Reject if</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Chair and table frames</td><td>Mortise and tenon, 10&ndash;12 mm tenon, glued and wedged</td><td>Racking test report above 1,000 kg; sectioned sample on first article</td><td>Single dowel, staple or screw-only construction</td></tr>
+                    <tr><td>Casegood carcass</td><td>Double dowel 8&ndash;10 mm plus glued corner blocks</td><td>Joint pull test; visual check of block glue coverage</td><td>Butt joints held by screws alone, or blocks stapled</td></tr>
+                    <tr><td>Drawer boxes</td><td>Through or half-blind dovetail, 12&ndash;15 mm sides</td><td>Cycle test report, loaded, 50,000 open/close</td><td>Stapled or pin-nailed boxes, glued butt corners</td></tr>
+                    <tr><td>Wide panels</td><td>Floating in frame, never glued across the grain</td><td>Panel movement allowance stated on drawing</td><td>Panel glued full width to rails and stiles</td></tr>
+                    <tr><td>Desk tops</td><td>25&ndash;40 mm solid, breadboard ends over 900 mm</td><td>Flatness check under straightedge</td><td>Under 25 mm, or no end restraint on a wide top</td></tr>
+                    <tr><td>Dining table tops</td><td>30&ndash;50 mm solid, battened underside</td><td>Flatness check, 1.5 mm per 1,000 mm maximum</td><td>Thin top, no battens, or battens fixed without slotted holes</td></tr>
+                    <tr><td>Edge-glued board width</td><td>60&ndash;80 mm staves for commercial work; 120&ndash;200 mm only with restraint</td><td>Colour and grain sort sheet per top</td><td>Mixed widths in one top, no colour sorting</td></tr>
+                    <tr><td>Adhesive</td><td>Type I / D3 water-resistant throughout</td><td>Glue batch data sheet, not a verbal assurance</td><td>Unlabelled white glue on any exterior or bathroom piece</td></tr>
+                    <tr><td>Fixings into timber</td><td>Pilot-drilled, countersunk, minimum two screw diameters from end grain</td><td>Spot pull-out check on first article</td><td>Screws driven into end grain, or splitting at the fixing</td></tr>
+                    <tr><td>CNC joinery tolerance</td><td>&plusmn;0.2 mm on cut joints</td><td>First-article dimensional report</td><td>Visible gap above 0.5 mm at any joint</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="tbl-cap">Acceptance criteria for solid wood construction, written to be checked without destructive testing. Racking figures refer to the joint, not the finished chair.</p>
+
+        <h3>Moisture Content and Drying</h3>
+
+        <p>Moisture content decides whether the joinery survives its first dry season. Timber dispatched at 12% into a guestroom running at 40% RH will lose moisture as it equalises, opening mitres and cupping wide tops. The opposite error is just as common: stock dried to 6% and installed in a tropical resort swells until floating panels lock solid against their frames. The number that matters is the equilibrium moisture content of the destination, not the reading the mill happened to record on the day it shipped.</p>
+
+        <p>Kiln schedules are set by species and thickness, not by a fixed number of days. Oak and ash are ring-porous and case-harden if the early schedule runs too fast; walnut and maple need a gentle final stage to avoid honeycombing. A 50 mm oak board typically spends three to four weeks in the kiln before equalising, while a 25 mm board of the same species takes roughly half that. Any factory quoting a single drying time for every species and thickness is guessing.</p>
+
+        <p>Ask for the kiln chart as well as the final reading. A meter applied to the face of a board tells you almost nothing: the surface equilibrates within hours of leaving the kiln while the core lags by days. Read the core of a freshly cut offcut, and read several boards from the same bundle &mdash; a spread of more than two percentage points across one batch means the charge was pulled before it was ready.</p>
+
+        <div class="tbl-wrap">
+            <table class="spec-table">
+                <thead>
+                    <tr><th>Destination climate</th><th>Target MC at dispatch</th><th>Expected in-service MC</th><th>Test method</th><th>Reject if</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Temperate and continental (Northern Europe, North America, northern China)</td><td>8&ndash;10%</td><td>6&ndash;9%</td><td>Pin meter on freshly cut core, three boards per bundle; oven-dry per ASTM D4442 on dispute</td><td>Batch spread above two percentage points</td></tr>
+                    <tr><td>Gulf and arid (UAE, Saudi Arabia, Qatar)</td><td>6&ndash;8%</td><td>5&ndash;7%</td><td>As above</td><td>Any reading above 9% at handover</td></tr>
+                    <tr><td>Mediterranean and southern Europe</td><td>10&ndash;12%</td><td>8&ndash;11%</td><td>As above</td><td>Any reading above 13%</td></tr>
+                    <tr><td>Tropical and humid (Southeast Asia, Caribbean, Indian Ocean)</td><td>12&ndash;14%</td><td>11&ndash;14%</td><td>As above</td><td>Any reading below 9% &mdash; the piece will swell and lock its panels</td></tr>
+                    <tr><td>Bathroom, spa and poolside joinery</td><td>10&ndash;12%, all faces sealed</td><td>10&ndash;13%</td><td>As above plus film thickness check on the back face</td><td>Unsealed back or underside, whatever the meter reads</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="tbl-cap">Targets assume the furniture is conditioned to the destination before installation. A batch dried to the wrong climate cannot be corrected on site.</p>
+
+        <p>Two drying faults are grounds for rejection regardless of the meter reading. Case-hardening shows up as a cup or a spring the moment a board is ripped, and no amount of site acclimatisation will settle it. Honeycombing appears as internal checks on the end grain of a cross-cut, usually near the centre of a thick board. Both are kiln faults, both are the supplier's to absorb, and both are visible in a five-minute inspection if anyone bothers to cut a sample.</p>
 
         <h2>Which finish system should hotel solid wood furniture use?</h2>
 
@@ -377,6 +472,11 @@
       <li><a href="/industry-insights/glass-guide.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">The Complete Guide to Glass & Rattan Hotel Furniture</a></li>
       <li><a href="/industry-insights/veneer-guide.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">The Complete Guide to Veneer & Leather in Hotel Furniture</a></li>
       <li><a href="/industry-insights/guestroom-guide.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">The Complete Guide to Guestroom & Lobby Furniture for Luxury Hotels</a></li>
+      <li><a href="/industry-insights/hotel-furniture-acceptance-standards.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Furniture Acceptance: Inspection, Judgement and Handover</a></li>
+      <li><a href="/industry-insights/hotel-furniture-hardware-specification.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Furniture Hardware: Hinges, Runners and Handles</a></li>
+      <li><a href="/industry-insights/furniture-finish-specification.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Furniture Finish: What to Specify, and What Actually Fails</a></li>
+      <li><a href="/industry-insights/upholstery-fabric-specification.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Upholstery Fabric: How to Read the Numbers</a></li>
+      <li><a href="/industry-insights/panel-substrate-specification.html" style="color:#1a237e;font-size:.92rem;line-height:1.5;">Hotel Furniture Panels: Formaldehyde, Density and Edge Failure</a></li>
   </ul>
 </section>
 <footer class="footer">
