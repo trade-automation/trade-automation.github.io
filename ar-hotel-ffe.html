@@ -283,6 +283,20 @@
   gtag('js', new Date());
   gtag('config', 'G-ZYGZJB2SWQ');
 </script>
+<style>
+/* === Mobile navigation (injected) === */
+.ffe-burger{display:none;background:none;border:0;padding:8px;cursor:pointer;color:var(--navy);line-height:0;border-radius:6px}
+.ffe-burger:active{background:#f5f3f0}
+.ffe-burger svg{display:block}
+.ffe-mobile-nav{display:none;position:absolute;inset-inline:0;top:100%;background:#fff;border-block-start:1px solid var(--line);box-shadow:0 12px 32px rgba(0,0,0,.12);max-height:calc(100vh - 70px);overflow-y:auto;padding-block:8px 24px;-webkit-overflow-scrolling:touch}
+.ffe-mobile-nav.open{display:block}
+.ffe-mobile-nav .grp{padding:16px 24px 6px;font-size:.72rem;font-weight:700;letter-spacing:.06em;color:var(--gold)}
+.ffe-mobile-nav a{display:block;padding:11px 24px;color:#3c4043;text-decoration:none;font-size:.95rem;border-block-end:1px solid #f5f3f0}
+.ffe-mobile-nav a:active{background:#faf9f7}
+.ffe-mobile-nav .cta{margin:16px 24px 0;background:var(--navy);color:#fff;border-radius:8px;text-align:center;font-weight:700;border:0}
+@media(max-width:900px){.ffe-burger{display:block}}
+@media print{.ffe-burger,.ffe-mobile-nav{display:none!important}}
+</style>
 </head>
 <body>
 
@@ -305,7 +319,39 @@
         <a href="/ar-hotel-ffe.html" class="active" hreflang="ar">AR</a>
       </div>
       <a class="btn btn-primary" href="#contact" style="padding:10px 20px;font-size:.88rem">اطلب عرض سعر</a>
+      <button class="ffe-burger" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="ffeMobileNav"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
     </div>
+  </div>
+
+  <div class="ffe-mobile-nav" id="ffeMobileNav">
+    <div class="grp">الخدمات</div>
+    <a href="/services/guestroom-ffe.html">تجهيزات غرف النوم</a>
+    <a href="/services/lobby-furniture.html">أثاث اللوبي والمناطق العامة</a>
+    <a href="/services/fb-restaurant.html">تجهيزات المطاعم</a>
+    <a href="/services/contract-seating.html">الكراسي التعاقدية</a>
+    <a href="/services/custom-millwork.html">الأعمال الخشبية المخصصة</a>
+    <a href="/services/outdoor-furniture.html">أثاث فندقي خارجي</a>
+    <a href="/services/suite-furniture.html">أثاث الأجنحة</a>
+    <a href="/services/quality-control.html">مراقبة الجودة والتفتيش</a>
+    <a href="/services/smart-room-control.html">أنظمة الغرف الذكية</a>
+    <a href="/services/lighting.html">الإضاءة الديكورية</a>
+    <a href="/services/logistics-shipping.html">التجميع والشحن العالمي</a>
+    <div class="grp">المنتجات</div>
+    <a href="/products/star-hotel-collection.html">مجموعة فنادق 5 و4 نجوم</a>
+    <a href="/products/fabric-upholstered.html">الأقمشة والتنجيد</a>
+    <a href="/products/wardrobe-nightstand-desk.html">خزائن وطاولات ومكاتب</a>
+    <a href="/products/reception-banquet.html">الاستقبال والحفلات</a>
+    <a href="/products/long-tail-collection.html">المجموعة الكاملة</a>
+    <a href="/products/acrylic-laminate.html">أكريليك ولامينيت</a>
+    <a href="/products/oem-odm-custom.html">التصنيع حسب الطلب</a>
+    <a href="/products/procurement-solutions.html">حلول التوريد</a>
+    <div class="grp">الشركة</div>
+    <a href="/projects.html">المشاريع</a>
+    <a href="/industry-insights.html">رؤى السوق</a>
+    <a href="/about.html">من نحن</a>
+    <a href="/faq.html">الأسئلة الشائعة</a>
+    <a href="/hs-codes.html">رموز HS</a>
+    <a href="/contact.html" class="cta">اطلب عرض سعر</a>
   </div>
 </header>
 
@@ -555,6 +601,25 @@
       document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
       if(!open) item.classList.add('open');
     });
+  });
+})();
+</script>
+<script>
+(function(){
+  var b=document.querySelector('.ffe-burger');
+  var m=document.getElementById('ffeMobileNav');
+  if(!b||!m)return;
+  b.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+    b.setAttribute('aria-label',open?'إغلاق القائمة':'فتح القائمة');
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','فتح القائمة');}
+  });
+  document.addEventListener('click',function(e){
+    if(!m.contains(e.target)&&!b.contains(e.target)){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
   });
 })();
 </script>
