@@ -20,7 +20,7 @@
     <meta property="og:image:alt" content="Hotel guestroom FF&E project">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://foshanffe.com/og-image.jpg">
-  <link rel="preload" as="image" href="images/factory/factory-exterior.webp">
+  <link rel="preload" as="image" href="images/factory/factory-exterior.webp" fetchpriority="high">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -874,7 +874,7 @@
     const menu = document.getElementById('mobile-menu');
     btn.addEventListener('click', () => menu.classList.toggle('hidden'));
   </script>
-<script src="lumen-chat.js"></script>
+<script src="lumen-chat.js" defer></script>
 <!-- WhatsApp floating button -->
 <style>
 .ffe-wa{position:fixed;inset-block-end:20px;inset-inline-end:20px;z-index:9990;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(0,0,0,.24);text-decoration:none;transition:transform .18s ease,box-shadow .18s ease}
