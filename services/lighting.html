@@ -136,6 +136,15 @@
         .lt-spec span { display: block; }
         @media (max-width: 900px) { .lt-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
         @media (max-width: 700px) { .spec-table { font-size: 0.8rem; } .spec-table th, .spec-table td { padding: 8px 9px; } }
+    
+        /* hero CTA (added 2026-11-03) */
+        .hero-actions { margin-top: 30px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .hero-btn { display: inline-block; padding: 14px 30px; border-radius: 6px; font-size: 1rem; font-weight: 600; font-family: 'Inter', sans-serif; text-decoration: none; transition: all .2s ease; }
+        .hero-btn-primary { background: #C9A96E; color: #1B2A4A; }
+        .hero-btn-primary:hover { background: #d4b76f; transform: translateY(-1px); }
+        .hero-btn-ghost { border: 1px solid rgba(255,255,255,.45); color: #fff; }
+        .hero-btn-ghost:hover { border-color: #C9A96E; color: #C9A96E; }
+        .hero-note { margin-top: 16px; font-size: .85rem; color: rgba(255,255,255,.62); }
     </style>
     <link rel="canonical" href="https://foshanffe.com/services/lighting.html">
     <script type="application/ld+json">{
@@ -291,6 +300,11 @@
             <div class="breadcrumb"><a href="../index.html">Home</a> &nbsp;&gt;&nbsp; <a href="index.html">Services</a> &nbsp;&gt;&nbsp; Decorative Lighting</div>
             <h1>Hotel Decorative Lighting</h1>
             <p>Lighting is usually the last FF&amp;E item specified and the first one to slip. The drawings show a fixture in elevation, the schedule carries a wattage, and the price is fixed before anyone has checked the backplate against the wall substrate or the driver against the control protocol. Below is the range we build for guestrooms, corridors and public areas, and the items a lighting schedule has to settle before a quotation is worth reading.</p>
+                    <div class="hero-actions">
+                <a href="../contact.html#boq" class="hero-btn hero-btn-primary">Submit Your BOQ</a>
+                <a href="../faq.html" class="hero-btn hero-btn-ghost">Common questions</a>
+            </div>
+            <p class="hero-note">Send a BOQ, drawing set or specification. You get a costed response, or the questions needed to produce one.</p>
         </div>
     </section>
 

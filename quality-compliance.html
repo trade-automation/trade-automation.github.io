@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel FF&amp;E Certificates: Who Holds Them, What They Cover</title>
+    <meta name="description" content="A certificate matrix for hotel FF&amp;E projects: what each standard covers, which party holds the certificate, how long it stays valid, and what document lands in your QA file.">
+    <meta name="keywords" content="hotel FF&amp;E certificates, who holds the certificate, CARB P2 holder, BIFMA test report, CE declaration of conformity hotel furniture, certificate matrix FF&amp;E, hotel furniture compliance evidence">
+    <meta name="author" content="foshanFFE.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hotel FF&amp;E Certificates: Who Holds Them, What They Cover">
+    <meta property="og:description" content="A certificate matrix for hotel FF&amp;E projects: what each standard covers, which party holds the certificate, how long it stays valid, and what document lands in your QA file.">
+    <meta property="og:url" content="https://foshanffe.com/quality-compliance.html">
+    <meta property="og:image" content="https://foshanffe.com/og-services.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Hotel room FF&E package">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://foshanffe.com/og-services.jpg">
+    <meta property="og:site_name" content="foshanFFE.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1a237e;
+            --navy-dark: #0d1242;
+            --navy-light: #283593;
+            --gold: #c9a961;
+            --gold-light: #d4b76f;
+            --warm-white: #faf9f7;
+            --warm-gray: #f5f3f0;
+            --text-primary: #1a1a2e;
+            --text-secondary: #4a4a5a;
+            --text-muted: #6b6b7b;
+            --border-light: #e8e5e0;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text-primary); line-height: 1.6; background: #fff; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
+
+        /* Navigation */
+        .nav { background: rgba(255,255,255,0.98); padding: 0; position: fixed; top: 0; z-index: 1000; backdrop-filter: blur(20px); border-bottom: 1px solid var(--border-light); transition: all 0.3s ease; }
+        .nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 32px; display: flex; justify-content: space-between; align-items: center; height: 72px; }
+        .nav-brand { color: var(--navy); font-size: 1.4rem; font-weight: 700; text-decoration: none; font-family: 'Inter', sans-serif; letter-spacing: -0.5px; }
+        .nav-brand span { color: var(--gold); }
+        .nav-links { display: flex; align-items: center; gap: 28px; }
+        .nav-links > a, .nav-dropdown > a { color: var(--text-secondary); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.2px; }
+        .nav-links a:hover { color: var(--gold); }
+        .nav-cta { background: var(--navy); color: #fff !important; padding: 10px 24px; border-radius: 6px; font-weight: 600; transition: background 0.2s, transform 0.2s; }
+        .nav-cta:hover { background: var(--navy-light); transform: translateY(-1px); }
+
+        /* Dropdown */
+        .nav-dropdown { position: relative; }
+        .nav-dropdown-trigger { cursor: pointer; }
+        .nav-dropdown-menu { display: none; position: absolute; top: 100%; left: -20px; background: #fff; border-radius: 10px; box-shadow: 0 12px 40px rgba(0,0,0,0.12); padding: 12px 0; min-width: 260px; z-index: 100; border: 1px solid var(--border-light); margin-top: 12px; }
+        .nav-dropdown-menu a { display: block; padding: 10px 24px; color: var(--text-secondary); font-size: 0.85rem; white-space: nowrap; transition: all 0.15s; }
+        .nav-dropdown-menu a:hover { background: var(--warm-white); color: var(--gold); }
+        .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+
+        /* Footer */
+        .footer { background: var(--navy-dark); color: rgba(255,255,255,0.6); padding: 60px 32px 40px; text-align: center; font-size: 0.85rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer a { color: var(--gold); text-decoration: none; }
+        .footer-brand { color: #fff; font-size: 1.4rem; font-weight: 700; margin-bottom: 12px; font-family: 'Inter', sans-serif; letter-spacing: -0.5px; }
+        .footer-brand span { color: var(--gold); }
+        .footer-tagline { color: rgba(255,255,255,0.4); margin-top: 12px; font-style: italic; font-size: 0.9rem; }
+        .footer-nav { margin-top: 20px; line-height: 2; }
+        .footer-nav a { font-size: 0.85rem; transition: color 0.2s; }
+        .footer-nav a:hover { color: var(--gold-light); }
+        .social-links { display: flex; justify-content: center; gap: 24px; margin-top: 24px; }
+        .social-links a { display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; font-weight: 500; }
+        .social-links a:hover { color: var(--gold); }
+        .social-links svg { width: 18px; height: 18px; fill: currentColor; }
+
+        /* Product Gallery */
+        .pg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0 12px; }
+        .pg-item { background: #fff; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; margin: 0; }
+        .pg-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: #fff; }
+        .pg-item figcaption { padding: 8px 10px 10px; font-size: 0.78rem; line-height: 1.35; color: var(--text-muted); text-align: center; }
+        @media (max-width: 700px) { .pg-grid { grid-template-columns: repeat(2, 1fr); } }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .section-header h2 { font-size: 1.8rem; }
+        }
+
+        /* Page Hero */
+        .page-hero { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color: #fff; padding: 140px 32px 80px; text-align: center; }
+        .page-hero-inner { max-width: 800px; margin: 0 auto; }
+        .breadcrumb { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-bottom: 20px; }
+        .breadcrumb a { color: var(--gold); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .page-hero h1 { font-size: 2.6rem; margin-bottom: 20px; }
+        .page-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 650px; margin: 0 auto; }
+
+        /* Content Sections */
+        .content-section { padding: 80px 32px; }
+        .content-section:nth-child(even) { background: var(--warm-white); }
+        .content-inner { max-width: 1000px; margin: 0 auto; }
+        .content-inner h2 { color: var(--navy); font-size: 1.8rem; margin-bottom: 24px; }
+        .content-inner h3 { color: var(--navy); font-size: 1.3rem; margin-bottom: 16px; font-family: 'Inter', sans-serif; font-weight: 600; }
+        .content-list { list-style: none; padding: 0; }
+        .content-list li { padding: 12px 0; border-bottom: 1px solid var(--border-light); font-size: 0.92rem; color: var(--text-secondary); line-height: 1.6; display: flex; align-items: flex-start; gap: 12px; }
+        .content-list li::before { content: ''; display: inline-block; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; flex-shrink: 0; margin-top: 8px; }
+        .content-list li:last-child { border-bottom: none; }
+
+        /* Two Column Layout */
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+
+        /* Image Banner */
+        .service-banner { width: 100%; height: 360px; object-fit: cover; border-radius: 12px; margin-bottom: 40px; }
+
+        /* CTA */
+        .service-cta { background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color: #fff; padding: 80px 32px; text-align: center; }
+        .service-cta h2 { color: #fff; font-size: 2rem; margin-bottom: 16px; }
+        .service-cta p { color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+        .service-cta .cta-btn { display: inline-block; background: var(--gold); color: var(--navy-dark); padding: 16px 48px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: all 0.3s; }
+        .service-cta .cta-btn:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,169,97,0.3); }
+
+        @media (max-width: 768px) {
+            .two-col { grid-template-columns: 1fr; gap: 32px; }
+            .page-hero h1 { font-size: 1.8rem; }
+            .service-banner { height: 220px; }
+        }
+    
+        /* hero CTA (added 2026-11-03) */
+        .hero-actions { margin-top: 30px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .hero-btn { display: inline-block; padding: 14px 30px; border-radius: 6px; font-size: 1rem; font-weight: 600; font-family: 'Inter', sans-serif; text-decoration: none; transition: all .2s ease; }
+        .hero-btn-primary { background: #C9A96E; color: #1B2A4A; }
+        .hero-btn-primary:hover { background: #d4b76f; transform: translateY(-1px); }
+        .hero-btn-ghost { border: 1px solid rgba(255,255,255,.45); color: #fff; }
+        .hero-btn-ghost:hover { border-color: #C9A96E; color: #C9A96E; }
+        .hero-note { margin-top: 16px; font-size: .85rem; color: rgba(255,255,255,.62); }
+    </style>
+    <link rel="canonical" href="https://foshanffe.com/quality-compliance.html">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://foshanffe.com/quality-compliance.html",
+  "url": "https://foshanffe.com/quality-compliance.html",
+  "name": "Hotel FF&E Certificates: Who Holds Them, What They Cover",
+  "description": "A certificate matrix for hotel FF&E projects: what each standard covers, which party holds the certificate, how long it stays valid, and what document lands in your QA file.",
+  "inLanguage": "en",
+  "dateModified": "2026-11-03",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "foshanFFE.com",
+    "url": "https://foshanffe.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://foshanffe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Quality & Compliance",
+      "item": "https://foshanffe.com/quality-compliance.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does FoshanFFE hold the certificates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. FoshanFFE is the integrator. ISO 9001, FSC, CARB P2, BIFMA, UL and CE documents are held by the factories, mills and testing labs that produce and test the goods. Every document we hand over carries the holder's name, so your compliance team can verify it at the source."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see the certificate before I place an order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Send the scope and the destination market and we return the certificate set for the factories that would run your package, with holder names visible. Full documents are released under NDA where the factory requires it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a certificate expires during production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We check validity at order release and again at pre-shipment. If a certificate lapses mid-production the shipment does not leave until a current document is in the file, or the item is re-sourced. That check is written into the QC schedule, not left to the factory to volunteer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is the validity column not a fixed date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because most of these documents do not expire on a single date. Management-system certificates run on annual surveillance audits, formaldehyde and fire reports are tied to a specific board or fabric, and declarations of conformity follow the model. We list the renewal route instead of printing a date that would be wrong for your order."
+      }
+    }
+  ]
+}
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZYGZJB2SWQ');
+</script>
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What quality control inspections are done on hotel furniture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hotel furniture QC includes: 1) Incoming material inspection (veneer grade, foam density, fabric batch consistency). 2) In-process inspection (joint strength, glue application, sanding quality). 3) Pre-assembly inspection (component dimensions, hardware fit). 4) Final assembly inspection (functionality, finish quality, color match). 5) Pre-shipment inspection (packaging, quantity, labeling, container loading plan). foshanFFE.com conducts 5-stage QC on every order with photo documentation at each stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What certifications does foshanFFE.com hold for hotel furniture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "foshanFFE.com's partner factories hold: ISO 9001 (quality management), ISO 14001 (environmental management), FSC (sustainable forestry), BIFMA testing capability, BS 7176/BS 5852 fire testing, CARB Phase 2 compliance for formaldehyde, and California Prop 65 compliance. We coordinate third-party testing through SGS, TÜV, and Intertek as required by your market."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much time does quality control add to an FF&E production schedule?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "QC adds about one week per container at the packing stage, which sits inside the standard 10-14 week package timeline rather than on top of it. Inspection runs at two in-process milestones (30% and 70% of production) plus a pre-shipment inspection to AQL 2.5 sampling, or 100% inspection where the specification requires it. Finish and colour are verified with spectrophotometer readings, and every container load is photographed before the doors close."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Security Headers -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com; frame-ancestors 'none';">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://foshanffe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://foshanffe.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hotel FF&E Quality Control & Inspection Services | On-Site QC in Foshan",
+      "item": "https://foshanffe.com/services/quality-control.html"
+    }
+  ]
+}
+</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<style>
+/* === Mobile navigation (injected) === */
+.ffe-burger{display:none;background:none;border:0;padding:8px;margin-left:12px;cursor:pointer;color:#1a237e;line-height:0;border-radius:6px}
+.ffe-burger:active{background:#f5f3f0}
+.ffe-burger svg{display:block}
+.ffe-mobile-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-top:1px solid #e8e5e0;box-shadow:0 12px 32px rgba(0,0,0,.12);max-height:calc(100vh - 72px);overflow-y:auto;padding:8px 0 24px;-webkit-overflow-scrolling:touch}
+.ffe-mobile-nav.open{display:block}
+.ffe-mobile-nav .grp{padding:16px 24px 6px;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c9a961}
+.ffe-mobile-nav a{display:block;padding:11px 24px;color:#4a4a5a;text-decoration:none;font-size:.92rem;border-bottom:1px solid #f5f3f0}
+.ffe-mobile-nav a:active{background:#faf9f7}
+.ffe-mobile-nav .cta{margin:16px 24px 0;background:#1a237e;color:#fff;border-radius:6px;text-align:center;font-weight:600;border:0}
+@media(max-width:768px){.ffe-burger{display:block}}
+@media print{.ffe-burger,.ffe-mobile-nav{display:none!important}}
+</style>
+</head>
+
+<body>
+
+<nav class="nav" id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-brand">foshan<span>FFE</span>.com</a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <a class="nav-dropdown-trigger">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="margin-left:4px;vertical-align:middle;"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <div class="nav-dropdown-menu">
+                        <a href="guestroom-ffe.html">Hotel Guestroom FF&E</a>
+                        <a href="lobby-furniture.html">Lobby & Public Area Furniture</a>
+                        <a href="fb-restaurant.html">F&B and Restaurant FF&E</a>
+                        <a href="contract-seating.html">Contract Seating</a>
+                        <a href="custom-millwork.html">Custom Millwork & Joinery</a>
+                        <a href="outdoor-furniture.html">Outdoor Hotel Furniture</a>
+                        <a href="suite-furniture.html">Hotel Suite Furniture</a>
+                        <a href="quality-control.html">Quality Control & Inspection</a>
+                        <a href="smart-room-control.html">Smart Room Control</a>
+                        <a href="lighting.html">Decorative Lighting</a>
+                        <a href="logistics-shipping.html">Consolidation & Global Shipping</a>
+                    </div>
+                </div>
+                <a href="../projects.html">Projects</a>
+                <a href="../technical-documentation.html">Technical</a>
+                <a href="../about.html">About</a>
+                <a href="../index.html#process">Process</a>
+                <a href="../industry-insights.html">Insights</a> <a href="/resources/">Knowledge Center</a>
+                <a href="../hs-codes.html">HS Codes</a>
+                <a href="../index.html#contact" class="nav-cta">Get in Touch</a>
+            </div>
+            <button class="ffe-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="ffeMobileNav"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+        </div>
+    <div class="ffe-mobile-nav" id="ffeMobileNav">
+      <div class="grp">Services</div>
+      <a href="../services/guestroom-ffe.html">Hotel Guestroom FF&amp;E</a>
+      <a href="../services/lobby-furniture.html">Lobby &amp; Public Area Furniture</a>
+      <a href="../services/fb-restaurant.html">F&amp;B and Restaurant FF&amp;E</a>
+      <a href="../services/contract-seating.html">Contract Seating</a>
+      <a href="../services/custom-millwork.html">Custom Millwork &amp; Joinery</a>
+      <a href="../services/outdoor-furniture.html">Outdoor Hotel Furniture</a>
+      <a href="../services/suite-furniture.html">Hotel Suite Furniture</a>
+      <a href="../services/quality-control.html">Quality Control &amp; Inspection</a>
+      <a href="../services/smart-room-control.html">Smart Room Control</a>
+      <a href="../services/lighting.html">Decorative Lighting</a>
+      <a href="../services/logistics-shipping.html">Consolidation &amp; Global Shipping</a>
+      <div class="grp">Products</div>
+      <a href="../products/star-hotel-collection.html">5 &amp; 4 Star Hotel Collection</a>
+      <a href="../products/fabric-upholstered.html">Fabric &amp; Upholstered</a>
+      <a href="../products/wardrobe-nightstand-desk.html">Wardrobe, Nightstand &amp; Desk</a>
+      <a href="../products/reception-banquet.html">Reception &amp; Banquet</a>
+      <a href="../products/long-tail-collection.html">Complete Collection</a>
+      <a href="../products/acrylic-laminate.html">Acrylic &amp; Laminate</a>
+      <a href="../products/oem-odm-custom.html">OEM / ODM &amp; Custom</a>
+      <a href="../products/procurement-solutions.html">Procurement Solutions</a>
+      <div class="grp">Company</div>
+      <a href="../projects.html">Projects</a>
+      <a href="../industry-insights.html">Insights</a>
+      <a href="../about.html">About</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../hs-codes.html">HS Codes</a>
+      <a href="../contact.html" class="cta">Request a Quote</a>
+    </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-inner">
+            <div class="breadcrumb"><a href="index.html">Home</a> &nbsp;&gt;&nbsp; Quality &amp; Compliance</div>
+            <h1>Quality &amp; Compliance: Who Actually Holds the Certificate</h1>
+            <p>Every FF&amp;E supplier publishes a row of logos. Almost none of them say which legal entity holds the certificate, which product it covers, or when it was last audited. This page does.</p>
+            <div class="hero-actions">
+                <a href="contact.html#boq" class="hero-btn hero-btn-primary">Submit Your BOQ</a>
+                <a href="#matrix" class="hero-btn hero-btn-ghost">Jump to the matrix</a>
+            </div>
+            <p class="hero-note">Send a BOQ and the destination market. You get the certificate set for the factories that would run your package.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-inner">
+            <h2 class="section-title">The One Sentence That Matters</h2>
+            <div style="background:#F7F5F0;border-left:4px solid #C9A96E;padding:26px 30px;border-radius:4px;margin:0 0 26px;">
+                <p style="margin:0;font-size:1.05rem;line-height:1.8;color:#1B2A4A;"><strong>FoshanFFE does not hold these certificates.</strong> We are the integrator. The ISO, FSC, CARB, BIFMA, UL and CE documents belong to the factories, mills and laboratories that make and test the goods. What we control is that the right document exists, covers the item you are buying, is current on the day it ships, and reaches your QA file with the holder's name on it.</p>
+            </div>
+            <p>That distinction is the reason this page exists. A buyer who is told &ldquo;we are certified&rdquo; has learned nothing. A buyer who is handed a BIFMA report addressed to a named factory, for a named model, with a named test date, can defend the decision internally. The second version is the only one worth putting in front of a brand's compliance team.</p>
+        </div>
+    </section>
+
+    <section class="content-section" id="matrix" style="background:#fff;">
+        <div class="content-inner">
+            <h2 class="section-title">The Certificate Matrix</h2>
+            <p style="color:#555;max-width:820px;margin-bottom:26px;">Four columns: what the document is, what it actually covers on a hotel package, which party holds it, and how it stays valid. The validity column is a route, not a date, because printing a single expiry date for a document that renews on surveillance audits would be a guess dressed up as evidence.</p>
+            <div style="overflow-x:auto;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.92rem;line-height:1.6;min-width:860px;">
+                    <thead>
+                        <tr style="background:#1B2A4A;color:#fff;text-align:left;">
+                            <th style="padding:14px 16px;font-weight:600;">Certificate or standard</th>
+                            <th style="padding:14px 16px;font-weight:600;">What it covers on our projects</th>
+                            <th style="padding:14px 16px;font-weight:600;">Who holds it</th>
+                            <th style="padding:14px 16px;font-weight:600;">Validity and what you receive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><strong>ISO 9001:2015</strong></td>
+                        <td>Quality management system at the plant that runs your package</td>
+                        <td>Partner factory</td>
+                        <td>Three-year cycle with annual surveillance audit. Certificate plus the latest audit report go into your QA file.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ISO 14001:2015</strong></td>
+                        <td>Environmental management at the same plant</td>
+                        <td>Partner factory</td>
+                        <td>Annual surveillance. Certificate copy on request.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FSC Chain of Custody (FSC-STD-40-004)</strong></td>
+                        <td>Timber and panel traceability where an FSC claim is specified</td>
+                        <td>Partner factory or panel mill</td>
+                        <td>Annual audit. The FSC claim code appears on the commercial invoice, not only on a marketing page.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CARB P2 / TSCA Title VI</strong></td>
+                        <td>Formaldehyde emission from engineered wood</td>
+                        <td>Panel mill, passed through by the factory</td>
+                        <td>Mill test reports refreshed quarterly; per-batch panel labels photographed at pre-shipment.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BIFMA X5.1 / X5.5 / X5.9</strong></td>
+                        <td>Durability of seating, casegoods and tables</td>
+                        <td>Testing lab commissioned by the factory</td>
+                        <td>Report per model, valid for the model as tested. Re-test required if the frame or mechanism changes.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UL 962 / UL 1286</strong></td>
+                        <td>Lighting fixtures and furniture with integrated electrics</td>
+                        <td>Fixture factory</td>
+                        <td>Listing file number per model, checked against the UL Product iQ database at order release.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CAL TB 117-2013</strong></td>
+                        <td>Upholstery flammability for US-bound goods</td>
+                        <td>Fabric mill and factory</td>
+                        <td>Report per fabric and foam combination; re-issued when the fabric is substituted.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BS 5852 / BS 7176</strong></td>
+                        <td>UK upholstery ignition resistance by occupancy risk</td>
+                        <td>Fabric mill and factory</td>
+                        <td>Report per fabric and foam combination, matched to the risk category your operator specifies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EN 13501-1</strong></td>
+                        <td>Reaction-to-fire classification for panels and wall units in the EU</td>
+                        <td>Panel mill, via a notified lab</td>
+                        <td>Classification report per board construction. A laminate change can void it.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>EN 16139 / EN 12521 / EN 1022 / EN 581</strong></td>
+                        <td>Strength, stability and safety of seating, tables and outdoor furniture</td>
+                        <td>Factory, as the legal manufacturer of record</td>
+                        <td>Declaration of conformity per model, issued by the factory, not by us.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>REACH SVHC and California Prop 65</strong></td>
+                        <td>Restricted substances in finishes, foams and textiles</td>
+                        <td>Factory and its material suppliers</td>
+                        <td>Declaration per shipment, aligned to the destination market's current list.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IMO / MED where the project is marine-classed</strong></td>
+                        <td>Furniture installed on vessels under flag-state rules</td>
+                        <td>Factory, with a class-society witness</td>
+                        <td>Certificate issued per order after witnessed testing.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="font-size:0.85rem;color:#777;margin-top:18px;">Last reviewed 3 November 2026. Standards and renewal cycles change; confirm the current document against your own market's requirement before tender.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-inner">
+            <h2 class="section-title">What This Page Deliberately Does Not Claim</h2>
+            <ul style="max-width:860px;line-height:1.9;color:#333;">
+                <li><strong>No certificate is presented as ours.</strong> If a document is listed here and the holder is a factory, the holder is named in the column, not buried in a footnote.</li>
+                <li><strong>No logo wall.</strong> A logo without a holder, a model and a date is decoration. We would rather show twelve rows of text that survive an audit.</li>
+                <li><strong>No blanket &ldquo;we comply with&rdquo; sentence.</strong> Compliance is per item, per market, per material. A single sentence covering a 400-room package is not a statement anyone can verify.</li>
+                <li><strong>No invented expiry dates.</strong> Where a document renews on surveillance, we say so and give you the audit route.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="content-section" style="background:#fff;">
+        <div class="content-inner">
+            <h2 class="section-title">How the Evidence Reaches Your QA File</h2>
+            <ol style="max-width:860px;line-height:1.9;color:#333;">
+                <li><strong>At tender.</strong> We list the factories that would run each category and return their certificate set before pricing is agreed, so compliance is a filter and not a surprise.</li>
+                <li><strong>At order release.</strong> Validity is checked against the shipment date. UL listing numbers are verified in the public database rather than trusted from a PDF.</li>
+                <li><strong>At pre-production.</strong> Material substitutions are re-checked. A different laminate, foam or fabric can void a fire report that was correct last month.</li>
+                <li><strong>At pre-shipment.</strong> The document pack is compiled per container and cross-referenced to the packing list, so an inspector can match item to report without calling anyone.</li>
+                <li><strong>At handover.</strong> You receive one index: item, standard, holder, document number, issue date. That index is what a brand audit actually asks for.</li>
+            </ol>
+            <p style="margin-top:24px;">For the standard-by-standard map of which rule applies in which market, see the <a href="hotel-ffe-compliance-hub.html" style="color:#1B2A4A;text-decoration:underline;">Hotel FF&amp;E Compliance Hub</a>. For how inspection is scheduled across production, see <a href="services/quality-control.html" style="color:#1B2A4A;text-decoration:underline;">Quality Control &amp; Inspection</a>.</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="content-inner">
+            <h2 class="section-title">Frequently Asked</h2>
+            <h3 style="margin-top:26px;">Does FoshanFFE hold the certificates?</h3>
+            <p style="max-width:860px;line-height:1.85;color:#333;">No. We are the integrator. ISO 9001, FSC, CARB P2, BIFMA, UL and CE documents are held by the factories, mills and testing labs that produce and test the goods. Every document we hand over carries the holder's name so your compliance team can verify it at the source.</p>
+            <h3 style="margin-top:26px;">Can I see the certificate before I place an order?</h3>
+            <p style="max-width:860px;line-height:1.85;color:#333;">Yes. Send the scope and the destination market and we return the certificate set for the factories that would run your package, with holder names visible. Full documents are released under NDA where the factory requires it.</p>
+            <h3 style="margin-top:26px;">What happens if a certificate expires during production?</h3>
+            <p style="max-width:860px;line-height:1.85;color:#333;">We check validity at order release and again at pre-shipment. If a certificate lapses mid-production the shipment does not leave until a current document is in the file, or the item is re-sourced. That check sits in the QC schedule; it is not left to the factory to volunteer.</p>
+            <h3 style="margin-top:26px;">Why is the validity column not a fixed date?</h3>
+            <p style="max-width:860px;line-height:1.85;color:#333;">Because most of these documents do not expire on a single date. Management-system certificates run on annual surveillance audits, formaldehyde and fire reports are tied to a specific board or fabric, and declarations of conformity follow the model. We list the renewal route instead of printing a date that would be wrong for your order.</p>
+        </div>
+    </section>
+
+    <section class="service-cta">
+        <h2>Send the Scope, Get the Documents</h2>
+        <p>Tell us the destination market and the categories you are buying. We return the certificate set, the holder names, and the gaps we cannot close before you commit to a purchase order.</p>
+        <div class="cta-buttons">
+            <a href="contact.html#boq" class="cta-btn">Submit Your BOQ</a>
+            <a href="what-is-ff-and-e-procurement.html" class="cta-btn cta-btn-outline">What FF&amp;E procurement covers</a>
+        </div>
+    </section>
+
+<footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">foshan<span>FFE</span>.com</div>
+            <p>Hospitality FF&E Integrator — Foshan, China</p>
+            <p>US & Middle East Hotel Projects — Casegoods, Soft Seating, Lobby Furniture, Lighting, Mattresses, Drapery, Bath Vanities, Custom Millwork</p>
+            <p class="footer-tagline">"One PO. Full Guestroom + Public Area FF&E. From Foshan to Your Property."</p>
+            <div class="footer-nav">
+                <a href="../about.html">About Us</a> &nbsp;·&nbsp;
+                <a href="../projects.html">Projects</a>
+                <a href="../technical-documentation.html">Technical</a> &nbsp;·&nbsp;
+                <a href="guestroom-ffe.html">Guestroom FF&E</a> &nbsp;·&nbsp;
+                <a href="lobby-furniture.html">Lobby Furniture</a> &nbsp;·&nbsp;
+                <a href="fb-restaurant.html">F&B FF&E</a> &nbsp;·&nbsp;
+                <a href="custom-millwork.html">Custom Millwork</a> ·
+                <a href="outdoor-furniture.html">Outdoor Furniture</a> ·
+                <a href="suite-furniture.html">Suite Furniture</a> &nbsp;·&nbsp;
+                <a href="quality-control.html">Quality Control</a> &nbsp;·&nbsp;
+                <a href="logistics-shipping.html">Global Shipping</a> &nbsp;·&nbsp;
+                <a href="../industry-insights.html">Industry Insights</a> &nbsp;·&nbsp;
+                <a href="../sitemap.xml">Sitemap</a> &nbsp;·&nbsp;
+                <a href="../llms.txt">llms.txt</a> &nbsp;·&nbsp;
+                <a href="../index.html#contact">Contact</a>
+            </div>
+            <div class="social-links">
+    <a href="https://www.linkedin.com/company/foshanffe" target="_blank" rel="noopener" title="LinkedIn">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.222.792 24 1.771 24h20.454C23.203 24 24 23.222 24 22.271V1.729C24 .774 23.203 0 22.225 0h-.001z"/></svg>
+    </a>
+    <a href="https://www.facebook.com/foshanffe/" target="_blank" rel="noopener" title="Facebook">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/foshanffe/" target="_blank" rel="noopener" title="Instagram">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@foshanffe" target="_blank" rel="noopener" title="YouTube">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+</div>
+            <p style="margin-top: 24px;">
+                <a href="mailto:info@foshanFFE.com">info@foshanFFE.com</a> &nbsp;·&nbsp;
+                <a href="tel:+8613630101668">+86 136 3010 1668</a> &nbsp;·&nbsp;
+                <a href="https://wa.me/8613630101668">WhatsApp</a>
+            </p>
+            <p style="margin-top: 16px;">&copy; 2026 foshanFFE.com. All rights reserved.</p>
+        </div>
+    <p style="margin-top:16px;font-size:0.82rem;line-height:1.6;"><a href="/resources/" style="color:inherit;text-decoration:underline;">Hotel FF&amp;E Knowledge Center</a> &mdash; every guide, market report and project case study on one page.</p></footer>
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+    </script>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8613630101668?text=Hello%2C%20we%27re%20interested%20in%20hotel%20FF%26E%20sourcing.%20Could%20you%20share%20more%20details%3F" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" width="32" height="32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.914 15.914 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.316 22.612c-.39 1.1-1.932 2.014-3.17 2.282-.848.18-1.954.324-5.68-1.22-4.762-1.972-7.826-6.79-8.064-7.108-.228-.318-1.932-2.574-1.932-4.908s1.222-3.472 1.656-3.948c.434-.476.948-.594 1.266-.594.318 0 .636.002.914.016.294.014.688-.11 1.076.822.39.94 1.326 3.238 1.442 3.474.118.236.196.512.04.828-.158.318-.236.514-.472.79-.236.276-.496.616-.71.83-.236.236-.482.492-.208.968.276.476 1.224 2.026 2.626 3.274 1.804 1.606 3.324 2.104 3.798 2.34.476.236.752.198 1.028-.118.276-.318 1.186-1.384 1.502-1.86.318-.476.634-.396 1.068-.236.434.158 2.754 1.298 3.228 1.534.476.236.792.354.91.552.116.198.116 1.14-.274 2.24z" fill="#25D366"/></svg>
+</a>
+<style>
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37,211,102,0.4);
+  z-index: 9999;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37,211,102,0.5);
+}
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+  }
+  .whatsapp-float svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+</style>
+<script>
+(function(){
+  var b=document.querySelector('.ffe-burger');
+  var m=document.getElementById('ffeMobileNav');
+  if(!b||!m)return;
+  b.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+    b.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Open menu');}
+  });
+  document.addEventListener('click',function(e){
+    if(!m.contains(e.target)&&!b.contains(e.target)){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  });
+})();
+</script>
+</body>
+</html>

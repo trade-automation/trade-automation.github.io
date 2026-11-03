@@ -137,6 +137,15 @@
         .lt-spec span { display: block; }
         @media (max-width: 900px) { .lt-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
         @media (max-width: 700px) { .spec-table { font-size: 0.8rem; } .spec-table th, .spec-table td { padding: 8px 9px; } }
+    
+        /* hero CTA (added 2026-11-03) */
+        .hero-actions { margin-top: 30px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .hero-btn { display: inline-block; padding: 14px 30px; border-radius: 6px; font-size: 1rem; font-weight: 600; font-family: 'Inter', sans-serif; text-decoration: none; transition: all .2s ease; }
+        .hero-btn-primary { background: #C9A96E; color: #1B2A4A; }
+        .hero-btn-primary:hover { background: #d4b76f; transform: translateY(-1px); }
+        .hero-btn-ghost { border: 1px solid rgba(255,255,255,.45); color: #fff; }
+        .hero-btn-ghost:hover { border-color: #C9A96E; color: #C9A96E; }
+        .hero-note { margin-top: 16px; font-size: .85rem; color: rgba(255,255,255,.62); }
     </style>
     <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -290,7 +299,12 @@
         <div class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#services">Services</a> / Contract Seating</div>
         <h1>Contract Seating</h1>
         <p>Seating is the only FF&amp;E item a guest touches with their whole body for an hour at a time. This page is the specification behind it &mdash; the numbers a booth has to hit, the foam and rub count each zone needs, and how the frame is jointed. The current range is photographed on the <a href="fb-restaurant.html" style="color:var(--gold-light);">F&amp;B page</a>.</p>
-    </div>
+                <div class="hero-actions">
+                <a href="../contact.html#boq" class="hero-btn hero-btn-primary">Submit Your BOQ</a>
+                <a href="../faq.html" class="hero-btn hero-btn-ghost">Common questions</a>
+            </div>
+            <p class="hero-note">Send a BOQ, drawing set or specification. You get a costed response, or the questions needed to produce one.</p>
+        </div>
 </section>
 
 <section class="content-section">

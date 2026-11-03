@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact FoshanFFE — Request a Quote for Hotel FF&amp;E</title>
-  <meta name="description" content="Contact FoshanFFE to request a quote for hotel FF&E packages or building materials. Send us your drawings, specs, or BOQ — we reply within 48 hours.">
+  <meta name="description" content="Contact FoshanFFE with your hotel FF&amp;E scope. Tell us the project country, key count and phase, and send a BOQ or drawing link - we come back with a costed response or the questions needed to produce one.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://foshanffe.com/contact.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Contact FoshanFFE – Request a Quote">
-  <meta property="og:description" content="Get in touch for hotel FF&E packages and building materials. One PO, from drawing to container.">
+  <meta property="og:description" content="Send your hotel FF&amp;E scope: project country, key count, phase and a BOQ link. One partner answering for the whole package.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://foshanffe.com/contact.html">
     <meta property="og:image" content="https://foshanffe.com/og-image.jpg">
@@ -238,7 +238,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Contact FoshanFFE – Request a Quote for Hotel FF&E & Building Materials",
+      "name": "Contact FoshanFFE – Request a Quote for Hotel FF&amp;E",
       "item": "https://foshanffe.com/contact.html"
     }
   ]
@@ -323,98 +323,169 @@
           Contact Us
         </h1>
         <p class="mt-4 text-lg text-gray-300 max-w-2xl">
-          Send us your drawings, specs, or BOQ — we'll respond with a detailed quotation within 48 hours.
+          Send your BOQ, drawing set or specification. We read the scope before we quote, and we tell you if it is not a fit.
         </p>
       </div>
     </section>
 
     <!-- ========== Contact Section ========== -->
-    <section class="py-20 lg:py-28">
+    <section id="boq" class="py-20 lg:py-28">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-5 gap-12 lg:gap-16">
 
           <!-- Contact Form (wider) -->
           <div class="lg:col-span-3">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Request a Quote</h2>
-            <p class="text-gray-600 mb-8">Fill out the form below and our team will get back to you shortly.</p>
+            <p class="text-gray-600 mb-8">Five fields tell us whether we can help. The more of the scope you send, the more specific the response.</p>
 
             <!-- The Form -->
             <form id="contact-form" class="space-y-6"
-                  action="https://formsubmit.co/info@foshanffe.com" method="POST">
+                  action="https://formsubmit.co/chencanming@coze.email" method="POST">
+              <!-- FormSubmit only delivers once the address in action= has been activated.
+                   Switch to info@foshanffe.com (and re-add _cc) when the domain mailbox is live. -->
               <input type="hidden" name="_subject" value="New FF&amp;E inquiry from foshanFFE.com">
               <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_cc" value="chencanming@coze.email">
               <input type="hidden" name="_next" value="https://foshanffe.com/thank-you.html">
+              <input type="hidden" name="_honey" value="">
               <input type="hidden" name="source" value="foshanFFE.com contact page">
-              <!-- Name -->
               <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name <span class="text-red-500">*</span></label>
                 <input
                   type="text"
                   id="name"
                   name="name"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 placeholder-gray-400"
                   required
                   placeholder="Your full name"
-                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 placeholder-gray-400"
                 >
               </div>
-
-              <!-- Email -->
               <div>
                 <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Business Email <span class="text-red-500">*</span></label>
                 <input
                   type="email"
                   id="email"
                   name="email"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 placeholder-gray-400"
                   required
                   placeholder="you@company.com"
-                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 placeholder-gray-400"
                 >
               </div>
-
-              <!-- Company -->
               <div>
-                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Company</label>
                 <input
                   type="text"
                   id="company"
                   name="company"
-                  placeholder="Your company name"
                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 placeholder-gray-400"
+                  placeholder="Your company name"
                 >
               </div>
-
-              <!-- Project Type -->
               <div>
-                <label for="project-type" class="block text-sm font-medium text-gray-700 mb-1">Interested In</label>
-                <select id="project-type" name="project-type" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 bg-white">
-                  <option value="">Select a product line</option>
-                  <option value="hotel-ffe">Hotel FF&E Package</option>
-                  <option value="building-materials">Building Materials</option>
-                  <option value="both">Both FF&E & Building Materials</option>
-                  <option value="other">Other Inquiry</option>
+                <label for="country" class="block text-sm font-medium text-gray-700 mb-1">Project Country <span class="text-red-500">*</span></label>
+                <select
+                  id="country"
+                  name="country"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 bg-white"
+                  required
+                >
+                  <option value="">Select the country of the project</option>
+                  <option value="united-states">United States</option>
+                  <option value="united-kingdom">United Kingdom</option>
+                  <option value="united-arab-emirates">United Arab Emirates</option>
+                  <option value="saudi-arabia">Saudi Arabia</option>
+                  <option value="qatar">Qatar</option>
+                  <option value="other-gcc">Other GCC</option>
+                  <option value="australia">Australia / New Zealand</option>
+                  <option value="canada">Canada</option>
+                  <option value="europe-eu">Europe (EU)</option>
+                  <option value="africa">Africa</option>
+                  <option value="asia-pacific">Asia Pacific</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
-
-              <!-- Message -->
               <div>
-                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message / Project Details <span class="text-red-500">*</span></label>
+                <label for="room-count" class="block text-sm font-medium text-gray-700 mb-1">Room Count <span class="text-red-500">*</span></label>
+                <select
+                  id="room-count"
+                  name="room-count"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 bg-white"
+                  required
+                >
+                  <option value="">Select the key count</option>
+                  <option value="under-50">Under 50 keys</option>
+                  <option value="50-99">50 – 99 keys</option>
+                  <option value="100-199">100 – 199 keys</option>
+                  <option value="200-399">200 – 399 keys</option>
+                  <option value="400-plus">400+ keys</option>
+                  <option value="multi-property">Multi-property programme</option>
+                </select>
+              </div>
+              <div>
+                <label for="project-phase" class="block text-sm font-medium text-gray-700 mb-1">Project Phase <span class="text-red-500">*</span></label>
+                <select
+                  id="project-phase"
+                  name="project-phase"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 bg-white"
+                  required
+                >
+                  <option value="">Where the project is now</option>
+                  <option value="design">Design development</option>
+                  <option value="tender">Tender / budgeting</option>
+                  <option value="construction">Under construction</option>
+                  <option value="renovation">Renovation of an operating hotel</option>
+                  <option value="procurement-ready">BOQ ready — procurement stage</option>
+                </select>
+              </div>
+              <div>
+                <label for="scope" class="block text-sm font-medium text-gray-700 mb-1">Scope <span class="text-red-500">*</span></label>
+                <select
+                  id="scope"
+                  name="scope"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 bg-white"
+                  required
+                >
+                  <option value="">Select the procurement scope</option>
+                  <option value="guestroom">Guestroom FF&E</option>
+                  <option value="public-area">Lobby / public area</option>
+                  <option value="millwork">Custom millwork & joinery</option>
+                  <option value="full-package">Full package — guestroom + public area</option>
+                  <option value="qc-logistics">QC / consolidation / logistics only</option>
+                  <option value="other">Other scope</option>
+                </select>
+              </div>
+              <div>
+                <label for="boq-link" class="block text-sm font-medium text-gray-700 mb-1">BOQ / Drawings Link</label>
+                <input
+                  type="url"
+                  id="boq-link"
+                  name="boq-link"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 placeholder-gray-400"
+                  placeholder="WeTransfer, Dropbox or Drive link (optional)"
+                >
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details <span class="text-red-500">*</span></label>
                 <textarea
                   id="message"
                   name="message"
                   rows="5"
-                  required
-                  placeholder="Tell us about your project — room count, product types, specifications, timeline, etc."
                   class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 placeholder-gray-400 resize-vertical"
+                  required
+                  placeholder="Hotel brand or standard, target opening date, specification status, anything already priced."
                 ></textarea>
               </div>
+
+              <p class="text-xs text-gray-500 leading-relaxed">
+                Large drawing sets: paste a transfer link above, or reply to our confirmation email with the files attached.
+                We read the BOQ before we quote, and we will tell you if the scope is not a fit.
+              </p>
 
               <!-- Submit -->
               <button
                 type="submit"
                 class="w-full sm:w-auto px-8 py-3.5 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-colors duration-200 shadow-sm"
               >
-                Send Inquiry
+                Submit Your BOQ
               </button>
             </form>
 
@@ -466,7 +537,7 @@
                   </div>
                   <div>
                     <p class="text-sm text-gray-500">Response Time</p>
-                    <p class="text-gray-900 font-medium">Within 48 hours</p>
+                    <p class="text-gray-900 font-medium">First reply within two business days</p>
                   </div>
                 </div>
 
@@ -539,7 +610,7 @@
             <span class="flex-none w-9 h-9 rounded-full bg-gray-900 text-white text-sm font-bold flex items-center justify-center">3</span>
             <div>
               <h3 class="font-semibold text-gray-900 mb-1">Itemised pricing</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">A bill of quantities with unit prices per item, packing and freight broken out separately, usually within 48 hours of a complete brief.</p>
+              <p class="text-gray-600 text-sm leading-relaxed">A bill of quantities with unit prices per item, packing and freight broken out separately. We confirm receipt first, then quote once the scope is complete.</p>
             </div>
           </li>
           <li class="flex gap-5">
@@ -607,7 +678,7 @@
           <h4 class="text-white font-semibold mb-4">Products</h4>
           <ul class="space-y-2 text-sm">
             <li><a href="index.html#products" class="hover:text-white transition-colors">Hotel FF&E</a></li>
-            <li><a href="index.html#products" class="hover:text-white transition-colors">Building Materials</a></li>
+            <li><a href="services/custom-millwork.html" class="hover:text-white transition-colors">Custom Millwork</a></li>
           </ul>
         </div>
         <div>
