@@ -340,7 +340,8 @@
 
             <!-- The Form -->
             <form id="contact-form" class="space-y-6"
-                  action="https://formsubmit.co/chencanming@coze.email" method="POST">
+                  action="https://formsubmit.co/chencanming@coze.email" method="POST"
+                  enctype="multipart/form-data">
               <!-- FormSubmit only delivers once the address in action= has been activated.
                    Switch to info@foshanffe.com (and re-add _cc) when the domain mailbox is live. -->
               <input type="hidden" name="_subject" value="New FF&amp;E inquiry from foshanFFE.com">
@@ -464,6 +465,18 @@
                 >
               </div>
               <div>
+                <label for="attachment" class="block text-sm font-medium text-gray-700 mb-1">BOQ / Drawings File</label>
+                <input
+                  type="file"
+                  id="attachment"
+                  name="attachment"
+                  class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg outline-none text-gray-800 bg-white file:mr-3 file:py-1.5 file:px-3 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-gray-100 file:text-gray-700 hover:file:bg-gray-200"
+                  accept=".pdf,.xls,.xlsx,.csv,.doc,.docx,.dwg,.dxf,.jpg,.jpeg,.png,.webp,.zip"
+                  aria-describedby="attachment-hint"
+                >
+                <p id="attachment-hint" class="text-xs text-gray-500 mt-1">PDF, Excel, Word, DWG or images &mdash; 10 MB total. Larger drawing sets: paste a link above.</p>
+              </div>
+              <div>
                 <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details <span class="text-red-500">*</span></label>
                 <textarea
                   id="message"
@@ -476,7 +489,7 @@
               </div>
 
               <p class="text-xs text-gray-500 leading-relaxed">
-                Large drawing sets: paste a transfer link above, or reply to our confirmation email with the files attached.
+                One attachment up to 10 MB total covers most BOQs. For a full drawing set, paste a transfer link above or reply to our confirmation email with the files attached.
                 We read the BOQ before we quote, and we will tell you if the scope is not a fit.
               </p>
 
@@ -797,7 +810,18 @@
     // Keep a light guard so the inquiry is not submitted twice.
     const form = document.getElementById('contact-form');
     if (form) {
-      form.addEventListener('submit', function() {
+      form.addEventListener('submit', function(e) {
+        // FormSubmit caps attachments at 10 MB per submission; catch it before the visitor loses the form.
+        var fileInput = form.querySelector('input[type="file"]');
+        if (fileInput && fileInput.files && fileInput.files.length) {
+          var total = 0;
+          for (var i = 0; i < fileInput.files.length; i++) { total += fileInput.files[i].size; }
+          if (total > 10 * 1024 * 1024) {
+            e.preventDefault();
+            window.alert('That attachment is over 10 MB. Please remove it and paste a WeTransfer, Dropbox or Drive link in the field above instead.');
+            return;
+          }
+        }
         var submitBtn = form.querySelector('button[type="submit"]');
         if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Sending…'; }
         if (window.gtag) { gtag('event', 'inquiry_submit', { page_location: location.pathname }); }
