@@ -10,7 +10,7 @@
     
     <meta property="og:type" content="website">
     <meta property="og:title" content="foshanFFE.com — Hospitality FF&E Integration from Foshan">
-    <meta property="og:description" content="One PO. Full Guestroom + Public Area FF&E. From Foshan to Your Property.">
+    <meta property="og:description" content="One coordinated partner for hotel FF&amp;E from Foshan, China — BOQ review, factory sourcing, sampling, QC and consolidated shipping.">
     <meta property="og:url" content="https://foshanffe.com">
     <meta property="og:image" content="https://foshanffe.com/og-image.jpg">
     <meta property="og:image:width" content="1200">
@@ -205,7 +205,7 @@
             font-weight: 600;
         }
         .hero h1 { 
-            font-size: 3.2rem; 
+            font-size: clamp(2rem, 4.4vw, 3rem); 
             line-height: 1.15; 
             margin-bottom: 24px; 
             font-weight: 600;
@@ -236,7 +236,7 @@
         .hero-cta-secondary { 
             display: inline-block; 
             color: rgba(255,255,255,0.9); 
-            padding: 16px 40px; 
+            padding: 16px 32px; 
             text-decoration: none; 
             font-size: 0.9rem; 
             margin-left: 16px; 
@@ -246,6 +246,9 @@
             font-weight: 500;
         }
         .hero-cta-secondary:hover { border-color: var(--gold); color: var(--gold); }
+        .hero-cta:focus-visible,
+        .hero-cta-secondary:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+        .hero-note { margin-top: 22px; font-size: 0.85rem; color: rgba(255,255,255,0.62); line-height: 1.6; }
 
         /* Brand Story */
         .brand-story {
@@ -1214,11 +1217,12 @@
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-inner">
-            <p class="hero-tagline">Hospitality FF&E Integrator — Foshan, China</p>
-            <h1>One PO. Full Guestroom + Public Area FF&E.<br><span class="gold">From Foshan to Your Property.</span></h1>
-            <p class="hero-subtitle">Integrated hotel FF&E procurement — casegoods, soft seating, lighting, mattresses, drapery, bath vanities, and custom millwork — coordinated from a single source for US and Middle East hotel projects.</p>
-            <a href="#contact" class="hero-cta">Request a Consultation</a>
-            <a href="industry-insights.html" class="hero-cta-secondary">Read Industry Insights</a>
+            <p class="hero-tagline">Hotel FF&amp;E Procurement &amp; Project Integration — Foshan, China</p>
+            <h1>One Coordinated Partner for Hotel FF&amp;E<br><span class="gold">from Foshan, China</span></h1>
+            <p class="hero-subtitle">From BOQ review and factory sourcing to sample approval, production monitoring and shipping coordination, FoshanFFE helps simplify multi-factory hotel FF&amp;E procurement.</p>
+            <a href="contact.html" class="hero-cta" data-cta="boq">Submit Your BOQ</a>
+            <a href="#contact" class="hero-cta-secondary" data-cta="consultation">Book a Project Consultation</a>
+            <p class="hero-note">No BOQ ready yet? Send your project country, room count and target opening date — we will come back with the right questions.</p>
         </div>
     </section>
 
@@ -1754,7 +1758,7 @@ document.addEventListener('DOMContentLoaded',function(){
             <div class="footer-brand">foshan<span>FFE</span>.com</div>
             <p>Hospitality FF&E Integrator — Foshan, China</p>
             <p>US & Middle East Hotel Projects — Casegoods, Soft Seating, Lobby Furniture, Lighting, Mattresses, Drapery, Bath Vanities, Custom Millwork</p>
-            <p class="footer-tagline">"One PO. Full Guestroom + Public Area FF&E. From Foshan to Your Property."</p>
+            <p class="footer-tagline">One Coordinated Partner for Hotel FF&amp;E from Foshan, China.</p>
             <div class="footer-nav">
                 <a href="about.html">About Us</a> &nbsp;·&nbsp;
                 <a href="projects.html">Projects</a>
