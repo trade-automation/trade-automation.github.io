@@ -15,8 +15,8 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 ## Key Capabilities
 
 - **Full-package hotel FF&E:** Guestroom furniture, lobby furniture, restaurant & bar furniture, outdoor/terrace furniture, suite furniture, custom millwork
-- **Product categories:** Casegoods, soft seating, beds, desks, wardrobes, nightstands, dining tables, chairs, banquet furniture, lighting, mattresses, drapery, bath vanities, wall panels, doors, hardware, tiles, aluminum veneer, smart locks, sanitary ware
-- **Hard finishes integration:** Stone (granite/quartz), glass, aluminum panels, metal ceilings, wrought iron — coordinated through the 19-factory partner network
+- **Product categories:** Casegoods, soft seating, beds, desks, wardrobes, nightstands, dining tables, chairs, banquet furniture, decorative lighting, mattresses, drapery, bath vanities, wall panels, doors and door hardware
+- **Scope boundary:** structure, MEP, tiling, stone cladding, ceilings, external works and OS&E are outside the FF&E contract. FF&E covers loose and fitted furniture, decorative lighting, drapery, mirrors and fixtures, coordinated to the designer's drawings rather than supplied as a building-materials package
 - **Certifications:** UL, CARB P2, FSC, BS 7177, CAL 117, AS/NZS 3744, ISO, EN 16798, CE
 - **Services:** Design optimization, shop drawing, mock-up room, DUPRO inspection, pre-shipment QC, consolidated container loading, logistics & shipping, on-site installation guidance
 
@@ -34,6 +34,15 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 - [Mockup Room](https://foshanffe.com/mockup-room.html): Pre-production sample room process
 - [HS Codes](https://foshanffe.com/hs-codes.html): Harmonized System codes for hotel furniture import
 - [Technical Documentation](https://foshanffe.com/technical-documentation.html): Technical guides, standards, and compliance resources
+
+### Definitions & Reference
+- [What Is FF&E Procurement?](https://foshanffe.com/what-is-ff-and-e-procurement.html): Definition, what the package covers and excludes, the six stages, roles, and FF&E vs OS&E vs MEP
+- [FF&E Procurement Hub](https://foshanffe.com/ff-and-e-procurement-hub.html): Index of the procurement guides, functions and buyer resources
+- [Best FF&E Procurement Companies](https://foshanffe.com/best-ff-and-e-procurement-companies.html): How to compare integrators, agents and trading companies
+- [How to Vet FF&E Suppliers](https://foshanffe.com/ff-and-e-suppliers.html): The four supply models and what each can carry
+- [Hotel FF&E Checklist](https://foshanffe.com/hotel-ffe-checklist.html): Stage-by-stage sign-off list
+- [Hotel FF&E Procurement from China](https://foshanffe.com/hotel-ffe-procurement-china.html): How a full package is bought out of Foshan
+- [Quality & Compliance](https://foshanffe.com/quality-compliance.html): Certificate matrix by category, and who holds each certificate
 
 ### Service Pages
 - [Guestroom FF&E](https://foshanffe.com/services/guestroom-ffe.html): Complete guestroom furniture packages
