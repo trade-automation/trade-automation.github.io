@@ -4,7 +4,7 @@
 
 ## About
 
-foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fixtures & Equipment) integrator headquartered in Foshan, Guangdong, China — the world's largest furniture manufacturing cluster. Unlike traditional furniture factories that produce only their own product lines, foshanFFE.com operates as an **integrator**, unifying 19+ certified partner factories under one contract, one QC standard, and one purchase order.
+foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fixtures & Equipment) integrator headquartered in Foshan, Guangdong, China — the world's largest furniture manufacturing cluster. Unlike traditional furniture factories that produce only their own product lines, foshanFFE.com operates as an **integrator**, unifying 19+ specialized partner factories under one contract, one QC standard, and one purchase order.
 
 **Core value proposition:** One PO. Full FF&E. Zero Hassle.
 
@@ -12,20 +12,24 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 
 **Hotel segments served:** 5-star luxury hotels, boutique hotels, resorts, serviced apartments, motel renovations, cruise ships.
 
+**Project counts:** 50+ hospitality projects coordinated across the partner network, 10,000+ guestrooms furnished, 12+ countries served. The 21-project table on the projects page is a narrower subset — only the projects where the Foshan plant's own production records can be verified line by line.
+
+**Client references:** Hotel brand logos and client names are not displayed without written authorization. For an active project, reference contacts from comparable hospitality work and the specification documents behind them are shared under NDA.
+
 ## Key Capabilities
 
 - **Full-package hotel FF&E:** Guestroom furniture, lobby furniture, restaurant & bar furniture, outdoor/terrace furniture, suite furniture, custom millwork
 - **Product categories:** Casegoods, soft seating, beds, desks, wardrobes, nightstands, dining tables, chairs, banquet furniture, decorative lighting, mattresses, drapery, bath vanities, wall panels, doors and door hardware
 - **Scope boundary:** structure, MEP, tiling, stone cladding, ceilings, external works and OS&E are outside the FF&E contract. FF&E covers loose and fitted furniture, decorative lighting, drapery, mirrors and fixtures, coordinated to the designer's drawings rather than supplied as a building-materials package
-- **Certifications:** UL, CARB P2, FSC, BS 7177, CAL 117, AS/NZS 3744, ISO, EN 16798, CE
+- **Standards worked to:** UL, CARB P2, FSC, BS 7177, CAL 117, AS/NZS 3744, ISO, EN 16798, CE. Certificates are held by the factory or component maker that produces the specific order, not by foshanFFE. The exact listing scope for an order is confirmed in writing rather than presented as a certificate of our own
 - **Services:** Design optimization, shop drawing, mock-up room, DUPRO inspection, pre-shipment QC, consolidated container loading, logistics & shipping, on-site installation guidance
 
 ## Site Structure
 
 ### Core Pages
 - [Homepage](https://foshanffe.com/): Overview of full-package FF&E integration services
-- [About](https://foshanffe.com/about.html): Company background, 19-factory network, team capabilities
-- [Projects](https://foshanffe.com/projects.html): Completed hotel FF&E project portfolio
+- [About](https://foshanffe.com/about.html): Company background, 19-factory network, team capabilities, reference policy
+- [Projects](https://foshanffe.com/projects.html): Featured projects and the plant-verified track record table
 - [Customer Gallery](https://foshanffe.com/customer-gallery.html): Client project photos and case studies
 - [FAQ](https://foshanffe.com/faq.html): Frequently asked questions about FF&E procurement
 - [Contact](https://foshanffe.com/contact.html): Inquiry form and contact details
@@ -34,10 +38,28 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 - [Mockup Room](https://foshanffe.com/mockup-room.html): Pre-production sample room process
 - [HS Codes](https://foshanffe.com/hs-codes.html): Harmonized System codes for hotel furniture import
 - [Technical Documentation](https://foshanffe.com/technical-documentation.html): Technical guides, standards, and compliance resources
+- [Resources Index](https://foshanffe.com/resources/): Downloadable checklists, templates and reference documents
+
+### Project Case Studies
+- [European Upper-Upscale, 200 Rooms](https://foshanffe.com/project-europe-upscale-200rooms.html): Full guestroom FF&E renovation, Western Europe, 148 brand-standard checkpoints, 10-week delivery, EU REACH compliance
+- [Dubai Resort, 300 Rooms](https://foshanffe.com/project-dubai-resort-300rooms.html): Resort guestroom and public area package for the UAE market
+- [Middle East Villa Project, 50 Units](https://foshanffe.com/project-middle-east-villa-50units.html): Villa-scale FF&E package for a Middle East development
+- [Singapore Aparthotel, 150 Units](https://foshanffe.com/project-singapore-aparthotel-150units.html): Serviced apartment FF&E across 150 units
+- [London Cafe & Restaurant](https://foshanffe.com/project-london-cafe-restaurant.html): F&B fit-out package for a UK venue
+- [Luxury Hotel, Middle East](https://foshanffe.com/projects/case-study-luxury-hotel-middle-east.html): Luxury segment case study
+- [Hotel Chain, North America](https://foshanffe.com/projects/case-study-hotel-chain-north-america.html): Multi-property chain rollout
+- [Boutique Hotel Millwork](https://foshanffe.com/projects/case-study-boutique-hotel-millwork.html): Custom millwork package
+- [Restaurant FF&E, Middle East](https://foshanffe.com/projects/case-study-restaurant-ffe-middle-east.html): Restaurant furniture and fixtures
+- [Cafe & Restaurant, London](https://foshanffe.com/projects/case-study-cafe-restaurant-london.html): F&B case study
+- [AMAR FIRENZE](https://foshanffe.com/projects/case-study-amar-firenze.html): Luxury boutique restaurant FF&E
 
 ### Definitions & Reference
 - [What Is FF&E Procurement?](https://foshanffe.com/what-is-ff-and-e-procurement.html): Definition, what the package covers and excludes, the six stages, roles, and FF&E vs OS&E vs MEP
 - [FF&E Procurement Hub](https://foshanffe.com/ff-and-e-procurement-hub.html): Index of the procurement guides, functions and buyer resources
+- [FF&E Package Contents](https://foshanffe.com/ff-and-e-package.html): What sits inside a full guestroom and public-area package
+- [FF&E Item List](https://foshanffe.com/ff-and-e-items-list.html): Category-by-category item breakdown
+- [FF&E Lead Times](https://foshanffe.com/ff-and-e-lead-times.html): Production and shipping timelines by category
+- [FF&E Procurement Fees](https://foshanffe.com/ff-and-e-procurement-fees.html): How integrator, agent and purchasing-company fees are structured
 - [Best FF&E Procurement Companies](https://foshanffe.com/best-ff-and-e-procurement-companies.html): How to compare integrators, agents and trading companies
 - [How to Vet FF&E Suppliers](https://foshanffe.com/ff-and-e-suppliers.html): The four supply models and what each can carry
 - [Hotel FF&E Checklist](https://foshanffe.com/hotel-ffe-checklist.html): Stage-by-stage sign-off list
@@ -63,6 +85,7 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 - [Fabric & Upholstered](https://foshanffe.com/products/fabric-upholstered.html): Sofas, headboards, upholstered seating
 - [Acrylic & Laminate](https://foshanffe.com/products/acrylic-laminate.html): Surface finish options and materials
 - [Star Hotel Collection](https://foshanffe.com/products/star-hotel-collection.html): Curated packages by hotel star rating
+- [Sofa Collection](https://foshanffe.com/products/sofa-collection.html): Contract sofas for guestrooms and public areas
 - [OEM/ODM Custom](https://foshanffe.com/products/oem-odm-custom.html): Custom manufacturing services
 - [Procurement Solutions](https://foshanffe.com/products/procurement-solutions.html): End-to-end procurement management
 - [Long-Tail Collection](https://foshanffe.com/products/long-tail-collection.html): Full-range supplementary FF&E items
@@ -74,11 +97,29 @@ foshanFFE.com is the online presence of a professional hotel FF&E (Furniture, Fi
 - [Australia Hotel FF&E](https://foshanffe.com/au-hotel-ffe.html): Australia & New Zealand market
 - [Germany/EU Hotel FF&E](https://foshanffe.com/de-hotel-ffe.html): Germany and European Union market
 - [UAE Hotel FF&E](https://foshanffe.com/ae-hotel-ffe.html): United Arab Emirates focus
+- [Argentina Hotel FF&E](https://foshanffe.com/ar-hotel-ffe.html): Argentina market
 
 ### Industry Insights (Blog)
-- [Blog Index](https://foshanffe.com/industry-insights.html): All articles listing
-- 40+ in-depth articles covering: procurement guides, compliance standards, material comparisons, market trends, sourcing tips, cost analysis
-- Key articles include material guides (solid wood, veneer, aluminum, glass, upholstery), location guides (Foshan, China sourcing), compliance guides (fire ratings, certifications), and market analysis (Middle East hotel boom, US tariffs)
+- [Blog Index](https://foshanffe.com/industry-insights.html): All 117 articles
+- 117 articles in total, covering procurement guides, compliance standards, material comparisons, market trends, sourcing tips and cost analysis
+
+**Category guides:**
+- [Guestroom Guide](https://foshanffe.com/industry-insights/guestroom-guide.html) | [Chair Guide](https://foshanffe.com/industry-insights/chair-guide.html) | [Terrace Guide](https://foshanffe.com/industry-insights/terrace-guide.html) | [Solid Wood Guide](https://foshanffe.com/industry-insights/solid-wood-guide.html) | [Veneer Guide](https://foshanffe.com/industry-insights/veneer-guide.html) | [Glass Guide](https://foshanffe.com/industry-insights/glass-guide.html) | [Aluminum Guide](https://foshanffe.com/industry-insights/aluminum-guide.html)
+- [Certification Guide](https://foshanffe.com/industry-insights/certification-guide.html) | [HS Code Import Guide](https://foshanffe.com/industry-insights/hs-code-import-guide.html) | [Elevator Lobby Guide](https://foshanffe.com/industry-insights/elevator-lobby-guide.html) | [Motel Guide](https://foshanffe.com/industry-insights/motel-guide.html) | [Project Guide](https://foshanffe.com/industry-insights/project-guide.html) | [Long-Tail Guide](https://foshanffe.com/industry-insights/long-tail-guide.html)
+
+**Selected articles:**
+- [Hotel FF&E Sourcing from China: Buyer's Guide (2026)](https://foshanffe.com/article-hotel-ffe-sourcing-china-guide.html)
+- [US Customs Binding Ruling for Hotel FF&E: Lock Your HTS Code](https://foshanffe.com/article-cbp-binding-ruling-hotel-ffe.html)
+- [Direct FF&E Integrator vs Local Purchasing Company](https://foshanffe.com/article-direct-integrator-vs-local-purchasing-company.html)
+- [Complete 2026 Guide to Hotel FF&E Procurement from Foshan](https://foshanffe.com/complete-2026-guide-hotel-ffe-procurement-foshan.html)
+- [FOB to Landed Cost: Hotel FF&E Breakdown](https://foshanffe.com/article-fob-to-landed-cost-hotel-ffe-breakdown.html)
+- [Fire Compliance: CAL 117 and BS 7177](https://foshanffe.com/article-fire-compliance-cal117-bs7177.html)
+- [Hotel Furniture Sourcing: Foshan vs Vietnam vs India](https://foshanffe.com/hotel-furniture-sourcing-foshan-vs-vietnam-india.html)
+- [Hotel FF&E Industry Statistics 2026](https://foshanffe.com/hotel-ffe-industry-statistics-2026.html)
+- [Middle East Hotel Boom: 724 Projects, 178K Rooms](https://foshanffe.com/article-middle-east-hotel-boom.html)
+- [Hotel FF&E Procurement Process Timeline](https://foshanffe.com/article-hotel-ffe-procurement-process-timeline.html)
+- [China Plus One: Hotel FF&E Sourcing](https://foshanffe.com/article-china-plus-one-hotel-ffe-sourcing.html)
+- [Controlling Hotel FF&E Costs Under Tariff Pressure](https://foshanffe.com/article-control-hotel-ffe-costs-tariff-pressure.html)
 
 ## Differentiators
 
