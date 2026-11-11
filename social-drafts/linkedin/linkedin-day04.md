@@ -35,4 +35,4 @@ The procurement teams winning on quality and timeline are the ones who stop trea
 
 ---
 **Hashtags:** #HotelConference #LoungeDesign #HotelFF&E #FF&EProcurement #HospitalityDesign
-**CTA:** See how integrated conference and lounge packages simplify procurement — visit foshanFFE.com or contact chencanming@coze.email
+**CTA:** See how integrated conference and lounge packages simplify procurement — visit foshanFFE.com or contact info@foshanffe.com

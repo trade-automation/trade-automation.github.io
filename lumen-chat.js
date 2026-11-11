@@ -457,7 +457,7 @@
         message: state.leadData.message,
         source: 'foshanFFE.com Lumen chat widget',
         _subject: 'Chat widget inquiry — ' + (state.leadData.company || state.leadData.name),
-        _cc: 'chencanming@coze.email',
+        _cc: 'info@foshanffe.com',
         _template: 'table',
         _captcha: 'false'
       };
