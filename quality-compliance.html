@@ -134,7 +134,24 @@
         .hero-btn-ghost { border: 1px solid rgba(255,255,255,.45); color: #fff; }
         .hero-btn-ghost:hover { border-color: #C9A96E; color: #C9A96E; }
         .hero-note { margin-top: 16px; font-size: .85rem; color: rgba(255,255,255,.62); }
-    </style>
+    
+    /* --- Sample test reports --- */
+    .report-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 40px; }
+    .report-card { background: #fff; border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+    .report-card a.rp-img { display: block; background: var(--warm-gray); }
+    .report-card img { width: 100%; height: auto; display: block; }
+    .report-meta { padding: 20px 24px 24px; display: flex; flex-direction: column; flex: 1; }
+    .report-tag { display: inline-block; font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 10px; }
+    .report-meta h3 { font-size: 1.02rem; margin: 0 0 8px; color: var(--text-primary); line-height: 1.35; }
+    .report-meta .rp-id { font-size: 0.8rem; color: var(--text-muted); margin: 0 0 10px; letter-spacing: 0.01em; }
+    .report-meta .rp-desc { font-size: 0.86rem; color: var(--text-secondary); margin: 0 0 16px; line-height: 1.6; flex: 1; }
+    .report-dl { align-self: flex-start; font-size: 0.84rem; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--gold); padding-bottom: 2px; transition: color .2s; }
+    .report-dl:hover { color: var(--gold); }
+    .rp-note { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; margin-top: 26px; max-width: 860px; }
+    @media (max-width: 768px) {
+        .report-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+</style>
     <link rel="canonical" href="https://foshanffe.com/quality-compliance.html">
     <script type="application/ld+json">
 {
@@ -486,6 +503,72 @@
                 </table>
             </div>
             <p style="font-size:0.85rem;color:#777;margin-top:18px;">Last reviewed 3 November 2026. Standards and renewal cycles change; confirm the current document against your own market's requirement before tender.</p>
+        </div>
+    </section>
+
+    <section class="content-section" id="sample-reports">
+        <div class="content-inner">
+            <h2 class="section-title">Sample Test Reports &mdash; The Documents Themselves</h2>
+            <p style="max-width:860px;">The matrix above says who holds what. These are what the documents look like when they arrive.</p>
+            <p style="max-width:860px;margin-top:16px;">Four reports below come from live projects: a mattress and foam set tested to BS 7177, an upholstery fabric tested to BS 5852 Schedules 4 and 5, a shaped foam to CAL TB 117 Section 3, and a cover fabric to CAL TB 117 Section 1. Supplier names and plant addresses have been removed. Report numbers, test houses, sample descriptions, dates and conclusions are untouched, so any of them can be checked with STC or SGS directly.</p>
+
+            <div class="report-grid">
+
+                <article class="report-card">
+                    <a class="rp-img" href="/documents/BS7177-DT26050408.pdf" target="_blank" rel="noopener">
+                        <img src="/images/certificates/bs7177-dt26050408.jpg" alt="BS 7177 test report DT26050408 for mattress and foam, low hazard" loading="lazy">
+                    </a>
+                    <div class="report-meta">
+                        <span class="report-tag">BS 7177:2008+A1:2011</span>
+                        <h3>Mattress and Foam &mdash; Low Hazard</h3>
+                        <p class="rp-id">DT26050408 &middot; STC (Guangdong) &middot; 25 May 2026 &middot; 6 pages</p>
+                        <p class="rp-desc">Two parts in one report. Part A tests the foam filling to BS 5852 Part 2 with crib source 5, result P5. Part B tests the mattress to BS 7177 using BS EN 597-1 and 597-2. It covers the foam and the mattress as separate components, not a finished upholstered chair.</p>
+                        <a class="report-dl" href="/documents/BS7177-DT26050408.pdf" target="_blank" rel="noopener">Open the full report (PDF)</a>
+                    </div>
+                </article>
+
+                <article class="report-card">
+                    <a class="rp-img" href="/documents/BS5852-SDHL260300407601FT.pdf" target="_blank" rel="noopener">
+                        <img src="/images/certificates/bs5852-sdhl260300407601ft.jpg" alt="BS 5852 upholstery fabric ignition test report SDHL260300407601FT" loading="lazy">
+                    </a>
+                    <div class="report-meta">
+                        <span class="report-tag">BS 5852 &middot; UK Furniture Regs</span>
+                        <h3>Upholstery Fabric &mdash; Schedules 4 and 5</h3>
+                        <p class="rp-id">SDHL260300407601FT &middot; SGS Shunde &middot; 26 Mar 2026 &middot; 3 pages</p>
+                        <p class="rp-desc">Fabric tested against Schedule 4 Part I and Schedule 5 Part I of the Furniture and Furnishings (Fire) (Safety) Regulations 1988, as amended. Result: pass.</p>
+                        <a class="report-dl" href="/documents/BS5852-SDHL260300407601FT.pdf" target="_blank" rel="noopener">Open the full report (PDF)</a>
+                    </div>
+                </article>
+
+                <article class="report-card">
+                    <a class="rp-img" href="/documents/CA117-SDFTS25005947R02.pdf" target="_blank" rel="noopener">
+                        <img src="/images/certificates/ca117-sdfts25005947r02.jpg" alt="California TB 117-2013 Section 3 shaped foam test report SDFTS25005947R02" loading="lazy">
+                    </a>
+                    <div class="report-meta">
+                        <span class="report-tag">CAL TB 117-2013 &sect;3</span>
+                        <h3>Shaped Foam &mdash; Smoulder Resistance</h3>
+                        <p class="rp-id">SDFTS25005947R02 &middot; SGS Shunde &middot; 29 Sep 2025 &middot; 3 pages</p>
+                        <p class="rp-desc">Three specimens tested to Section 3. All passed; individual char lengths are recorded on the attached sheet rather than summarised here.</p>
+                        <a class="report-dl" href="/documents/CA117-SDFTS25005947R02.pdf" target="_blank" rel="noopener">Open the full report (PDF)</a>
+                    </div>
+                </article>
+
+                <article class="report-card">
+                    <a class="rp-img" href="/documents/CA117-SDHL250300374201FT.pdf" target="_blank" rel="noopener">
+                        <img src="/images/certificates/ca117-sdhl250300374201ft.jpg" alt="California TB 117-2013 Section 1 cover fabric test report SDHL250300374201FT" loading="lazy">
+                    </a>
+                    <div class="report-meta">
+                        <span class="report-tag">CAL TB 117-2013 &sect;1</span>
+                        <h3>Cover Fabric &mdash; Flammability</h3>
+                        <p class="rp-id">SDHL250300374201FT &middot; SGS Shunde &middot; 24 Mar 2025 &middot; 3 pages</p>
+                        <p class="rp-desc">Cover fabric at 491 g/m&sup2;, tested to the Section 1 cover fabric protocol. Result: pass.</p>
+                        <a class="report-dl" href="/documents/CA117-SDHL250300374201FT.pdf" target="_blank" rel="noopener">Open the full report (PDF)</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="rp-note">What these four do not do is certify your specification. A report covers the sample as tested. Substitute the fabric, change the foam density, or move to a different frame and the report stops applying &mdash; which is why the matrix above lists re-test conditions instead of a blanket claim. For a specific project, the factory re-tests the actual combination and the new report goes into your QA file before production starts.</p>
         </div>
     </section>
 
