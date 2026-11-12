@@ -35,4 +35,4 @@ The question is not whether integration works — it's whether your supply chain
 
 ---
 **Hashtags:** #HotelFFE #PresidentialSuite #PoolsideDesign #HotelProcurement #ResortFF&E
-**CTA:** Explore how foshanFFE.com integrates presidential suite and outdoor packages under one PO — visit foshanFFE.com or reach out at chencanming@coze.email
+**CTA:** Explore how foshanFFE.com integrates presidential suite and outdoor packages under one PO — visit foshanFFE.com or reach out at info@foshanffe.com

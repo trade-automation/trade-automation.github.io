@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel FF&E Shipping & Consolidation | DDP Delivery from China | foshanFFE.com</title>
-    <meta name="description" content="End-to-end hotel FF&E logistics: export packaging, cargo consolidation, ocean freight, DDP delivery to US, Middle East, Europe. One team manages your entire shipment from Foshan factory to hotel site. 5 star hotel furniture shipping, luxury hospitality FF&E logistics.">
-    <meta name="keywords" content="hotel FF&E shipping, hotel furniture logistics, DDP delivery hotel furniture, hotel furniture export China, cargo consolidation hotel, hotel furniture shipping from Foshan, hospitality furniture logistics, hotel project shipping, hotel furniture freight forwarder, hotel FF&E supply chain">
+    <title>Hotel FF&E Shipping, Consolidation & DDP Delivery</title>
+    <meta name="description" content="End-to-end hotel FF&amp;E logistics: export packaging, cargo consolidation, ocean freight, DDP delivery to US, Middle East and Europe.">
     <meta name="author" content="foshanFFE.com">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Hotel FF&E Shipping & Consolidation | DDP Delivery from China | foshanFFE.com">
-    <meta property="og:description" content="End-to-end hotel FF&E logistics: export packaging, cargo consolidation, ocean freight, DDP delivery to US, Middle East, Europe. One team manages your entire shipment from Foshan factory to hotel site.">
+    <meta property="og:description" content="End-to-end hotel FF&amp;E logistics: export packaging, cargo consolidation, ocean freight, DDP delivery to US, Middle East and Europe.">
     <meta property="og:url" content="https://foshanffe.com/services/logistics-shipping.html">
+    <meta property="og:image" content="https://foshanffe.com/og-services.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Hotel room FF&E package">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://foshanffe.com/og-services.jpg">
     <meta property="og:site_name" content="foshanFFE.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,6 +74,20 @@
         .social-links a:hover { color: var(--gold); }
         .social-links svg { width: 18px; height: 18px; fill: currentColor; }
 
+        /* Packing Table */
+        .pk-wrap { overflow-x: auto; margin: 22px 0 10px; }
+        .pk-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 620px; }
+        .pk-table th { background: var(--navy); color: #fff; text-align: left; padding: 11px 12px; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.02em; }
+        .pk-table td { padding: 11px 12px; border-bottom: 1px solid var(--border-light); vertical-align: top; line-height: 1.5; }
+        .pk-table tr:nth-child(even) td { background: #faf9f7; }
+        .pg-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 26px 0 12px; }
+        .pg-item { background: #fff; border: 1px solid var(--border-light); border-radius: 8px; overflow: hidden; margin: 0; }
+        .pg-item img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: #f2f0ec; }
+        .pg-item figcaption { padding: 9px 11px 11px; font-size: 0.78rem; line-height: 1.4; color: var(--text-muted); text-align: left; }
+        @media (max-width: 700px) { .pg-grid { grid-template-columns: 1fr; } }
+        .pk-table td:first-child { font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+        @media (max-width: 700px) { .pk-table { font-size: 0.82rem; } .pk-table th, .pk-table td { padding: 9px 8px; } }
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links { display: none; }
@@ -113,6 +132,15 @@
             .page-hero h1 { font-size: 1.8rem; }
             .service-banner { height: 220px; }
         }
+    
+        /* hero CTA (added 2026-11-03) */
+        .hero-actions { margin-top: 30px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+        .hero-btn { display: inline-block; padding: 14px 30px; border-radius: 6px; font-size: 1rem; font-weight: 600; font-family: 'Inter', sans-serif; text-decoration: none; transition: all .2s ease; }
+        .hero-btn-primary { background: #C9A96E; color: #1B2A4A; }
+        .hero-btn-primary:hover { background: #d4b76f; transform: translateY(-1px); }
+        .hero-btn-ghost { border: 1px solid rgba(255,255,255,.45); color: #fff; }
+        .hero-btn-ghost:hover { border-color: #C9A96E; color: #C9A96E; }
+        .hero-note { margin-top: 16px; font-size: .85rem; color: rgba(255,255,255,.62); }
     </style>
     <link rel="canonical" href="https://foshanffe.com/services/logistics-shipping.html">
     <script type="application/ld+json">{
@@ -121,7 +149,7 @@
   "name": "Hotel FF&E Logistics & Shipping",
   "provider": {
     "@type": "Organization",
-    "name": "Foshan FF&E",
+    "name": "foshanFFE.com",
     "url": "https://foshanffe.com"
   },
   "description": "Consolidation & Global Shipping \u2014 hospitality FF&E sourced from Foshan. Factory-direct pricing, fire-compliant, global shipping.",
@@ -132,12 +160,12 @@
   "serviceType": "Hotel FF&E Services"
 }</script>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYGZJB2SWQ"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PV7JZK3SGB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-ZYGZJB2SWQ');
+  gtag('config', 'G-PV7JZK3SGB');
 </script>
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <script type="application/ld+json">
@@ -177,6 +205,50 @@
 <meta http-equiv="X-Frame-Options" content="DENY">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com; frame-ancestors 'none';">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://foshanffe.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://foshanffe.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Hotel FF&E Shipping & Consolidation | DDP Delivery from China",
+      "item": "https://foshanffe.com/services/logistics-shipping.html"
+    }
+  ]
+}
+</script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<style>
+/* === Mobile navigation (injected) === */
+.ffe-burger{display:none;background:none;border:0;padding:8px;margin-left:12px;cursor:pointer;color:#1a237e;line-height:0;border-radius:6px}
+.ffe-burger:active{background:#f5f3f0}
+.ffe-burger svg{display:block}
+.ffe-mobile-nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-top:1px solid #e8e5e0;box-shadow:0 12px 32px rgba(0,0,0,.12);max-height:calc(100vh - 72px);overflow-y:auto;padding:8px 0 24px;-webkit-overflow-scrolling:touch}
+.ffe-mobile-nav.open{display:block}
+.ffe-mobile-nav .grp{padding:16px 24px 6px;font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#c9a961}
+.ffe-mobile-nav a{display:block;padding:11px 24px;color:#4a4a5a;text-decoration:none;font-size:.92rem;border-bottom:1px solid #f5f3f0}
+.ffe-mobile-nav a:active{background:#faf9f7}
+.ffe-mobile-nav .cta{margin:16px 24px 0;background:#1a237e;color:#fff;border-radius:6px;text-align:center;font-weight:600;border:0}
+@media(max-width:768px){.ffe-burger{display:block}}
+@media print{.ffe-burger,.ffe-mobile-nav{display:none!important}}
+</style>
 </head>
 <body>
         <nav class="nav" id="navbar">
@@ -189,10 +261,13 @@
                         <a href="guestroom-ffe.html">Hotel Guestroom FF&E</a>
                         <a href="lobby-furniture.html">Lobby & Public Area Furniture</a>
                         <a href="fb-restaurant.html">F&B and Restaurant FF&E</a>
+                        <a href="contract-seating.html">Contract Seating</a>
                         <a href="custom-millwork.html">Custom Millwork & Joinery</a>
                         <a href="outdoor-furniture.html">Outdoor Hotel Furniture</a>
                         <a href="suite-furniture.html">Hotel Suite Furniture</a>
                         <a href="quality-control.html">Quality Control & Inspection</a>
+                        <a href="smart-room-control.html">Smart Room Control</a>
+                        <a href="lighting.html">Decorative Lighting</a>
                         <a href="logistics-shipping.html">Consolidation & Global Shipping</a>
                     </div>
                 </div>
@@ -200,11 +275,42 @@
                 <a href="../technical-documentation.html">Technical</a>
                 <a href="../about.html">About</a>
                 <a href="../index.html#process">Process</a>
-                <a href="../industry-insights.html">Insights</a>
+                <a href="../industry-insights.html">Insights</a> <a href="/resources/">Knowledge Center</a>
                 <a href="../hs-codes.html">HS Codes</a>
                 <a href="../index.html#contact" class="nav-cta">Get in Touch</a>
             </div>
+            <button class="ffe-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="ffeMobileNav"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
         </div>
+    <div class="ffe-mobile-nav" id="ffeMobileNav">
+      <div class="grp">Services</div>
+      <a href="../services/guestroom-ffe.html">Hotel Guestroom FF&amp;E</a>
+      <a href="../services/lobby-furniture.html">Lobby &amp; Public Area Furniture</a>
+      <a href="../services/fb-restaurant.html">F&amp;B and Restaurant FF&amp;E</a>
+      <a href="../services/contract-seating.html">Contract Seating</a>
+      <a href="../services/custom-millwork.html">Custom Millwork &amp; Joinery</a>
+      <a href="../services/outdoor-furniture.html">Outdoor Hotel Furniture</a>
+      <a href="../services/suite-furniture.html">Hotel Suite Furniture</a>
+      <a href="../services/quality-control.html">Quality Control &amp; Inspection</a>
+      <a href="../services/smart-room-control.html">Smart Room Control</a>
+      <a href="../services/lighting.html">Decorative Lighting</a>
+      <a href="../services/logistics-shipping.html">Consolidation &amp; Global Shipping</a>
+      <div class="grp">Products</div>
+      <a href="../products/star-hotel-collection.html">5 &amp; 4 Star Hotel Collection</a>
+      <a href="../products/fabric-upholstered.html">Fabric &amp; Upholstered</a>
+      <a href="../products/wardrobe-nightstand-desk.html">Wardrobe, Nightstand &amp; Desk</a>
+      <a href="../products/reception-banquet.html">Reception &amp; Banquet</a>
+      <a href="../products/long-tail-collection.html">Complete Collection</a>
+      <a href="../products/acrylic-laminate.html">Acrylic &amp; Laminate</a>
+      <a href="../products/oem-odm-custom.html">OEM / ODM &amp; Custom</a>
+      <a href="../products/procurement-solutions.html">Procurement Solutions</a>
+      <div class="grp">Company</div>
+      <a href="../projects.html">Projects</a>
+      <a href="../industry-insights.html">Insights</a>
+      <a href="../about.html">About</a>
+      <a href="../faq.html">FAQ</a>
+      <a href="../hs-codes.html">HS Codes</a>
+      <a href="../contact.html" class="cta">Request a Quote</a>
+    </div>
     </nav>
 
     <!-- Page Hero -->
@@ -213,6 +319,11 @@
             <div class="breadcrumb"><a href="../index.html">Home</a> &nbsp;&gt;&nbsp; <a href="index.html">Services</a> &nbsp;&gt;&nbsp; Consolidation & Global Shipping</div>
             <h1>Consolidation & Global Shipping</h1>
             <p>From Foshan factory floor to hotel loading dock worldwide — we manage the entire logistics chain: export packaging, cargo consolidation, documentation, ocean freight booking, and customs coordination with full DDP transparency.</p>
+                    <div class="hero-actions">
+                <a href="../contact.html#boq" class="hero-btn hero-btn-primary">Submit Your BOQ</a>
+                <a href="#at-a-glance" class="hero-btn hero-btn-ghost">Lead times &amp; minimums</a>
+            </div>
+            <p class="hero-note">Send a BOQ, drawing set or specification. You get a costed response, or the questions needed to produce one.</p>
         </div>
     </section>
 
@@ -331,6 +442,42 @@
                         <li>Climate-controlled packaging options for moisture-sensitive furniture</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packing by Category -->
+    <section class="content-section" id="packing-by-category">
+        <div class="content-inner">
+            <h2>Packing and Loading, by Product Category</h2>
+            <p>Damage in an FF&E shipment is rarely caused by the ocean leg. It is caused by how the goods were packed at the factory and how they were loaded into the container, and both of those are decided weeks before the vessel sails. The table below is the packing specification we apply by default. It is not a sales sheet &mdash; it is what the factory is instructed to do, and what the loading photos are checked against before the container is sealed.</p>
+            <div class="pk-wrap">
+                <table class="pk-table">
+                    <thead><tr><th>Category</th><th>Packing</th><th>Loading note</th></tr></thead>
+                    <tbody>
+                <tr><td>Casegoods</td><td>EPE foam wrap on all edges and corners, 5-layer corrugated carton, corner protectors on every carcass</td><td>Flat-packed carcasses where the design allows; assembled units need a wider footprint and cost roughly 20% more container space</td></tr>
+                <tr><td>Upholstered seating</td><td>Foam corner blocks, stretch wrap, breathable bag — never vacuum-sealed for more than 14 days</td><td>Bags are opened on arrival for inspection; long transit in sealed plastic traps moisture and sets creases in the cover</td></tr>
+                <tr><td>Marble and stone tops</td><td>Foam-faced A-frame crate, tops stood on edge, never stacked flat</td><td>Stacking flat is the single most common cause of transit breakage on stone tops</td></tr>
+                <tr><td>Glass and mirrors</td><td>Timber crate with foam spacers, individual cardboard sleeves, vertical orientation only</td><td>Marked fragile and loaded last so nothing sits on top of the crate</td></tr>
+                <tr><td>Fixed joinery</td><td>Disassembled into panels, panel edges banded, hardware bagged and labelled per unit</td><td>Labelled by room number and unit so the installation crew can work room by room</td></tr>
+                <tr><td>Lighting and hardware</td><td>Individual cartons inside a master carton, anti-static wrap on drivers and LED boards</td><td>Kept off the container floor and away from doors — the two places that take water</td></tr>
+                <tr><td>Mattresses</td><td>Vacuum-compressed and rolled, boxed individually</td><td>Recovers to full height within 48–72 hours of unboxing; do not open before the room is ready</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Consolidation is where the cost actually moves. Goods from five factories arriving at the port on five different dates will either wait for each other or ship separately, and both outcomes cost money. We hold the schedule, book the container against the slowest factory rather than the fastest, and issue loading photographs and a sealed container number before the bill of lading is released. Send the FF&amp;E schedule with destination port and required on-site date, and the loading plan comes back with a container count and a sailing window.</p>
+
+            <h3 style="margin-top: 44px;">What the Loading Photos Actually Show</h3>
+            <p>Two photographs come back per container before the doors are shut: the load as it stands, and the door end once it is braced. The first is checked against the packing list, the second against the loading plan. Both go out the same day with the container number and the seal number, and the shipment is signed off against them.</p>
+            <div class="pg-grid">
+                <figure class="pg-item">
+                    <img src="../images/factory/container-packed-labels.jpg" alt="Loaded shipping container with labelled cartons and foil-wrapped furniture frames standing on edge" loading="lazy" width="1200" height="1096">
+                    <figcaption>Door end of a loaded 40ft HC. Every carton carries its unit label. Upholstered frames stand on edge against the doors and are strapped there, with nothing stacked on top of them.</figcaption>
+                </figure>
+                <figure class="pg-item">
+                    <img src="../images/factory/container-loading-forklift.jpg" alt="Forklift loading a carton into a shipping container in the factory yard" loading="lazy" width="1200" height="751">
+                    <figcaption>Loading in the factory yard. Cartons go in on the forks rather than being carried by hand, so the corner protection stays on the piece instead of on the floor.</figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -469,7 +616,7 @@ document.addEventListener('DOMContentLoaded',function(){
             </p>
             <p style="margin-top: 16px;">&copy; 2026 foshanFFE.com. All rights reserved.</p>
         </div>
-    </footer>
+    <p style="margin-top:16px;font-size:0.82rem;line-height:1.6;"><a href="/resources/" style="color:inherit;text-decoration:underline;">Hotel FF&amp;E Knowledge Center</a> &mdash; every guide, market report and project case study on one page.</p></footer>
 
     <script>
         window.addEventListener('scroll', function() {
@@ -521,5 +668,24 @@ document.addEventListener('DOMContentLoaded',function(){
   }
 }
 </style>
+<script>
+(function(){
+  var b=document.querySelector('.ffe-burger');
+  var m=document.getElementById('ffeMobileNav');
+  if(!b||!m)return;
+  b.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=m.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+    b.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+  m.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Open menu');}
+  });
+  document.addEventListener('click',function(e){
+    if(!m.contains(e.target)&&!b.contains(e.target)){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  });
+})();
+</script>
 </body>
 </html>
