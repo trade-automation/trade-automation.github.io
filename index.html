@@ -59,7 +59,7 @@
     }
     </script>
     
-    <link rel="preload" as="image" href="images/hero-lobby.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="images/hero-guestroom-install.webp" fetchpriority="high">
     
     
     
@@ -178,14 +178,14 @@
         .hero-bg {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: url('images/hero-lobby.webp') center/cover no-repeat;
+            background: url('images/hero-guestroom-install.webp') center/cover no-repeat;
             z-index: 0;
         }
         .hero-bg::after {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(135deg, rgba(13,18,66,0.85) 0%, rgba(26,35,126,0.7) 50%, rgba(40,53,147,0.6) 100%);
+            background: linear-gradient(160deg, rgba(10,16,26,0.80) 0%, rgba(12,20,32,0.68) 45%, rgba(8,14,24,0.52) 100%);
         }
         .hero-inner { 
             position: relative;
@@ -202,6 +202,7 @@
             color: var(--gold);
             margin-bottom: 20px;
             font-weight: 600;
+            text-shadow: 0 1px 10px rgba(0,0,0,0.6);
         }
         .hero h1 { 
             font-size: clamp(2rem, 4.4vw, 3rem); 
@@ -864,6 +865,7 @@
         }
         @media (max-width: 768px) {
             .hero h1 { font-size: 2rem; }
+            .hero-bg { background-position: 62% center; }
             .hero-inner { padding: 100px 24px 60px; }
             .value-props-inner { grid-template-columns: 1fr; }
             .services-grid { grid-template-columns: 1fr; }
