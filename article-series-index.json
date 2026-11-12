@@ -124,11 +124,11 @@
     },
     {
       "day": 6,
-      "date": "2026-09-23",
+      "date": "2026-11-09",
       "topic": "表面处理工艺大全",
       "title_en": "Surface Treatment Masterclass: Spray Coating, Veneer, Melamine and More",
       "slug": "article-surface-treatment-guide",
-      "status": "pending",
+      "status": "published",
       "keywords": [
         "surface treatment",
         "spray coating",
@@ -146,15 +146,16 @@
         "scratch-resistant",
         "anti-fingerprint"
       ],
-      "content_guide": "全面介绍各种表面处理：喷涂(spray coating)、磨砂(matte)、高光(high-gloss)、三聚氰胺贴面(melamine)、木皮(veneer)、贴皮(PVC/PET wrapping)、UV固化、粉末喷涂、阳极氧化、手工擦油。各种工艺的优缺点和适用场景。"
+      "content_guide": "全面介绍各种表面处理：喷涂(spray coating)、磨砂(matte)、高光(high-gloss)、三聚氰胺贴面(melamine)、木皮(veneer)、贴皮(PVC/PET wrapping)、UV固化、粉末喷涂、阳极氧化、手工擦油。各种工艺的优缺点和适用场景。",
+      "url": "https://foshanffe.com/article-surface-treatment-guide.html"
     },
     {
       "day": 7,
-      "date": "2026-09-24",
+      "date": "2026-11-10",
       "topic": "软装面料全解",
-      "title_en": "Hotel FF&E Fabric Guide: From Genuine Leather to Performance Textiles",
+      "title_en": "Upholstery Fabric Manufacturing: Leather, Performance Textiles and Foam Construction",
       "slug": "article-upholstery-fabric-guide",
-      "status": "pending",
+      "status": "published",
       "keywords": [
         "upholstery fabric",
         "genuine leather",
@@ -176,7 +177,8 @@
         "stain-resistant",
         "antimicrobial fabric"
       ],
-      "content_guide": "全面介绍软装面料选择：布艺(阻燃/功能性/高耐摩擦>10万次)、真皮(头层牛皮/意大利皮/植物鞣)、PU皮、仿皮(bonded/microfiber)、纳帕皮、麂皮超细纤维。阻燃标准和选购建议。"
+      "content_guide": "从制造端讲软包面料：布艺织造与后整理(阻燃/防污/耐磨马丁代尔)、真皮鞣制与等级(头层/纳帕/意大利皮)、PU与超纤仿皮结构(bonded/microfiber)、海绵密度与回弹、复合与包覆工艺、缝制与拉扣。重点在\"怎么做出来的、工艺如何决定性能\"，不写采购选型对比。",
+      "url": "https://foshanffe.com/article-upholstery-fabric-guide.html"
     },
     {
       "day": 8,
@@ -184,7 +186,7 @@
       "topic": "家具质检体系",
       "title_en": "Hotel FF&E Quality Control: IQC, IPQC and FQC Explained",
       "slug": "article-furniture-quality-control-guide",
-      "status": "pending",
+      "status": "archived",
       "keywords": [
         "quality control",
         "IQC",
@@ -204,15 +206,16 @@
         "ISO 9001",
         "inspection procedures"
       ],
-      "content_guide": "三阶段质检(来料IQC→制程IPQC→成品FQC/OQC)+七维度(外观/尺寸/结构/功能/安全/环保/包装)。IQC：板材/实木/五金/面料/涂料检验要点。IPQC：开料/封边/钻孔/榫卯/焊接/缝纫/涂装过程管控。FQC：外观/尺寸/结构强度/功能五金/表面处理/安全/环保包装。分品类重点(实木/板式/软体/金属/玻璃石材/儿童)。常用标准GB/T 3324/3325/10357/18584/28007/39600。"
+      "content_guide": "三阶段质检(来料IQC→制程IPQC→成品FQC/OQC)+七维度(外观/尺寸/结构/功能/安全/环保/包装)。IQC：板材/实木/五金/面料/涂料检验要点。IPQC：开料/封边/钻孔/榫卯/焊接/缝纫/涂装过程管控。FQC：外观/尺寸/结构强度/功能五金/表面处理/安全/环保包装。分品类重点(实木/板式/软体/金属/玻璃石材/儿童)。常用标准GB/T 3324/3325/10357/18584/28007/39600。",
+      "archived_reason": "2026-11-09 查重退役：与 weekly_deep_seo_article 话题池 ffe-quality-control-inspection-guide 高度重叠，weekly 覆盖 IQC/IPQC/FQC + 工厂审核 + 现场验收全链条，范围更广。"
     },
     {
       "day": 9,
-      "date": "2026-09-26",
+      "date": "2026-11-11",
       "topic": "连接工艺与组装技术",
       "title_en": "Furniture Joinery and Assembly: Mortise-Tenon to Modern Hardware Systems",
       "slug": "article-furniture-joinery-assembly",
-      "status": "pending",
+      "status": "published",
       "keywords": [
         "mortise and tenon",
         "dowel joint",
@@ -231,7 +234,8 @@
         "dowel pin",
         "confirmat screw"
       ],
-      "content_guide": "连接工艺全景：传统榫卯、钉接、螺丝、偏心件、胶合、焊接。现代五金系统（铰链类型、滑轨系统、快装连接件）。不同材质的连接方式选择。"
+      "content_guide": "连接工艺全景：传统榫卯、钉接、螺丝、偏心件、胶合、焊接。现代五金系统（铰链类型、滑轨系统、快装连接件）。不同材质的连接方式选择。",
+      "url": "https://foshanffe.com/article-furniture-joinery-assembly.html"
     },
     {
       "day": 10,
@@ -239,7 +243,7 @@
       "topic": "认证标准与合规指南",
       "title_en": "FF&E Compliance Guide: CARB, UL, BIFMA, ISO and International Standards",
       "slug": "article-ffe-compliance-standards-guide",
-      "status": "pending",
+      "status": "archived",
       "keywords": [
         "CARB P2",
         "TSCA Title VI",
@@ -259,7 +263,8 @@
         "CQC",
         "EN standards"
       ],
-      "content_guide": "出口认证全面指南：甲醛标准(CARB P2/TSCA Title VI/GB/T 39600 E1/E0/ENF)、防火标准(UL/NFPA 260/CAL 117/BS 5852)、质量标准(BIFMA/ASTM/GB/T 3324/3325/10357)、环保(FSC/ISO 14001/REACH)、质量管理体系(ISO 9001/CQC)。各目标市场的合规要求对比。"
+      "content_guide": "出口认证全面指南：甲醛标准(CARB P2/TSCA Title VI/GB/T 39600 E1/E0/ENF)、防火标准(UL/NFPA 260/CAL 117/BS 5852)、质量标准(BIFMA/ASTM/GB/T 3324/3325/10357)、环保(FSC/ISO 14001/REACH)、质量管理体系(ISO 9001/CQC)。各目标市场的合规要求对比。",
+      "archived_reason": "2026-11-09 查重退役：weekly 已发 ff-e-compliance-united-states-guide，且话题池另有 ffe-compliance-middle-east-gcc 与 hotel-furniture-fire-safety-standards-global 两篇按区域拆分，本篇全域标准清单与之重复且颗粒度更粗。"
     }
   ]
 }
