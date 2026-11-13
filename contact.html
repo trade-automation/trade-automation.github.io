@@ -343,10 +343,14 @@
 
             <!-- The Form -->
             <form id="contact-form" class="space-y-6"
-                  action="https://formsubmit.co/chencanming@coze.email" method="POST"
+                  action="https://formsubmit.co/f92be3c3242ac1a0d45a9f55ae8fd5c8" method="POST"
                   enctype="multipart/form-data">
               <!-- FormSubmit only delivers once the address in action= has been activated.
-                   Switch to info@foshanffe.com (and re-add _cc) when the domain mailbox is live. -->
+                   2026-11-13: bare address replaced by its FormSubmit token so the mailbox is no
+                   longer readable in page source. _cc puts every inquiry into the official mailbox.
+                   Next step: move the primary recipient to info@foshanffe.com once its own token
+                   has been issued and activated. -->
+              <input type="hidden" name="_cc" value="info@foshanffe.com">
               <input type="hidden" name="_subject" value="New FF&amp;E inquiry from foshanFFE.com">
               <input type="hidden" name="_template" value="table">
               <input type="hidden" name="_next" value="https://foshanffe.com/thank-you.html">
