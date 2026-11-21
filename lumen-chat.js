@@ -450,17 +450,27 @@
       f.method = 'POST';
       f.target = frameId;
       f.style.display = 'none';
+      var attribution = window.ffeLeadAttribution ? window.ffeLeadAttribution.createSubmission('lumen_chat') : null;
       var data = {
         name: state.leadData.name,
         email: state.leadData.email,
         company: state.leadData.company,
         message: state.leadData.message,
         source: 'foshanFFE.com Lumen chat widget',
+        form_name: 'lumen_chat',
         _subject: 'Chat widget inquiry — ' + (state.leadData.company || state.leadData.name),
         _cc: 'info@foshanffe.com',
         _template: 'table',
-        _captcha: 'false'
+        _captcha: 'false',
+        _next: 'https://foshanffe.com/thank-you.html'
       };
+      if (attribution) {
+        Object.keys(attribution).forEach(function(k) {
+          if (k !== 'created_at') data[k] = attribution[k] || '';
+        });
+        data._next += '?submission_id=' + encodeURIComponent(attribution.submission_id);
+        data._subject += ' [' + attribution.submission_id + ']';
+      }
       Object.keys(data).forEach(function(k) {
         var i = document.createElement('input');
         i.type = 'hidden'; i.name = k; i.value = data[k] || '';
@@ -472,8 +482,16 @@
     } catch (err) { /* silent: WhatsApp fallback is already shown in the chat */ }
   }
 
+  function loadAttribution() {
+    if (window.ffeLeadAttribution) return;
+    var script = document.createElement('script');
+    script.src = '/lead-attribution.js';
+    document.head.appendChild(script);
+  }
+
   // ===== Initialize =====
   function init() {
+    loadAttribution();
     injectStyles();
     createWidget();
   }

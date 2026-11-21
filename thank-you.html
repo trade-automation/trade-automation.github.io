@@ -13,7 +13,15 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-PV7JZK3SGB');
-  gtag('event', 'generate_lead', { form_name: 'contact_inquiry', page_location: '/thank-you.html' });
+</script>
+<script src="/lead-attribution.js"></script>
+<script>
+  (function () {
+    var lead = window.ffeLeadAttribution && window.ffeLeadAttribution.consumeThankYou();
+    if (lead && typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', lead);
+    }
+  })();
 </script>
 <style>
   *{box-sizing:border-box}
