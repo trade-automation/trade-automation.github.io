@@ -142,6 +142,11 @@
             .cert-thumb { width: 100px; }
             .service-cta .cta-buttons { flex-direction: column; align-items: center; }
         }
+        /* Recent workshop production gallery */
+        .production-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-top: 40px; align-items: start; }
+        .production-grid .workshop-card img { width: 100%; height: auto; display: block; }
+        @media (max-width: 768px) { .production-grid { grid-template-columns: 1fr; } }
+
     /* Performance: responsive images + lazy loading */
 img { max-width: 100%; height: auto; }
 img[loading="lazy"] { content-visibility: auto; }
@@ -515,6 +520,58 @@ img[loading="lazy"] { content-visibility: auto; }
                     <div class="workshop-card-body">
                         <h3>Hands-On Craftsmanship & Safety</h3>
                         <p>Experienced woodworkers operating band saws with full safety equipment and dust control systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Workshop Production -->
+    <section class="content-section" id="recent-workshop-production">
+        <div class="content-inner">
+            <h2 style="text-align: center;">Recent Workshop Production</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 16px; font-size: 0.95rem; max-width: 760px; margin-left: auto; margin-right: auto;">Workshop views of custom upholstery, guestroom casegoods and repeated furniture components. These are production photographs, not staged hotel installations.</p>
+            <div class="production-grid">
+                <div class="workshop-card">
+                    <img src="https://foshanffe.com/images/factory/upholstery-hand-finishing-workshop.webp" alt="Craftsperson hand-finishing a green upholstered stool beside a carved wooden frame" width="1200" height="800" loading="lazy" decoding="async">
+                    <div class="workshop-card-body">
+                        <h3>Hand-Finishing</h3>
+                        <p>Close-up upholstery work on a green stool, with a carved wooden frame nearby.</p>
+                    </div>
+                </div>
+                <div class="workshop-card">
+                    <img src="https://foshanffe.com/images/factory/custom-tufted-leather-sofa-workshop.webp" alt="Burgundy tufted leather sofa with carved wood trim in a Foshan partner workshop" width="1320" height="740" loading="lazy" decoding="async">
+                    <div class="workshop-card-body">
+                        <h3>Custom Upholstered Seating</h3>
+                        <p>A workshop example of tufted upholstery and carved wood trim.</p>
+                    </div>
+                </div>
+                <div class="workshop-card">
+                    <img src="https://foshanffe.com/images/factory/custom-houndstooth-armchair-workshop.webp" alt="Houndstooth upholstered armchair with dark wood trim in a Foshan partner workshop" width="880" height="1300" loading="lazy" decoding="async">
+                    <div class="workshop-card-body">
+                        <h3>Fabric and Frame Detailing</h3>
+                        <p>Houndstooth upholstery paired with dark wood and decorative trim.</p>
+                    </div>
+                </div>
+                <div class="workshop-card">
+                    <img src="https://foshanffe.com/images/factory/casegoods-batch-production-workshop.webp" alt="Unfinished wooden casegood components arranged in batches inside a Foshan partner workshop" width="1440" height="960" loading="lazy" decoding="async">
+                    <div class="workshop-card-body">
+                        <h3>Casegoods in Batch Production</h3>
+                        <p>Wooden casegood components arranged for the next production step.</p>
+                    </div>
+                </div>
+                <div class="workshop-card">
+                    <img src="https://foshanffe.com/images/factory/headboard-batch-production.webp" alt="Wooden headboards and bed-frame panels stacked in a Foshan partner workshop" width="1440" height="960" loading="lazy" decoding="async">
+                    <div class="workshop-card-body">
+                        <h3>Headboards and Bed-Frame Panels</h3>
+                        <p>Repeated wooden parts staged together for guestroom furniture production.</p>
+                    </div>
+                </div>
+                <div class="workshop-card">
+                    <img src="https://foshanffe.com/images/factory/nightstand-batch-production.webp" alt="Rows of two-tone nightstands lined up in a Foshan partner workshop" width="1440" height="640" loading="lazy" decoding="async">
+                    <div class="workshop-card-body">
+                        <h3>Nightstand Production Run</h3>
+                        <p>Two-tone nightstands lined up in the workshop.</p>
                     </div>
                 </div>
             </div>
